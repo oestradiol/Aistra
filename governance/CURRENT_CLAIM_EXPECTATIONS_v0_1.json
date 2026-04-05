@@ -1,6 +1,6 @@
 {
   "package_name": "aistra",
-  "package_version": "1.10.0",
+  "package_version": "1.11.0",
   "expectations": {
     "README.md": {
       "must_contain_all": [
@@ -49,7 +49,7 @@
     },
     "docs/frontdoor/VERIFICATION_REPORT.md": {
       "must_contain_all": [
-        "1.10.0",
+        "1.11.0",
         "package_doctor.py",
         "route1_launch_gate.py",
         "audit_current_surfaces.py",
@@ -62,7 +62,7 @@
     },
     "docs/frontdoor/FULL_AUDIT_REPORT.md": {
       "must_contain_all": [
-        "1.10.0",
+        "1.11.0",
         "current-surface governance",
         "repository-wide file registry"
       ],

@@ -3,7 +3,7 @@
 ## Pre-run gate
 1. Run `python package_doctor.py`
 2. Run `python route1_launch_gate.py`
-3. Verify `../../governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json` with `python research_grounding_v0_1/scripts/verify_integrity_manifest.py --strict`
+3. Verify `../../governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json` with `python research/grounding/scripts/verify_integrity_manifest.py --strict`
 
 Do not proceed unless all pass.
 
@@ -38,7 +38,7 @@ The wrapper writes:
 - scored report
 - run manifest
 
-Store generated outputs under `reports/generated/` or another run-evidence directory, not in the canonical top level.
+Store generated outputs under `archive/reports/generated/` or another run-evidence directory, not in the canonical top level.
 
 ## Stop conditions
 Stop and mark the run if:

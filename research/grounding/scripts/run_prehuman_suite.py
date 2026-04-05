@@ -5,7 +5,7 @@ import json, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(sys.argv[sys.argv.index("--package-root")+1]) if "--package-root" in sys.argv else Path(".")
-RG = ROOT / "research_grounding_v0_1"
+RG = ROOT / "research/grounding"
 scripts = RG / "scripts"
 
 runs = []

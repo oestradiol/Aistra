@@ -3,13 +3,13 @@
 This guide is for running the current Route 1 local packet without manual operator paraphrase.
 
 ## Current package state
-- live package line: `v1.10`
+- live package line: `v1.11`
 - Route 1 status: `pilot_ready`
 - Route 1 is the explicit-calibration route, not a naturalistic phenomenology route
 
 ## Recommended path
 1. Read `../../START_HERE.md`.
-2. Open `../../human_pilot_app_v0_1/index.html` in a browser.
+2. Open `../../apps/human_pilot/index.html` in a browser.
 3. Complete the packet exactly as shown.
 4. Click **Export Results**.
 5. Keep the exported files and, if needed, score them locally.
@@ -21,8 +21,8 @@ This guide is for running the current Route 1 local packet without manual operat
 - For baseline-explicit items, do not infer extra cause, source, certainty, or contour beyond what the text gives you.
 
 ## Current files you may use
-- `../../human_pilot_app_v0_1/index.html`
-- `../../human_pilot_app_v0_1/packet_config.json`
+- `../../apps/human_pilot/index.html`
+- `../../apps/human_pilot/packet_config.json`
 - `../../core/route1/pilot_packet_route1_v0_3_final.jsonl`
 - `../../core/route1/pilot_answer_key_route1_v0_4_alternate_aware.jsonl`
 - `../../tools/score_route1_human_pilot_export.py`

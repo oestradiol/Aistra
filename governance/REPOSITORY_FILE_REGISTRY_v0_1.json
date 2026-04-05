@@ -1,7 +1,7 @@
 {
   "version": "1.1.0",
   "package_name": "aistra",
-  "package_version": "1.10.0",
+  "package_version": "1.11.0",
   "entries": [
     {
       "path": "README.md",
@@ -14,17 +14,17 @@
       "justification": "root entry or executable anchor required by the package front door"
     },
     {
-      "path": "adversarial_suite_v0_1/README.md",
+      "path": "tests/adversarial_suite/README.md",
       "role": "test_asset",
       "justification": "adversarial test asset for parser, scorer, or route-control stress testing"
     },
     {
-      "path": "adversarial_suite_v0_1/adversarial_cases.json",
+      "path": "tests/adversarial_suite/adversarial_cases.json",
       "role": "test_asset",
       "justification": "adversarial test asset for parser, scorer, or route-control stress testing"
     },
     {
-      "path": "adversarial_suite_v0_1/run_adversarial_suite.py",
+      "path": "tests/adversarial_suite/run_adversarial_suite.py",
       "role": "test_asset",
       "justification": "adversarial test asset for parser, scorer, or route-control stress testing"
     },
@@ -99,92 +99,92 @@
       "justification": "authoritative Route 1 asset or executable code"
     },
     {
-      "path": "cross_route_spec_v0_1/common_interfaces.md",
+      "path": "research/cross_route_spec/common_interfaces.md",
       "role": "authoritative_asset",
       "justification": "cross-route interface or manifest support"
     },
     {
-      "path": "cross_route_spec_v0_1/manifest.json",
+      "path": "research/cross_route_spec/manifest.json",
       "role": "authoritative_asset",
       "justification": "cross-route interface or manifest support"
     },
     {
-      "path": "cross_route_spec_v0_1/package_tree.txt",
+      "path": "research/cross_route_spec/package_tree.txt",
       "role": "authoritative_asset",
       "justification": "cross-route interface or manifest support"
     },
     {
-      "path": "cross_route_spec_v0_1/unified_report_template.json",
+      "path": "research/cross_route_spec/unified_report_template.json",
       "role": "authoritative_asset",
       "justification": "cross-route interface or manifest support"
     },
     {
-      "path": "deprecated/README.md",
+      "path": "archive/deprecated/README.md",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/allowed_values_response_form_route1_v0_1.md",
+      "path": "archive/deprecated/route1_superseded/allowed_values_response_form_route1_v0_1.md",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/baseline_protocol_memo_v0_1.md",
+      "path": "archive/deprecated/route1_superseded/baseline_protocol_memo_v0_1.md",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/participant_instructions_route1_pilot_v0_1.md",
+      "path": "archive/deprecated/route1_superseded/participant_instructions_route1_pilot_v0_1.md",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_answer_key_route1_v0_3_final.jsonl",
+      "path": "archive/deprecated/route1_superseded/pilot_answer_key_route1_v0_3_final.jsonl",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl",
+      "path": "archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl.WARNING.txt",
+      "path": "archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl.WARNING.txt",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl",
+      "path": "archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl.WARNING.txt",
+      "path": "archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl.WARNING.txt",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_protocol_memo_v0_1.md",
+      "path": "archive/deprecated/route1_superseded/pilot_protocol_memo_v0_1.md",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_readiness_memo_v0_1.md",
+      "path": "archive/deprecated/route1_superseded/pilot_readiness_memo_v0_1.md",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_ready_status_note_v0_1.md",
+      "path": "archive/deprecated/route1_superseded/pilot_ready_status_note_v0_1.md",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_response_template_route1_v0_1.json",
+      "path": "archive/deprecated/route1_superseded/pilot_response_template_route1_v0_1.json",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
     {
-      "path": "deprecated/route1_superseded/pilot_review_template_v0_1.md",
+      "path": "archive/deprecated/route1_superseded/pilot_review_template_v0_1.md",
       "role": "historical_trace",
       "justification": "superseded material retained for traceability"
     },
@@ -384,62 +384,62 @@
       "justification": "current status or execution-order surface"
     },
     {
-      "path": "examples/README.md",
+      "path": "research/examples/README.md",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route1/predictions_example.jsonl",
+      "path": "research/examples/route1/predictions_example.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route1/sample_packet.jsonl",
+      "path": "research/examples/route1/sample_packet.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route1/sample_packet_answer_key.jsonl",
+      "path": "research/examples/route1/sample_packet_answer_key.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route1/sample_predictions_blank.jsonl",
+      "path": "research/examples/route1/sample_predictions_blank.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route1/sample_predictions_filled.jsonl",
+      "path": "research/examples/route1/sample_predictions_filled.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route1/sample_report.json",
+      "path": "research/examples/route1/sample_report.json",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route2/predictions_example.jsonl",
+      "path": "research/examples/route2/predictions_example.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route2/predictions_example_answer_key.jsonl",
+      "path": "research/examples/route2/predictions_example_answer_key.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route2/sample_packet.jsonl",
+      "path": "research/examples/route2/sample_packet.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route2/sample_packet_answer_key.jsonl",
+      "path": "research/examples/route2/sample_packet_answer_key.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
     {
-      "path": "examples/route2/sample_predictions_blank.jsonl",
+      "path": "research/examples/route2/sample_predictions_blank.jsonl",
       "role": "example_asset",
       "justification": "non-authoritative example asset"
     },
@@ -499,27 +499,27 @@
       "justification": "governance registry, authoritative map, or package-control rule"
     },
     {
-      "path": "human_pilot_app_v0_1/app.js",
+      "path": "apps/human_pilot/app.js",
       "role": "tooling_current",
       "justification": "local Route 1 pilot interface asset"
     },
     {
-      "path": "human_pilot_app_v0_1/index.html",
+      "path": "apps/human_pilot/index.html",
       "role": "tooling_current",
       "justification": "local Route 1 pilot interface asset"
     },
     {
-      "path": "human_pilot_app_v0_1/packet_config.js",
+      "path": "apps/human_pilot/packet_config.js",
       "role": "tooling_current",
       "justification": "local Route 1 pilot interface asset"
     },
     {
-      "path": "human_pilot_app_v0_1/packet_config.json",
+      "path": "apps/human_pilot/packet_config.json",
       "role": "tooling_current",
       "justification": "local Route 1 pilot interface asset"
     },
     {
-      "path": "human_pilot_app_v0_1/styles.css",
+      "path": "apps/human_pilot/styles.css",
       "role": "tooling_current",
       "justification": "local Route 1 pilot interface asset"
     },
@@ -529,142 +529,142 @@
       "justification": "root entry or executable anchor required by the package front door"
     },
     {
-      "path": "reports/generated/README.md",
+      "path": "archive/reports/generated/README.md",
       "role": "generated_output",
       "justification": "generated report location used by package checks and local runs"
     },
     {
-      "path": "research_grounding_v0_1/README.md",
+      "path": "research/grounding/README.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/dataset_cards/R1_DEAP_dataset_card.md",
+      "path": "research/grounding/dataset_cards/R1_DEAP_dataset_card.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/dataset_cards/R1_OASIS_dataset_card.md",
+      "path": "research/grounding/dataset_cards/R1_OASIS_dataset_card.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/dataset_cards/R2_SYNTH_dataset_card.md",
+      "path": "research/grounding/dataset_cards/R2_SYNTH_dataset_card.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/datasets_manifest_v0_1.json",
+      "path": "research/grounding/datasets_manifest_v0_1.json",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/evidence_mapping_method_memo_v0_1.md",
+      "path": "research/grounding/evidence_mapping_method_memo_v0_1.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/field_registry_route1_v0_1.json",
+      "path": "research/grounding/field_registry_route1_v0_1.json",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/field_registry_route2_v0_1.json",
+      "path": "research/grounding/field_registry_route2_v0_1.json",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/prehuman_validation_report_route1_v0_1.md",
+      "path": "research/grounding/prehuman_validation_report_route1_v0_1.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/prehuman_validation_report_route2_v0_1.md",
+      "path": "research/grounding/prehuman_validation_report_route2_v0_1.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/prehuman_validation_rubric_v0_1.md",
+      "path": "research/grounding/prehuman_validation_rubric_v0_1.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/prehuman_validation_summary_v0_1.json",
+      "path": "research/grounding/prehuman_validation_summary_v0_1.json",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/reference_bibliography_v0_1.json",
+      "path": "research/grounding/reference_bibliography_v0_1.json",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/reference_bibliography_v0_1.md",
+      "path": "research/grounding/reference_bibliography_v0_1.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/route1_field_evidence_v0_1.csv",
+      "path": "research/grounding/route1_field_evidence_v0_1.csv",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/route1_field_evidence_v0_1.jsonl",
+      "path": "research/grounding/route1_field_evidence_v0_1.jsonl",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/route1_scientific_grounding_memo_v0_1.md",
+      "path": "research/grounding/route1_scientific_grounding_memo_v0_1.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/route2_field_evidence_v0_1.csv",
+      "path": "research/grounding/route2_field_evidence_v0_1.csv",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/route2_field_evidence_v0_1.jsonl",
+      "path": "research/grounding/route2_field_evidence_v0_1.jsonl",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/route2_scientific_grounding_memo_v0_1.md",
+      "path": "research/grounding/route2_scientific_grounding_memo_v0_1.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/scripts/generate_integrity_manifest.py",
+      "path": "research/grounding/scripts/generate_integrity_manifest.py",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/scripts/run_prehuman_suite.py",
+      "path": "research/grounding/scripts/run_prehuman_suite.py",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/scripts/synthesize_route2_stimuli.py",
+      "path": "research/grounding/scripts/synthesize_route2_stimuli.py",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/scripts/validate_datasets_manifest.py",
+      "path": "research/grounding/scripts/validate_datasets_manifest.py",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/scripts/validate_evidence_tables.py",
+      "path": "research/grounding/scripts/validate_evidence_tables.py",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/scripts/verify_integrity_manifest.py",
+      "path": "research/grounding/scripts/verify_integrity_manifest.py",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
     {
-      "path": "research_grounding_v0_1/weight_priors_memo_v0_2.md",
+      "path": "research/grounding/weight_priors_memo_v0_2.md",
       "role": "research_support",
       "justification": "research-grounding evidence, bibliography, or validation support"
     },
@@ -674,37 +674,37 @@
       "justification": "root entry or executable anchor required by the package front door"
     },
     {
-      "path": "route2_visual_v0_1/README.md",
+      "path": "apps/route2_visual/README.md",
       "role": "authoritative_asset",
       "justification": "pre-human Route 2 asset or executable code"
     },
     {
-      "path": "route2_visual_v0_1/correction_pairs.jsonl",
+      "path": "apps/route2_visual/correction_pairs.jsonl",
       "role": "authoritative_asset",
       "justification": "pre-human Route 2 asset or executable code"
     },
     {
-      "path": "route2_visual_v0_1/experiment_runner.py",
+      "path": "apps/route2_visual/experiment_runner.py",
       "role": "authoritative_asset",
       "justification": "pre-human Route 2 asset or executable code"
     },
     {
-      "path": "route2_visual_v0_1/gold_invalid.jsonl",
+      "path": "apps/route2_visual/gold_invalid.jsonl",
       "role": "authoritative_asset",
       "justification": "pre-human Route 2 asset or executable code"
     },
     {
-      "path": "route2_visual_v0_1/gold_valid.jsonl",
+      "path": "apps/route2_visual/gold_valid.jsonl",
       "role": "authoritative_asset",
       "justification": "pre-human Route 2 asset or executable code"
     },
     {
-      "path": "route2_visual_v0_1/parser.py",
+      "path": "apps/route2_visual/parser.py",
       "role": "authoritative_asset",
       "justification": "pre-human Route 2 asset or executable code"
     },
     {
-      "path": "route2_visual_v0_1/scorer.py",
+      "path": "apps/route2_visual/scorer.py",
       "role": "authoritative_asset",
       "justification": "pre-human Route 2 asset or executable code"
     },

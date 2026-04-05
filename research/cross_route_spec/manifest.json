@@ -37,13 +37,13 @@
         "runner": "core/route1/experiment_runner.py"
       },
       "superseded_docs": [
-        "deprecated/route1_superseded/pilot_protocol_memo_v0_1.md",
-        "deprecated/route1_superseded/baseline_protocol_memo_v0_1.md",
-        "deprecated/route1_superseded/pilot_review_template_v0_1.md",
-        "deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl",
-        "deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl",
-        "deprecated/route1_superseded/pilot_ready_status_note_v0_1.md",
-        "deprecated/route1_superseded/pilot_readiness_memo_v0_1.md"
+        "archive/deprecated/route1_superseded/pilot_protocol_memo_v0_1.md",
+        "archive/deprecated/route1_superseded/baseline_protocol_memo_v0_1.md",
+        "archive/deprecated/route1_superseded/pilot_review_template_v0_1.md",
+        "archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl",
+        "archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl",
+        "archive/deprecated/route1_superseded/pilot_ready_status_note_v0_1.md",
+        "archive/deprecated/route1_superseded/pilot_readiness_memo_v0_1.md"
       ]
     },
     {
@@ -51,21 +51,21 @@
       "version": "0.1.0",
       "status": "pre_human",
       "authoritative_docs": [
-        "route2_visual_v0_1/README.md",
-        "route2_visual_v0_1/gold_valid.jsonl",
-        "route2_visual_v0_1/gold_invalid.jsonl",
-        "route2_visual_v0_1/correction_pairs.jsonl",
-        "route2_visual_v0_1/parser.py",
-        "route2_visual_v0_1/scorer.py",
-        "route2_visual_v0_1/experiment_runner.py"
+        "apps/route2_visual/README.md",
+        "apps/route2_visual/gold_valid.jsonl",
+        "apps/route2_visual/gold_invalid.jsonl",
+        "apps/route2_visual/correction_pairs.jsonl",
+        "apps/route2_visual/parser.py",
+        "apps/route2_visual/scorer.py",
+        "apps/route2_visual/experiment_runner.py"
       ],
       "artifact_paths": {
-        "gold_valid": "route2_visual_v0_1/gold_valid.jsonl",
-        "gold_invalid": "route2_visual_v0_1/gold_invalid.jsonl",
-        "corrections": "route2_visual_v0_1/correction_pairs.jsonl",
-        "parser": "route2_visual_v0_1/parser.py",
-        "scorer": "route2_visual_v0_1/scorer.py",
-        "runner": "route2_visual_v0_1/experiment_runner.py"
+        "gold_valid": "apps/route2_visual/gold_valid.jsonl",
+        "gold_invalid": "apps/route2_visual/gold_invalid.jsonl",
+        "corrections": "apps/route2_visual/correction_pairs.jsonl",
+        "parser": "apps/route2_visual/parser.py",
+        "scorer": "apps/route2_visual/scorer.py",
+        "runner": "apps/route2_visual/experiment_runner.py"
       },
       "superseded_docs": []
     }
@@ -74,8 +74,8 @@
     "route_control": "core/common/route_control.py",
     "route_control_memo": "core/common/route_control_memo.md",
     "weight_calibration_memo": "docs/ops/weight_calibration_memo_v0_1.md",
-    "adversarial_suite": "adversarial_suite_v0_1/",
-    "cross_route_spec": "cross_route_spec_v0_1/"
+    "adversarial_suite": "tests/adversarial_suite/",
+    "cross_route_spec": "research/cross_route_spec/"
   },
   "non_goals_currently": [
     "mixed-route encoding",
@@ -88,9 +88,9 @@
   "handoff_rule": "Use docs/frontdoor/HANDOFF_GUIDE.md and governance/AUTHORITATIVE_INDEX_v0_1.md first. If two documents conflict, prefer the higher-version authoritative doc listed there.",
   "research_grounding_layer": {
     "present": true,
-    "path": "research_grounding_v0_1/",
+    "path": "research/grounding/",
     "required_for_status": "scientifically_grounded_prehuman"
   },
-  "package_version": "1.10.0",
+  "package_version": "1.11.0",
   "cross_route_spec_schema_version": "0.8.0"
 }

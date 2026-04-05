@@ -11,7 +11,7 @@ Required checks:
 - `python tools/audit_repository_file_registry.py`
 - `python tools/audit_current_claims.py`
 - `python tools/audit_repository_minimality.py`
-- `python adversarial_suite_v0_1/run_adversarial_suite.py`
+- `python tests/adversarial_suite/run_adversarial_suite.py`
 
 Manual checks:
 - read `README.md` and `START_HERE.md` cold

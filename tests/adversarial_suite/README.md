@@ -8,7 +8,7 @@ Purpose:
 Files:
 - adversarial_cases.json
 - run_adversarial_suite.py
-- ../reports/generated/adversarial_suite_v0_1/adversarial_report.json (generated)
+- ../../archive/reports/generated/tests/adversarial_suite/adversarial_report.json (generated)
 
 Use:
 ```bash

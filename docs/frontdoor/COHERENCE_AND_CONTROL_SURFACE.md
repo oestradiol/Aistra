@@ -46,14 +46,14 @@ Rule: old files may stay old, but current files may not quietly drift.
 - `SCIENTIFIC_GROUNDING.md`
 - `../specs/VALIDITY_AND_LIMITS_v0_1.md`
 - `../specs/FIELD_RATIONALE_REVIEW_v0_1.md`
-- `../../research_grounding_v0_1/`
+- `../../research/grounding/`
 
 ## How the route logic stays aligned
 - `../specs/SCORING_SPEC_v0_1.md`
 - `../../core/route1/pilot_answer_key_route1_v0_4_alternate_aware.jsonl`
 - `../../tools/score_route1_human_pilot_export.py`
 - `../../tests/run_route1_regression_tests.py`
-- `../../adversarial_suite_v0_1/run_adversarial_suite.py`
+- `../../tests/adversarial_suite/run_adversarial_suite.py`
 
 ## Honest limit
 These controls are strong against many known mistakes. They do not guarantee perfection and they do not replace human judgment.

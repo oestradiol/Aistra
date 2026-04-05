@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parents[2]
+BASE = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(BASE))
 from authoritative_guard import verify_integrity, AuthorityError  # noqa
 

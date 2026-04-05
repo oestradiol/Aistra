@@ -6,7 +6,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]
 EXPECT_PATH = BASE / 'governance' / 'CURRENT_CLAIM_EXPECTATIONS_v0_1.json'
-REPORT_PATH = BASE / 'reports' / 'generated' / 'current_claim_audit_report_v0_1.json'
+REPORT_PATH = BASE / 'archive' / 'reports' / 'generated' / 'current_claim_audit_report_v0_1.json'
 
 def run_audit() -> dict:
     data = json.loads(EXPECT_PATH.read_text(encoding='utf-8'))

@@ -6,7 +6,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]
 POLICY = BASE / 'governance' / 'MINIMALITY_POLICY_v0_1.json'
-REPORT = BASE / 'reports' / 'generated' / 'repository_minimality_report_v0_1.json'
+REPORT = BASE / 'archive' / 'reports' / 'generated' / 'repository_minimality_report_v0_1.json'
 
 def run_audit() -> dict:
     policy = json.loads(POLICY.read_text(encoding='utf-8'))
@@ -17,8 +17,8 @@ def run_audit() -> dict:
             issues.append({'check':name,'detail':detail})
     root_files = [p for p in BASE.iterdir() if p.is_file()]
     history_files = [p for p in (BASE/'docs'/'history').rglob('*') if p.is_file()]
-    deprecated_files = [p for p in (BASE/'deprecated').rglob('*') if p.is_file()]
-    generated_files = [p for p in (BASE/'reports'/'generated').rglob('*') if p.is_file() and p.name == 'README.md']
+    deprecated_files = [p for p in (BASE/'archive'/'deprecated').rglob('*') if p.is_file()]
+    generated_files = [p for p in (BASE/'archive'/'reports'/'generated').rglob('*') if p.is_file() and p.name == 'README.md']
     lim = policy['limits']
     record('limit:root-files', len(root_files) <= lim['max_root_files'], f'count={len(root_files)} limit={lim["max_root_files"]}')
     record('limit:history-files', len(history_files) <= lim['max_docs_history_files'], f'count={len(history_files)} limit={lim["max_docs_history_files"]}')

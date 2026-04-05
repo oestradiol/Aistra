@@ -15,7 +15,7 @@ If a correction affects:
 
 then also update:
 - `../../governance/AUTHORITATIVE_INDEX_v0_1.md`
-- `cross_route_spec_v0_1/manifest.json`
+- `research/cross_route_spec/manifest.json`
 - `../../governance/PACKAGE_STATE_SUMMARY_v0_1.json`
 - a correction note or pass note
 

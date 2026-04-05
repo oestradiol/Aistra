@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "package_name": "aistra",
-  "package_version": "1.10.0",
+  "package_version": "1.11.0",
   "total_files": 151,
   "registered_files": 151,
   "total_checks": 396,
@@ -69,32 +69,342 @@
       "detail": "root file not allowlisted"
     },
     {
-      "check": "entry:adversarial_suite_v0_1/README.md:valid-role",
+      "check": "entry:apps/human_pilot/app.js:valid-role",
       "ok": true,
-      "detail": "role=test_asset"
+      "detail": "role=tooling_current"
     },
     {
-      "check": "entry:adversarial_suite_v0_1/README.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:adversarial_suite_v0_1/adversarial_cases.json:valid-role",
-      "ok": true,
-      "detail": "role=test_asset"
-    },
-    {
-      "check": "entry:adversarial_suite_v0_1/adversarial_cases.json:justified",
+      "check": "entry:apps/human_pilot/app.js:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:adversarial_suite_v0_1/run_adversarial_suite.py:valid-role",
+      "check": "entry:apps/human_pilot/index.html:valid-role",
       "ok": true,
-      "detail": "role=test_asset"
+      "detail": "role=tooling_current"
     },
     {
-      "check": "entry:adversarial_suite_v0_1/run_adversarial_suite.py:justified",
+      "check": "entry:apps/human_pilot/index.html:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/human_pilot/packet_config.js:valid-role",
+      "ok": true,
+      "detail": "role=tooling_current"
+    },
+    {
+      "check": "entry:apps/human_pilot/packet_config.js:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/human_pilot/packet_config.json:valid-role",
+      "ok": true,
+      "detail": "role=tooling_current"
+    },
+    {
+      "check": "entry:apps/human_pilot/packet_config.json:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/human_pilot/styles.css:valid-role",
+      "ok": true,
+      "detail": "role=tooling_current"
+    },
+    {
+      "check": "entry:apps/human_pilot/styles.css:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/route2_visual/README.md:valid-role",
+      "ok": true,
+      "detail": "role=authoritative_asset"
+    },
+    {
+      "check": "entry:apps/route2_visual/README.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/route2_visual/correction_pairs.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=authoritative_asset"
+    },
+    {
+      "check": "entry:apps/route2_visual/correction_pairs.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/route2_visual/experiment_runner.py:valid-role",
+      "ok": true,
+      "detail": "role=authoritative_asset"
+    },
+    {
+      "check": "entry:apps/route2_visual/experiment_runner.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/route2_visual/gold_invalid.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=authoritative_asset"
+    },
+    {
+      "check": "entry:apps/route2_visual/gold_invalid.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/route2_visual/gold_valid.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=authoritative_asset"
+    },
+    {
+      "check": "entry:apps/route2_visual/gold_valid.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/route2_visual/parser.py:valid-role",
+      "ok": true,
+      "detail": "role=authoritative_asset"
+    },
+    {
+      "check": "entry:apps/route2_visual/parser.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:apps/route2_visual/scorer.py:valid-role",
+      "ok": true,
+      "detail": "role=authoritative_asset"
+    },
+    {
+      "check": "entry:apps/route2_visual/scorer.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/README.md:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/README.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/README.md:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/allowed_values_response_form_route1_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/allowed_values_response_form_route1_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/allowed_values_response_form_route1_v0_1.md:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/baseline_protocol_memo_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/baseline_protocol_memo_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/baseline_protocol_memo_v0_1.md:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/participant_instructions_route1_pilot_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/participant_instructions_route1_pilot_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/participant_instructions_route1_pilot_v0_1.md:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_answer_key_route1_v0_3_final.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_answer_key_route1_v0_3_final.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_answer_key_route1_v0_3_final.jsonl:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl.WARNING.txt:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl.WARNING.txt:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl.WARNING.txt:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl.WARNING.txt:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl.WARNING.txt:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl.WARNING.txt:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_protocol_memo_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_protocol_memo_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_protocol_memo_v0_1.md:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_readiness_memo_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_readiness_memo_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_readiness_memo_v0_1.md:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_ready_status_note_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_ready_status_note_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_ready_status_note_v0_1.md:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_response_template_route1_v0_1.json:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_response_template_route1_v0_1.json:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_response_template_route1_v0_1.json:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_review_template_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=historical_trace"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_review_template_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:archive/deprecated/route1_superseded/pilot_review_template_v0_1.md:historical-placement",
+      "ok": true,
+      "detail": "historical file outside approved historical zones"
+    },
+    {
+      "check": "entry:archive/reports/generated/README.md:valid-role",
+      "ok": true,
+      "detail": "role=generated_output"
+    },
+    {
+      "check": "entry:archive/reports/generated/README.md:justified",
       "ok": true,
       "detail": "empty justification"
     },
@@ -242,256 +552,6 @@
       "check": "entry:core/route1/token_legend_route1_v0_1.md:justified",
       "ok": true,
       "detail": "empty justification"
-    },
-    {
-      "check": "entry:cross_route_spec_v0_1/common_interfaces.md:valid-role",
-      "ok": true,
-      "detail": "role=authoritative_asset"
-    },
-    {
-      "check": "entry:cross_route_spec_v0_1/common_interfaces.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:cross_route_spec_v0_1/manifest.json:valid-role",
-      "ok": true,
-      "detail": "role=authoritative_asset"
-    },
-    {
-      "check": "entry:cross_route_spec_v0_1/manifest.json:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:cross_route_spec_v0_1/package_tree.txt:valid-role",
-      "ok": true,
-      "detail": "role=authoritative_asset"
-    },
-    {
-      "check": "entry:cross_route_spec_v0_1/package_tree.txt:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:cross_route_spec_v0_1/unified_report_template.json:valid-role",
-      "ok": true,
-      "detail": "role=authoritative_asset"
-    },
-    {
-      "check": "entry:cross_route_spec_v0_1/unified_report_template.json:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/README.md:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/README.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/README.md:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/allowed_values_response_form_route1_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/allowed_values_response_form_route1_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/allowed_values_response_form_route1_v0_1.md:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/baseline_protocol_memo_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/baseline_protocol_memo_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/baseline_protocol_memo_v0_1.md:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/participant_instructions_route1_pilot_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/participant_instructions_route1_pilot_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/participant_instructions_route1_pilot_v0_1.md:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_answer_key_route1_v0_3_final.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_answer_key_route1_v0_3_final.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_answer_key_route1_v0_3_final.jsonl:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl.WARNING.txt:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl.WARNING.txt:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl.WARNING.txt:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl.WARNING.txt:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl.WARNING.txt:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl.WARNING.txt:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_protocol_memo_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_protocol_memo_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_protocol_memo_v0_1.md:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_readiness_memo_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_readiness_memo_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_readiness_memo_v0_1.md:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_ready_status_note_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_ready_status_note_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_ready_status_note_v0_1.md:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_response_template_route1_v0_1.json:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_response_template_route1_v0_1.json:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_response_template_route1_v0_1.json:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_review_template_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=historical_trace"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_review_template_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:deprecated/route1_superseded/pilot_review_template_v0_1.md:historical-placement",
-      "ok": true,
-      "detail": "historical file outside approved historical zones"
     },
     {
       "check": "entry:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:valid-role",
@@ -954,126 +1014,6 @@
       "detail": "current file placed in historical zone"
     },
     {
-      "check": "entry:examples/README.md:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/README.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route1/predictions_example.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route1/predictions_example.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route1/sample_packet.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route1/sample_packet.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route1/sample_packet_answer_key.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route1/sample_packet_answer_key.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route1/sample_predictions_blank.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route1/sample_predictions_blank.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route1/sample_predictions_filled.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route1/sample_predictions_filled.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route1/sample_report.json:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route1/sample_report.json:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route2/predictions_example.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route2/predictions_example.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route2/predictions_example_answer_key.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route2/predictions_example_answer_key.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route2/sample_packet.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route2/sample_packet.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route2/sample_packet_answer_key.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route2/sample_packet_answer_key.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:examples/route2/sample_predictions_blank.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=example_asset"
-    },
-    {
-      "check": "entry:examples/route2/sample_predictions_blank.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
       "check": "entry:governance/AUTHORITATIVE_INDEX_v0_1.md:valid-role",
       "ok": true,
       "detail": "role=current_truth"
@@ -1219,56 +1159,6 @@
       "detail": "current file placed in historical zone"
     },
     {
-      "check": "entry:human_pilot_app_v0_1/app.js:valid-role",
-      "ok": true,
-      "detail": "role=tooling_current"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/app.js:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/index.html:valid-role",
-      "ok": true,
-      "detail": "role=tooling_current"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/index.html:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/packet_config.js:valid-role",
-      "ok": true,
-      "detail": "role=tooling_current"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/packet_config.js:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/packet_config.json:valid-role",
-      "ok": true,
-      "detail": "role=tooling_current"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/packet_config.json:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/styles.css:valid-role",
-      "ok": true,
-      "detail": "role=tooling_current"
-    },
-    {
-      "check": "entry:human_pilot_app_v0_1/styles.css:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
       "check": "entry:package_doctor.py:valid-role",
       "ok": true,
       "detail": "role=tooling_current"
@@ -1284,282 +1174,432 @@
       "detail": "root file not allowlisted"
     },
     {
-      "check": "entry:reports/generated/README.md:valid-role",
+      "check": "entry:research/cross_route_spec/common_interfaces.md:valid-role",
       "ok": true,
-      "detail": "role=generated_output"
+      "detail": "role=authoritative_asset"
     },
     {
-      "check": "entry:reports/generated/README.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/README.md:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/README.md:justified",
+      "check": "entry:research/cross_route_spec/common_interfaces.md:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/dataset_cards/R1_DEAP_dataset_card.md:valid-role",
+      "check": "entry:research/cross_route_spec/manifest.json:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=authoritative_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/dataset_cards/R1_DEAP_dataset_card.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/dataset_cards/R1_OASIS_dataset_card.md:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/dataset_cards/R1_OASIS_dataset_card.md:justified",
+      "check": "entry:research/cross_route_spec/manifest.json:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/dataset_cards/R2_SYNTH_dataset_card.md:valid-role",
+      "check": "entry:research/cross_route_spec/package_tree.txt:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=authoritative_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/dataset_cards/R2_SYNTH_dataset_card.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/datasets_manifest_v0_1.json:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/datasets_manifest_v0_1.json:justified",
+      "check": "entry:research/cross_route_spec/package_tree.txt:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/evidence_mapping_method_memo_v0_1.md:valid-role",
+      "check": "entry:research/cross_route_spec/unified_report_template.json:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=authoritative_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/evidence_mapping_method_memo_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/field_registry_route1_v0_1.json:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/field_registry_route1_v0_1.json:justified",
+      "check": "entry:research/cross_route_spec/unified_report_template.json:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/field_registry_route2_v0_1.json:valid-role",
+      "check": "entry:research/examples/README.md:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/field_registry_route2_v0_1.json:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/prehuman_validation_report_route1_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/prehuman_validation_report_route1_v0_1.md:justified",
+      "check": "entry:research/examples/README.md:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/prehuman_validation_report_route2_v0_1.md:valid-role",
+      "check": "entry:research/examples/route1/predictions_example.jsonl:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/prehuman_validation_report_route2_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/prehuman_validation_rubric_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/prehuman_validation_rubric_v0_1.md:justified",
+      "check": "entry:research/examples/route1/predictions_example.jsonl:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/prehuman_validation_summary_v0_1.json:valid-role",
+      "check": "entry:research/examples/route1/sample_packet.jsonl:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/prehuman_validation_summary_v0_1.json:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/reference_bibliography_v0_1.json:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/reference_bibliography_v0_1.json:justified",
+      "check": "entry:research/examples/route1/sample_packet.jsonl:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/reference_bibliography_v0_1.md:valid-role",
+      "check": "entry:research/examples/route1/sample_packet_answer_key.jsonl:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/reference_bibliography_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/route1_field_evidence_v0_1.csv:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/route1_field_evidence_v0_1.csv:justified",
+      "check": "entry:research/examples/route1/sample_packet_answer_key.jsonl:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/route1_field_evidence_v0_1.jsonl:valid-role",
+      "check": "entry:research/examples/route1/sample_predictions_blank.jsonl:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/route1_field_evidence_v0_1.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/route1_scientific_grounding_memo_v0_1.md:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/route1_scientific_grounding_memo_v0_1.md:justified",
+      "check": "entry:research/examples/route1/sample_predictions_blank.jsonl:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/route2_field_evidence_v0_1.csv:valid-role",
+      "check": "entry:research/examples/route1/sample_predictions_filled.jsonl:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/route2_field_evidence_v0_1.csv:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/route2_field_evidence_v0_1.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/route2_field_evidence_v0_1.jsonl:justified",
+      "check": "entry:research/examples/route1/sample_predictions_filled.jsonl:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/route2_scientific_grounding_memo_v0_1.md:valid-role",
+      "check": "entry:research/examples/route1/sample_report.json:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/route2_scientific_grounding_memo_v0_1.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/scripts/generate_integrity_manifest.py:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/scripts/generate_integrity_manifest.py:justified",
+      "check": "entry:research/examples/route1/sample_report.json:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/scripts/run_prehuman_suite.py:valid-role",
+      "check": "entry:research/examples/route2/predictions_example.jsonl:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/scripts/run_prehuman_suite.py:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/scripts/synthesize_route2_stimuli.py:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/scripts/synthesize_route2_stimuli.py:justified",
+      "check": "entry:research/examples/route2/predictions_example.jsonl:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/scripts/validate_datasets_manifest.py:valid-role",
+      "check": "entry:research/examples/route2/predictions_example_answer_key.jsonl:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/scripts/validate_datasets_manifest.py:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/scripts/validate_evidence_tables.py:valid-role",
-      "ok": true,
-      "detail": "role=research_support"
-    },
-    {
-      "check": "entry:research_grounding_v0_1/scripts/validate_evidence_tables.py:justified",
+      "check": "entry:research/examples/route2/predictions_example_answer_key.jsonl:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/scripts/verify_integrity_manifest.py:valid-role",
+      "check": "entry:research/examples/route2/sample_packet.jsonl:valid-role",
       "ok": true,
-      "detail": "role=research_support"
+      "detail": "role=example_asset"
     },
     {
-      "check": "entry:research_grounding_v0_1/scripts/verify_integrity_manifest.py:justified",
+      "check": "entry:research/examples/route2/sample_packet.jsonl:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:research_grounding_v0_1/weight_priors_memo_v0_2.md:valid-role",
+      "check": "entry:research/examples/route2/sample_packet_answer_key.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=example_asset"
+    },
+    {
+      "check": "entry:research/examples/route2/sample_packet_answer_key.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/examples/route2/sample_predictions_blank.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=example_asset"
+    },
+    {
+      "check": "entry:research/examples/route2/sample_predictions_blank.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/README.md:valid-role",
       "ok": true,
       "detail": "role=research_support"
     },
     {
-      "check": "entry:research_grounding_v0_1/weight_priors_memo_v0_2.md:justified",
+      "check": "entry:research/grounding/README.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/dataset_cards/R1_DEAP_dataset_card.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/dataset_cards/R1_DEAP_dataset_card.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/dataset_cards/R1_OASIS_dataset_card.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/dataset_cards/R1_OASIS_dataset_card.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/dataset_cards/R2_SYNTH_dataset_card.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/dataset_cards/R2_SYNTH_dataset_card.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/datasets_manifest_v0_1.json:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/datasets_manifest_v0_1.json:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/evidence_mapping_method_memo_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/evidence_mapping_method_memo_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/field_registry_route1_v0_1.json:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/field_registry_route1_v0_1.json:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/field_registry_route2_v0_1.json:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/field_registry_route2_v0_1.json:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/prehuman_validation_report_route1_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/prehuman_validation_report_route1_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/prehuman_validation_report_route2_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/prehuman_validation_report_route2_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/prehuman_validation_rubric_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/prehuman_validation_rubric_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/prehuman_validation_summary_v0_1.json:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/prehuman_validation_summary_v0_1.json:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/reference_bibliography_v0_1.json:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/reference_bibliography_v0_1.json:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/reference_bibliography_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/reference_bibliography_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/route1_field_evidence_v0_1.csv:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/route1_field_evidence_v0_1.csv:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/route1_field_evidence_v0_1.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/route1_field_evidence_v0_1.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/route1_scientific_grounding_memo_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/route1_scientific_grounding_memo_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/route2_field_evidence_v0_1.csv:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/route2_field_evidence_v0_1.csv:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/route2_field_evidence_v0_1.jsonl:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/route2_field_evidence_v0_1.jsonl:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/route2_scientific_grounding_memo_v0_1.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/route2_scientific_grounding_memo_v0_1.md:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/scripts/generate_integrity_manifest.py:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/scripts/generate_integrity_manifest.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/scripts/run_prehuman_suite.py:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/scripts/run_prehuman_suite.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/scripts/synthesize_route2_stimuli.py:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/scripts/synthesize_route2_stimuli.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/scripts/validate_datasets_manifest.py:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/scripts/validate_datasets_manifest.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/scripts/validate_evidence_tables.py:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/scripts/validate_evidence_tables.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/scripts/verify_integrity_manifest.py:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/scripts/verify_integrity_manifest.py:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:research/grounding/weight_priors_memo_v0_2.md:valid-role",
+      "ok": true,
+      "detail": "role=research_support"
+    },
+    {
+      "check": "entry:research/grounding/weight_priors_memo_v0_2.md:justified",
       "ok": true,
       "detail": "empty justification"
     },
@@ -1579,72 +1619,32 @@
       "detail": "root file not allowlisted"
     },
     {
-      "check": "entry:route2_visual_v0_1/README.md:valid-role",
+      "check": "entry:tests/adversarial_suite/README.md:valid-role",
       "ok": true,
-      "detail": "role=authoritative_asset"
+      "detail": "role=test_asset"
     },
     {
-      "check": "entry:route2_visual_v0_1/README.md:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:route2_visual_v0_1/correction_pairs.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=authoritative_asset"
-    },
-    {
-      "check": "entry:route2_visual_v0_1/correction_pairs.jsonl:justified",
+      "check": "entry:tests/adversarial_suite/README.md:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:route2_visual_v0_1/experiment_runner.py:valid-role",
+      "check": "entry:tests/adversarial_suite/adversarial_cases.json:valid-role",
       "ok": true,
-      "detail": "role=authoritative_asset"
+      "detail": "role=test_asset"
     },
     {
-      "check": "entry:route2_visual_v0_1/experiment_runner.py:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:route2_visual_v0_1/gold_invalid.jsonl:valid-role",
-      "ok": true,
-      "detail": "role=authoritative_asset"
-    },
-    {
-      "check": "entry:route2_visual_v0_1/gold_invalid.jsonl:justified",
+      "check": "entry:tests/adversarial_suite/adversarial_cases.json:justified",
       "ok": true,
       "detail": "empty justification"
     },
     {
-      "check": "entry:route2_visual_v0_1/gold_valid.jsonl:valid-role",
+      "check": "entry:tests/adversarial_suite/run_adversarial_suite.py:valid-role",
       "ok": true,
-      "detail": "role=authoritative_asset"
+      "detail": "role=test_asset"
     },
     {
-      "check": "entry:route2_visual_v0_1/gold_valid.jsonl:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:route2_visual_v0_1/parser.py:valid-role",
-      "ok": true,
-      "detail": "role=authoritative_asset"
-    },
-    {
-      "check": "entry:route2_visual_v0_1/parser.py:justified",
-      "ok": true,
-      "detail": "empty justification"
-    },
-    {
-      "check": "entry:route2_visual_v0_1/scorer.py:valid-role",
-      "ok": true,
-      "detail": "role=authoritative_asset"
-    },
-    {
-      "check": "entry:route2_visual_v0_1/scorer.py:justified",
+      "check": "entry:tests/adversarial_suite/run_adversarial_suite.py:justified",
       "ok": true,
       "detail": "empty justification"
     },
@@ -1749,72 +1749,12 @@
       "detail": "empty justification"
     },
     {
-      "check": "current-surface:governance/MINIMALITY_POLICY_v0_1.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/MINIMALITY_POLICY_v0_1.json:role-valid",
-      "ok": true,
-      "detail": "role=governance_support"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/HANDOFF_GUIDE.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/HANDOFF_GUIDE.md:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
       "check": "current-surface:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
       "check": "current-surface:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/SCIENTIFIC_GROUNDING.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/SCIENTIFIC_GROUNDING.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:governance/ROOT_ALLOWLIST_v0_1.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/ROOT_ALLOWLIST_v0_1.json:role-valid",
       "ok": true,
       "detail": "role=current_support"
     },
@@ -1829,42 +1769,22 @@
       "detail": "role=governance_support"
     },
     {
-      "check": "current-surface:START_HERE.md:registered",
+      "check": "current-surface:governance/MINIMALITY_POLICY_v0_1.json:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:START_HERE.md:role-valid",
+      "check": "current-surface:governance/MINIMALITY_POLICY_v0_1.json:role-valid",
       "ok": true,
-      "detail": "role=current_truth"
+      "detail": "role=governance_support"
     },
     {
-      "check": "current-surface:docs/state/PROJECT_STATUS.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/state/PROJECT_STATUS.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:registered",
+      "check": "current-surface:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:governance/AUTHORITATIVE_SOURCES_v0_2.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/AUTHORITATIVE_SOURCES_v0_2.json:role-valid",
+      "check": "current-surface:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:role-valid",
       "ok": true,
       "detail": "role=current_support"
     },
@@ -1879,62 +1799,12 @@
       "detail": "role=current_truth"
     },
     {
-      "check": "current-surface:docs/frontdoor/NAME_DECISION.md:registered",
+      "check": "current-surface:governance/AUTHORITATIVE_SOURCES_v0_2.json:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:docs/frontdoor/NAME_DECISION.md:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:governance/AUTHORITATIVE_INDEX_v0_1.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/AUTHORITATIVE_INDEX_v0_1.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:role-valid",
+      "check": "current-surface:governance/AUTHORITATIVE_SOURCES_v0_2.json:role-valid",
       "ok": true,
       "detail": "role=current_support"
     },
@@ -1949,14 +1819,74 @@
       "detail": "role=current_truth"
     },
     {
-      "check": "current-surface:docs/frontdoor/FULL_AUDIT_REPORT.md:registered",
+      "check": "current-surface:START_HERE.md:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:docs/frontdoor/FULL_AUDIT_REPORT.md:role-valid",
+      "check": "current-surface:START_HERE.md:role-valid",
       "ok": true,
       "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/SCIENTIFIC_GROUNDING.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/SCIENTIFIC_GROUNDING.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:governance/AUTHORITATIVE_INDEX_v0_1.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:governance/AUTHORITATIVE_INDEX_v0_1.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
     },
     {
       "check": "current-surface:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:registered",
@@ -1969,6 +1899,26 @@
       "detail": "role=current_truth"
     },
     {
+      "check": "current-surface:docs/frontdoor/FULL_AUDIT_REPORT.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/FULL_AUDIT_REPORT.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
       "check": "current-surface:docs/frontdoor/VERIFICATION_REPORT.md:registered",
       "ok": true,
       "detail": "missing registry entry"
@@ -1979,12 +1929,62 @@
       "detail": "role=current_truth"
     },
     {
+      "check": "current-surface:docs/frontdoor/NAME_DECISION.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/NAME_DECISION.md:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
+      "check": "current-surface:governance/ROOT_ALLOWLIST_v0_1.json:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:governance/ROOT_ALLOWLIST_v0_1.json:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/HANDOFF_GUIDE.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/HANDOFF_GUIDE.md:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
       "check": "current-surface:governance/PACKAGE_STATE_SUMMARY_v0_1.json:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
       "check": "current-surface:governance/PACKAGE_STATE_SUMMARY_v0_1.json:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/state/PROJECT_STATUS.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/state/PROJECT_STATUS.md:role-valid",
       "ok": true,
       "detail": "role=current_truth"
     }

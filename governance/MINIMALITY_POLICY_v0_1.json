@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "package_name": "aistra",
-  "package_version": "1.10.0",
+  "package_version": "1.11.0",
   "limits": {
     "max_root_files": 5,
     "max_docs_history_files": 3,

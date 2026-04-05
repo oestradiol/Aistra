@@ -9,7 +9,7 @@ BASE = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = BASE / 'governance' / 'REPOSITORY_FILE_REGISTRY_v0_1.json'
 CURRENT_SURFACES_PATH = BASE / 'governance' / 'CURRENT_SURFACES_REGISTRY_v0_1.json'
 ROOT_ALLOWLIST_PATH = BASE / 'governance' / 'ROOT_ALLOWLIST_v0_1.json'
-REPORT_PATH = BASE / 'reports' / 'generated' / 'repository_file_registry_audit_report_v0_1.json'
+REPORT_PATH = BASE / 'archive' / 'reports' / 'generated' / 'repository_file_registry_audit_report_v0_1.json'
 VALID_ROLES = {
     'current_truth',
     'current_support',
@@ -49,7 +49,7 @@ def all_files(base: Path) -> list[str]:
         if not p.is_file():
             continue
         rel = str(p.relative_to(base)).replace('\\', '/')
-        if rel.startswith('reports/generated/') and rel != 'reports/generated/README.md':
+        if rel.startswith('archive/reports/generated/') and rel != 'archive/reports/generated/README.md':
             continue
         files.append(rel)
     return sorted(files)
@@ -92,10 +92,10 @@ def run_audit() -> dict:
         record(f'entry:{path}:valid-role', role in VALID_ROLES, f'role={role}')
         record(f'entry:{path}:justified', bool(just), 'empty justification')
         if role == 'historical_trace':
-            allowed_hist = path.startswith(('deprecated/', 'docs/history/'))
+            allowed_hist = path.startswith(('archive/deprecated/', 'docs/history/'))
             record(f'entry:{path}:historical-placement', allowed_hist, 'historical file outside approved historical zones')
         if role in {'current_truth', 'current_support'}:
-            record(f'entry:{path}:not-in-historical-zones', not path.startswith(('deprecated/', 'docs/history/')), 'current file placed in historical zone')
+            record(f'entry:{path}:not-in-historical-zones', not path.startswith(('archive/deprecated/', 'docs/history/')), 'current file placed in historical zone')
         if path.count('/') == 0:
             allowed_root = path in {row.get('path') for row in root_allow.get('allowed_root_files', [])}
             record(f'entry:{path}:root-allowlisted', allowed_root, 'root file not allowlisted')

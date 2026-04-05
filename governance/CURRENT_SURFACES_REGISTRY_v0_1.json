@@ -1,6 +1,6 @@
 {
   "package_name": "aistra",
-  "package_version": "1.10.0",
+  "package_version": "1.11.0",
   "current_truth_surfaces": [
     "README.md",
     "START_HERE.md",
@@ -30,7 +30,7 @@
     "governance/MINIMALITY_POLICY_v0_1.json"
   ],
   "historical_or_trace_surfaces": [
-    "deprecated/",
+    "archive/deprecated/",
     "docs/history/"
   ],
   "forbidden_in_current_surfaces": [
@@ -44,7 +44,7 @@
     "FULL_AUDIT_REPORT_v1_4.md",
     "PROJECT_STATUS_v0_1.md",
     "CURRENT_EXECUTION_ORDER_v0_1.md",
-    "reports/generated/route1_runs/"
+    "archive/reports/generated/route1_runs/"
   ],
   "registry_schema_version": "1.1.0"
 }

@@ -6,7 +6,7 @@ import importlib.util
 import sys
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parent.parent
+BASE = Path(__file__).resolve().parents[2]
 
 def load_module(name: str, path: Path):
     spec = importlib.util.spec_from_file_location(name, path)
@@ -20,7 +20,7 @@ def run():
     suite = json.loads(suite_path.read_text(encoding="utf-8"))
 
     r1_dir = BASE / "core/route1"
-    r2_dir = BASE / "route2_visual_v0_1"
+    r2_dir = BASE / "apps/route2_visual"
 
     r1_parser = load_module("adv_r1_parser", r1_dir / "parser.py")
     sys.modules["parser"] = r1_parser
@@ -73,7 +73,7 @@ def run():
         "n_failed": sum(1 for x in flat if not x["ok"]),
         "results": results,
     }
-    out = Path(__file__).resolve().parents[1] / "reports" / "generated" / "adversarial_suite_v0_1" / "adversarial_report.json"
+    out = BASE / "archive" / "reports" / "generated" / "tests/adversarial_suite" / "adversarial_report.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     return summary

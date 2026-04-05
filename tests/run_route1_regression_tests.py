@@ -31,8 +31,8 @@ def test_parser_accepts_woba():
 
 
 def test_packet_config_sync():
-    cfg_json = json.loads((ROOT / 'human_pilot_app_v0_1' / 'packet_config.json').read_text(encoding='utf-8'))
-    js_text = (ROOT / 'human_pilot_app_v0_1' / 'packet_config.js').read_text(encoding='utf-8').strip()
+    cfg_json = json.loads((ROOT / 'apps/human_pilot' / 'packet_config.json').read_text(encoding='utf-8'))
+    js_text = (ROOT / 'apps/human_pilot' / 'packet_config.js').read_text(encoding='utf-8').strip()
     prefix = 'window.PACKET_CONFIG = '
     assert_true(js_text.startswith(prefix) and js_text.endswith(';'), 'packet_config.js wrapper invalid')
     cfg_js = json.loads(js_text[len(prefix):-1])
@@ -41,7 +41,7 @@ def test_packet_config_sync():
 
 
 def test_export_scorer_generates_outputs():
-    cfg = ROOT / 'human_pilot_app_v0_1' / 'packet_config.json'
+    cfg = ROOT / 'apps/human_pilot' / 'packet_config.json'
     sample = {
         'package_name': 'test',
         'app_version': 'test_app',

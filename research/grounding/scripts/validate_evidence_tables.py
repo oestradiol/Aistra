@@ -5,7 +5,7 @@ import json, sys
 from pathlib import Path
 
 ROOT = Path(sys.argv[sys.argv.index("--root")+1]) if "--root" in sys.argv else Path(".")
-RG = ROOT / "research_grounding_v0_1"
+RG = ROOT / "research/grounding"
 required = [
     "field_registry_route1_v0_1.json",
     "field_registry_route2_v0_1.json",

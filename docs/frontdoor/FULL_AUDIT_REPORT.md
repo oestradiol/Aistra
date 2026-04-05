@@ -1,6 +1,6 @@
-# Full audit report v1.10
+# Full audit report v1.11
 
-Current package version: **1.10.0**.
+Current package version: **1.11.0**.
 
 ## Main release-cleaning actions
 - strengthened current-surface governance so live docs are checked separately from historical trace files
@@ -8,7 +8,7 @@ Current package version: **1.10.0**.
 - removed shipped generated verification artifacts that can be reproduced on demand
 - removed stored pilot run outputs that were not needed for operation or release verification
 - consolidated the useful development story into `../history/DEVELOPMENT_HISTORY.md`
-- moved generated report outputs to `../../reports/generated/`
+- moved generated report outputs to `../../archive/reports/generated/`
 - simplified several current front-door docs to reduce over-produced or compliance-heavy tone
 - added a front-door scientific grounding summary so the research layer is visible without digging
 - enforced a repository-wide file registry so every shipped file keeps an explicit role and justification

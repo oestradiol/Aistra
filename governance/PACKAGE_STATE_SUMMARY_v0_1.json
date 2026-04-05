@@ -1,6 +1,6 @@
 {
   "package_name": "aistra",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "package_status": "route1_pilot_ready_route2_pre_human",
   "current_authoritative_entrypoints": [
     "README.md",
@@ -62,7 +62,7 @@
     "route1": "initial_single_participant_pilot_complete_not_yet_validated",
     "route2": "not_started_and_not_pilot_ready"
   },
-  "superseded_material_warning": "Earlier pilot docs remain under deprecated/ for traceability. Use governance/AUTHORITATIVE_INDEX_v0_1.md and governance/AUTHORITATIVE_SOURCES_v0_2.json to avoid outdated materials.",
+  "superseded_material_warning": "Earlier pilot docs remain under archive/deprecated/ for traceability. Use governance/AUTHORITATIVE_INDEX_v0_1.md and governance/AUTHORITATIVE_SOURCES_v0_2.json to avoid outdated materials.",
   "enforcement_layer": {
     "present": true,
     "doctor": "package_doctor.py",
@@ -71,7 +71,7 @@
   },
   "research_grounding_layer": {
     "present": true,
-    "path": "research_grounding_v0_1/",
+    "path": "research/grounding/",
     "route1_scientific_grounding_status": "PREHUMAN_GROUNDED_NOT_HUMAN_VALIDATED",
     "route2_scientific_grounding_status": "PREHUMAN_GROUNDED_NOT_HUMAN_VALIDATED"
   }

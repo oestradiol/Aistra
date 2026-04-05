@@ -1,9 +1,9 @@
-# Project status v1.10
+# Project status v1.11
 
 This file is the current-state summary for the live package.
 
 ## Current package posture
-Current package line: **v1.10**
+Current package line: **v1.11**
 
 Route posture:
 - **Route 1** = pilot-ready, local app present, one completed initial pilot, alternate-aware scoring available, not broadly validated

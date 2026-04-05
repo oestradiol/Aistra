@@ -1,4 +1,4 @@
-# Handoff guide v1.10
+# Handoff guide v1.11
 
 This file explains how to hand the live package to another person without sending them into stale files.
 
@@ -21,7 +21,7 @@ For release checks:
 - run `python tools/audit_repository_file_registry.py`
 - run `python tools/audit_current_claims.py`
 - run `python tools/audit_repository_minimality.py`
-- run `python adversarial_suite_v0_1/run_adversarial_suite.py`
+- run `python tests/adversarial_suite/run_adversarial_suite.py`
 
 Current truth surfaces:
 - `../state/PROJECT_STATUS.md`
@@ -29,4 +29,4 @@ Current truth surfaces:
 - `VERIFICATION_REPORT.md`
 - `FULL_AUDIT_REPORT.md`
 
-Historical trace lives under `../../deprecated/` and `../history/`.
+Historical trace lives under `../../archive/deprecated/` and `../history/`.

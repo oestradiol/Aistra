@@ -6,7 +6,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = BASE / 'governance' / 'CURRENT_SURFACES_REGISTRY_v0_1.json'
-REPORT_PATH = BASE / 'reports' / 'generated' / 'current_surface_audit_report_v0_1.json'
+REPORT_PATH = BASE / 'archive' / 'reports' / 'generated' / 'current_surface_audit_report_v0_1.json'
 TEXT_SUFFIXES = {'.md', '.txt', '.json', '.js', '.py', '.html', '.css'}
 
 

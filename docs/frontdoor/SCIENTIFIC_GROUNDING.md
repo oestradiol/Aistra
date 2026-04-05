@@ -3,10 +3,10 @@
 Aistra is not just a software/testing package. It also includes a research-grounding layer that explains why these fields and route designs were chosen and what evidence supports them.
 
 ## Where the grounding lives
-- `../../research_grounding_v0_1/README.md`
-- `../../research_grounding_v0_1/route1_scientific_grounding_memo_v0_1.md`
-- `../../research_grounding_v0_1/route2_scientific_grounding_memo_v0_1.md`
-- `../../research_grounding_v0_1/reference_bibliography_v0_1.md`
+- `../../research/grounding/README.md`
+- `../../research/grounding/route1_scientific_grounding_memo_v0_1.md`
+- `../../research/grounding/route2_scientific_grounding_memo_v0_1.md`
+- `../../research/grounding/reference_bibliography_v0_1.md`
 - `../specs/VALIDITY_AND_LIMITS_v0_1.md`
 - `../specs/FIELD_RATIONALE_REVIEW_v0_1.md`
 

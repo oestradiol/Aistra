@@ -8,8 +8,8 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parents[1]
 PACKET = BASE / 'core/route1/pilot_packet_route1_v0_3_final.jsonl'
 ANSWER = BASE / 'core/route1/pilot_answer_key_route1_v0_4_alternate_aware.jsonl'
-OUT_JSON = BASE / 'human_pilot_app_v0_1' / 'packet_config.json'
-OUT_JS = BASE / 'human_pilot_app_v0_1' / 'packet_config.js'
+OUT_JSON = BASE / 'apps/human_pilot' / 'packet_config.json'
+OUT_JS = BASE / 'apps/human_pilot' / 'packet_config.js'
 
 FIELDS = {
     'valence': ['negative', 'neutral', 'positive', 'mixed'],
@@ -35,7 +35,7 @@ def main():
     packet_rows = load_jsonl(PACKET)
     answer_rows = load_jsonl(ANSWER)
     config = {
-        'package_name': 'aistra_route1_human_pilot_pack_v1_10',
+        'package_name': 'aistra_route1_human_pilot_pack_v1_11',
         'token_change': {
             'whole_body_surface_token_old': 'holo',
             'whole_body_surface_token_new': 'woba',

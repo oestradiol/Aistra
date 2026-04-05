@@ -5,7 +5,7 @@ import json
 import hashlib
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parents[2]
+BASE = Path(__file__).resolve().parents[3]
 OUT = BASE / "governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json"
 CONFIG = BASE / "governance/AUTHORITATIVE_SOURCES_v0_2.json"
 SELF_NAME = "governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json"

@@ -53,7 +53,7 @@ If you cannot answer all five cleanly, do not add the file.
 - Do not create version-suffixed siblings unless content is materially different and both versions must coexist.
 - Do not keep historical drafts at root.
 - Prefer appending to changelog, status, or audit surfaces over creating another summary.
-- Prefer generated artifacts under `reports/generated/` or another non-canonical run directory.
+- Prefer generated artifacts under `archive/reports/generated/` or another non-canonical run directory.
 - Prefer governance rules under `governance/`.
 
 ## Enforcement

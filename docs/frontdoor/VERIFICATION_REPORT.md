@@ -1,6 +1,6 @@
-# Verification report v1.10
+# Verification report v1.11
 
-Current package version: **1.10.0**.
+Current package version: **1.11.0**.
 
 ## What was checked
 - package integrity and authoritative digests
@@ -22,7 +22,7 @@ Current package version: **1.10.0**.
 - `python tools/audit_repository_file_registry.py`
 - `python tools/audit_current_claims.py`
 - `python tools/audit_repository_minimality.py`
-- `python adversarial_suite_v0_1/run_adversarial_suite.py`
+- `python tests/adversarial_suite/run_adversarial_suite.py`
 
 ## What this means
 The package is internally consistent, aligned to its declared current files, and protected against several known drift classes.

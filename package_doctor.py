@@ -43,11 +43,11 @@ def jsonl_rows(rel: str):
 
 
 def read_packet_config_json():
-    return read_json("human_pilot_app_v0_1/packet_config.json")
+    return read_json("apps/human_pilot/packet_config.json")
 
 
 def read_packet_config_js_payload():
-    text = read_text("human_pilot_app_v0_1/packet_config.js").strip()
+    text = read_text("apps/human_pilot/packet_config.js").strip()
     prefix = "window.PACKET_CONFIG = "
     if not text.startswith(prefix) or not text.endswith(";"):
         raise ValueError("packet_config.js has unexpected wrapper")
@@ -94,7 +94,7 @@ def main():
     except AuthorityError as e:
         record("integrity:manifest-pass", False, str(e))
 
-    for rel in ["docs/history/DEVELOPMENT_HISTORY.md", "examples/README.md", "reports/generated/README.md", "deprecated/README.md"]:
+    for rel in ["docs/history/DEVELOPMENT_HISTORY.md", "research/examples/README.md", "archive/reports/generated/README.md", "archive/deprecated/README.md"]:
         p = BASE / rel
         record(f"layout:{rel}:exists", p.exists(), "present" if p.exists() else f"missing {rel}")
 
@@ -105,7 +105,7 @@ def main():
     detail = f"removed_dirs={len(removed_dirs)} removed_pyc={len(removed_files)} remaining_dirs={len(remaining_pycaches)} remaining_pyc={len(remaining_pyc)}"
     record("layout:transient-bytecode-clean", (not found_transient) and len(remaining_pycaches) == 0 and len(remaining_pyc) == 0, detail)
 
-    manifest = read_json("cross_route_spec_v0_1/manifest.json")
+    manifest = read_json("research/cross_route_spec/manifest.json")
     state = read_json("governance/PACKAGE_STATE_SUMMARY_v0_1.json")
     auth_index = read_text("governance/AUTHORITATIVE_INDEX_v0_1.md")
     handoff = read_text(CURRENT_HANDOFF)
@@ -113,7 +113,7 @@ def main():
 
     record("status:manifest-state-match", manifest["package_status"] == state["package_status"], f"manifest={manifest['package_status']} state={state['package_status']}")
     record("status:state-package-name-current", state.get("package_name") == "aistra", f"package_name={state.get('package_name')}")
-    record("status:state-version-current", state.get("version") == "1.10.0", f"version={state.get('version')}")
+    record("status:state-version-current", state.get("version") == "1.11.0", f"version={state.get('version')}")
     expected_entrypoints = [
         "README.md",
         "START_HERE.md",
@@ -151,7 +151,7 @@ def main():
     cfg_js = read_packet_config_js_payload()
     record("route1-app:packet-config-sync", cfg_json == cfg_js, "packet_config.json and packet_config.js diverge" if cfg_json != cfg_js else "ok")
     record("route1-app:packet-source-sync", cfg_json.get("packet_source") == CURRENT_PACKET and cfg_json.get("answer_key_source") == CURRENT_ANSWER_KEY, f"packet_source={cfg_json.get('packet_source')} answer_key_source={cfg_json.get('answer_key_source')}")
-    record("route1-app:package-name-current", cfg_json.get("package_name") == "aistra_route1_human_pilot_pack_v1_10", f"package_name={cfg_json.get('package_name')}")
+    record("route1-app:package-name-current", cfg_json.get("package_name") == "aistra_route1_human_pilot_pack_v1_11", f"package_name={cfg_json.get('package_name')}")
     record("route1-app:packet-count-sync", len(cfg_json.get("packet", [])) == len(packet) and set(r["id"] for r in cfg_json.get("packet", [])) == set(packet_ids), "app packet mismatch")
     record("route1-app:key-id-sync", set(cfg_json.get("answer_key", {}).keys()) == set(packet_ids), "app answer key mismatch")
     record("route1-app:has-config-digests", all(cfg_json.get(k) for k in ["packet_sha256", "answer_key_sha256", "config_sha256"]), "missing config digests")
@@ -176,7 +176,7 @@ def main():
     minimality_report = minimality_mod.run_audit()
     record("repository-minimality:audit-pass", minimality_report.get("status") == "PASS", f"failed_checks={minimality_report.get('failed_checks')}")
 
-    adv_mod = load_module("adversarial_suite_mod", BASE / "adversarial_suite_v0_1" / "run_adversarial_suite.py")
+    adv_mod = load_module("adversarial_suite_mod", BASE / "tests/adversarial_suite" / "run_adversarial_suite.py")
     adv = adv_mod.run()
     record("adversarial-suite:pass", adv.get("n_failed") == 0, f"n_failed={adv.get('n_failed')}")
 

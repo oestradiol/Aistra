@@ -1,4 +1,4 @@
-# Aistra package v1.10
+# Aistra package v1.11
 
 Aistra is a small prototype language for describing human felt states in a more structured and testable way. Instead of treating a feeling as one vague blob, it breaks it into parts like valence, arousal, intensity, location, texture, contour, certainty, source, and action tendency. It is already real enough to run as a serious prototype, but it is still a prototype and not finished science.
 
@@ -38,15 +38,15 @@ Read in this order:
 - `docs/history/` = condensed development history worth keeping
 - `core/route1/` = Route 1 assets and code
 - `core/common/` = shared route-control code
-- `human_pilot_app_v0_1/` = local Route 1 app
-- `research_grounding_v0_1/` = literature-linked grounding and prehuman justification
+- `apps/human_pilot/` = local Route 1 app
+- `research/grounding/` = literature-linked grounding and prehuman justification
 - `governance/` = authoritative maps, integrity, and file-governance rules
-- `reports/generated/` = regenerated check outputs and run reports
+- `archive/reports/generated/` = regenerated check outputs and run reports
 
 ## Boundaries
-- `examples/` are examples, not launch artifacts.
-- `deprecated/` contains superseded material retained for traceability.
-- `reports/generated/` contains generated reports, not canonical definitions.
+- `research/examples/` are examples, not launch artifacts.
+- `archive/deprecated/` contains superseded material retained for traceability.
+- `archive/reports/generated/` contains generated reports, not canonical definitions.
 
 ## Minimum checks before use
 - `python package_doctor.py`
