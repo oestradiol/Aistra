@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Route 1 Human Pilot v0.3</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>Route 1 Human Pilot v0.3</h1>
+        <p class="muted">Verbatim packet runner with local export and built-in scoring. No operator paraphrase required.</p>
+      </div>
+      <div class="pill" id="progressPill">Loading…</div>
+    </header>
+
+    <section class="card">
+      <h2>Before you start</h2>
+      <ol>
+        <li>Answer from the stimulus, not from your own current feeling.</li>
+        <li>Fill the 9 scored fields only. Modality is shown for reference.</li>
+        <li>Pick the closest single value. Use up to 2 textures.</li>
+        <li>Click <strong>Export Results</strong> at the end. The JSON includes built-in scoring.</li>
+        <li>For baseline items, choose only what the text directly supports. Do not add extra inferred source, certainty, or contour.</li>
+      </ol>
+      <div class="inline-note">
+        <strong>Collision fix in this build:</strong> whole body token is <code>woba</code>, hollow stays <code>hol</code>.
+      </div>
+    </section>
+
+    <section class="card stimulus-card">
+      <div class="meta-row">
+        <span id="itemId" class="mono">—</span>
+        <span id="itemCondition" class="tag">—</span>
+      </div>
+      <h2>Stimulus</h2>
+      <div id="stimulusText" class="stimulus">—</div>
+      <p class="muted small" id="modalityHint"></p>
+    </section>
+
+    <section class="card">
+      <h2>Response</h2>
+      <form id="responseForm">
+        <div class="grid">
+          <label>Valence<select id="valence" required></select></label>
+          <label>Arousal<select id="arousal" required></select></label>
+          <label>Intensity<select id="intensity" required></select></label>
+          <label>Location<select id="location" required></select></label>
+          <label>Texture 1<select id="texture1" required></select></label>
+          <label>Texture 2<select id="texture2"></select></label>
+          <label>Contour<select id="contour" required></select></label>
+          <label>Certainty<select id="certainty" required></select></label>
+          <label>Source<select id="source" required></select></label>
+          <label>Action<select id="action" required></select></label>
+        </div>
+        <label class="full-width">Comments<textarea id="comments" rows="4" placeholder="Optional"></textarea></label>
+      </form>
+    </section>
+
+    <section class="card controls">
+      <button id="prevBtn" type="button">Back</button>
+      <button id="saveBtn" type="button">Save This Answer</button>
+      <button id="nextBtn" type="button">Next</button>
+      <button id="exportBtn" type="button" class="primary">Export Results</button>
+    </section>
+
+    <section class="card">
+      <h2>Saved responses</h2>
+      <div id="savedStatus" class="muted">0 items saved.</div>
+      <pre id="savedPreview" class="preview"></pre>
+    </section>
+  </main>
+  <script src="packet_config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+  "package_name": "suf_experiential_language",
+  "version": "0.8.0",
+  "package_status": "route1_pilot_ready_route2_pre_human",
+  "authoritative_entrypoints": {
+    "readme": "README.md",
+    "handoff_guide": "docs/frontdoor/HANDOFF_GUIDE_v0_1.md",
+    "authoritative_index": "governance/AUTHORITATIVE_INDEX_v0_1.md",
+    "state_summary": "governance/PACKAGE_STATE_SUMMARY_v0_1.json",
+    "correction_protocol": "docs/ops/CORRECTION_CYCLE_PROTOCOL_v0_1.md",
+    "authoritative_source_config": "governance/AUTHORITATIVE_SOURCES_v0_2.json"
+  },
+  "routes": [
+    {
+      "route_id": "route1_intero_affective",
+      "version": "0.1.0",
+      "status": "pilot_ready",
+      "authoritative_pilot_packet": "core/route1/pilot_packet_route1_v0_3_final.jsonl",
+      "authoritative_answer_key": "core/route1/pilot_answer_key_route1_v0_4_alternate_aware.jsonl",
+      "authoritative_docs": [
+        "docs/ops/pilot_protocol_memo_v0_2_redteamed.md",
+        "docs/ops/baseline_protocol_memo_v0_2_redteamed.md",
+        "docs/ops/pilot_review_template_v0_2_redteamed.md",
+        "docs/ops/participant_instructions_route1_pilot_v0_2_anchored.md",
+        "core/route1/token_legend_route1_v0_1.md",
+        "docs/ops/allowed_values_response_form_route1_v0_2_anchored.md",
+        "core/route1/pilot_response_template_route1_v0_2_anchored.json",
+        "docs/ops/route1_calibration_examples_v0_1.md",
+        "docs/ops/route1_pilot_clarification_layer_v0_1.md",
+        "docs/ops/final_correction_pass_note_v0_1.md"
+      ],
+      "artifact_paths": {
+        "gold_valid": "core/route1/gold_valid.jsonl",
+        "gold_invalid": "core/route1/gold_invalid.jsonl",
+        "corrections": "core/route1/correction_pairs.jsonl",
+        "parser": "core/route1/parser.py",
+        "scorer": "core/route1/scorer.py",
+        "runner": "core/route1/experiment_runner.py"
+      },
+      "superseded_docs": [
+        "deprecated/route1_superseded/pilot_protocol_memo_v0_1.md",
+        "deprecated/route1_superseded/baseline_protocol_memo_v0_1.md",
+        "deprecated/route1_superseded/pilot_review_template_v0_1.md",
+        "deprecated/route1_superseded/pilot_packet_route1_v0_1.jsonl",
+        "deprecated/route1_superseded/pilot_packet_route1_v0_2_redteamed.jsonl",
+        "deprecated/route1_superseded/pilot_ready_status_note_v0_1.md",
+        "deprecated/route1_superseded/pilot_readiness_memo_v0_1.md"
+      ]
+    },
+    {
+      "route_id": "route2_visual_microstructures",
+      "version": "0.1.0",
+      "status": "pre_human",
+      "authoritative_docs": [
+        "route2_visual_v0_1/README.md",
+        "route2_visual_v0_1/gold_valid.jsonl",
+        "route2_visual_v0_1/gold_invalid.jsonl",
+        "route2_visual_v0_1/correction_pairs.jsonl",
+        "route2_visual_v0_1/parser.py",
+        "route2_visual_v0_1/scorer.py",
+        "route2_visual_v0_1/experiment_runner.py"
+      ],
+      "artifact_paths": {
+        "gold_valid": "route2_visual_v0_1/gold_valid.jsonl",
+        "gold_invalid": "route2_visual_v0_1/gold_invalid.jsonl",
+        "corrections": "route2_visual_v0_1/correction_pairs.jsonl",
+        "parser": "route2_visual_v0_1/parser.py",
+        "scorer": "route2_visual_v0_1/scorer.py",
+        "runner": "route2_visual_v0_1/experiment_runner.py"
+      },
+      "superseded_docs": []
+    }
+  ],
+  "shared_layers": {
+    "route_control": "core/common/route_control.py",
+    "route_control_memo": "core/common/route_control_memo.md",
+    "weight_calibration_memo": "docs/ops/weight_calibration_memo_v0_1.md",
+    "adversarial_suite": "adversarial_suite_v0_1/",
+    "cross_route_spec": "cross_route_spec_v0_1/"
+  },
+  "non_goals_currently": [
+    "mixed-route encoding",
+    "UI",
+    "learned models",
+    "cross-route semantic translation",
+    "route fusion scoring",
+    "human pilot for Route 2"
+  ],
+  "handoff_rule": "Use docs/frontdoor/HANDOFF_GUIDE_v0_1.md and governance/AUTHORITATIVE_INDEX_v0_1.md first. If two documents conflict, prefer the higher-version authoritative doc listed there.",
+  "research_grounding_layer": {
+    "present": true,
+    "path": "research_grounding_v0_1/",
+    "required_for_status": "scientifically_grounded_prehuman"
+  }
+}

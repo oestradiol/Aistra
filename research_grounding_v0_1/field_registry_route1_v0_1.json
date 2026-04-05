@@ -1,0 +1,56 @@
+{
+  "route_id": "route1_intero_affective",
+  "version": "0.1.0",
+  "fields": [
+    {
+      "field_id": "R1.FIELD.MOD",
+      "name": "mod",
+      "role": "route_identity"
+    },
+    {
+      "field_id": "R1.FIELD.VAL",
+      "name": "val",
+      "role": "core_affect"
+    },
+    {
+      "field_id": "R1.FIELD.ARO",
+      "name": "aro",
+      "role": "core_affect"
+    },
+    {
+      "field_id": "R1.FIELD.INT",
+      "name": "int",
+      "role": "magnitude"
+    },
+    {
+      "field_id": "R1.FIELD.LOC",
+      "name": "loc",
+      "role": "bodily_locus"
+    },
+    {
+      "field_id": "R1.FIELD.TEX",
+      "name": "tex",
+      "role": "felt_quality"
+    },
+    {
+      "field_id": "R1.FIELD.CON",
+      "name": "con",
+      "role": "temporal_contour"
+    },
+    {
+      "field_id": "R1.FIELD.CER",
+      "name": "cer",
+      "role": "encoding_confidence"
+    },
+    {
+      "field_id": "R1.FIELD.SRC",
+      "name": "src",
+      "role": "source_attribution"
+    },
+    {
+      "field_id": "R1.FIELD.ACT",
+      "name": "act",
+      "role": "action_tendency"
+    }
+  ]
+}

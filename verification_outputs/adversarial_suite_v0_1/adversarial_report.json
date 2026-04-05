@@ -1,0 +1,136 @@
+{
+  "n_checks": 17,
+  "n_passed": 17,
+  "n_failed": 0,
+  "results": {
+    "route1": [
+      {
+        "id": "R1A01",
+        "kind": "parse_should_fail",
+        "ok": true,
+        "got": "wrong_slot_count",
+        "expect": "wrong_slot_count"
+      },
+      {
+        "id": "R1A02",
+        "kind": "parse_should_fail",
+        "ok": true,
+        "got": "too_many_textures",
+        "expect": "too_many_textures"
+      },
+      {
+        "id": "R1A03",
+        "kind": "parse_should_fail",
+        "ok": true,
+        "got": "slot_family_mismatch",
+        "expect": "slot_family_mismatch"
+      },
+      {
+        "id": "R1A04",
+        "kind": "parse_should_fail",
+        "ok": true,
+        "got": "invalid_token",
+        "expect": "invalid_token"
+      },
+      {
+        "id": "R1S01",
+        "kind": "score_adversarial_pairs",
+        "ok": true,
+        "score": 0.7222,
+        "expect_min": 0.65,
+        "expect_max": 0.8
+      },
+      {
+        "id": "R1S02",
+        "kind": "score_adversarial_pairs",
+        "ok": true,
+        "score": 0.0556,
+        "expect_min": 0.0,
+        "expect_max": 0.25
+      }
+    ],
+    "route2": [
+      {
+        "id": "R2A01",
+        "kind": "parse_should_fail",
+        "ok": true,
+        "got": "wrong_slot_count",
+        "expect": "wrong_slot_count"
+      },
+      {
+        "id": "R2A02",
+        "kind": "parse_should_fail",
+        "ok": true,
+        "got": "too_many_textures",
+        "expect": "too_many_textures"
+      },
+      {
+        "id": "R2A03",
+        "kind": "parse_should_fail",
+        "ok": true,
+        "got": "slot_family_mismatch",
+        "expect": "slot_family_mismatch"
+      },
+      {
+        "id": "R2A04",
+        "kind": "parse_should_fail",
+        "ok": true,
+        "got": "invalid_token",
+        "expect": "invalid_token"
+      },
+      {
+        "id": "R2S01",
+        "kind": "score_adversarial_pairs",
+        "ok": true,
+        "score": 0.6571,
+        "expect_min": 0.65,
+        "expect_max": 0.85
+      },
+      {
+        "id": "R2S02",
+        "kind": "score_adversarial_pairs",
+        "ok": true,
+        "score": 0.0,
+        "expect_min": 0.0,
+        "expect_max": 0.3
+      }
+    ],
+    "route_control": [
+      {
+        "id": "RCA01",
+        "kind": "classification_checks",
+        "ok": true,
+        "got": "route1_intero_affective",
+        "expect": "route1_intero_affective"
+      },
+      {
+        "id": "RCA02",
+        "kind": "classification_checks",
+        "ok": true,
+        "got": "route2_visual_microstructures",
+        "expect": "route2_visual_microstructures"
+      },
+      {
+        "id": "RCA03",
+        "kind": "classification_checks",
+        "ok": true,
+        "got": "defer_mixed_or_out_of_scope",
+        "expect": "defer_mixed_or_out_of_scope"
+      },
+      {
+        "id": "RCA04",
+        "kind": "assignment_checks",
+        "ok": true,
+        "got": false,
+        "expect": false
+      },
+      {
+        "id": "RCA05",
+        "kind": "assignment_checks",
+        "ok": true,
+        "got": true,
+        "expect": true
+      }
+    ]
+  }
+}

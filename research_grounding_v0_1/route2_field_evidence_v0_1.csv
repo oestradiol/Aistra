@@ -1,0 +1,11 @@
+field_id,name,research_domains,primary_support,review_or_standard_support,expected_reliability,known_confusions,prehuman_validation_tests,recommended_weight_prior,operational_risks
+"R2.FIELD.MOD","mod","system governance","route identity constraint","package architecture","high","route mix","route-control checks","0.5","treated as content field"
+"R2.FIELD.VAL","val","affective tone; weak valence overlay","affective tone framing","route memo","low_medium","val vs vividness/brightness appeal","do-not-overweight check","0.5","may be weakly grounded in this route"
+"R2.FIELD.VIV","viv","phenomenology; percept salience","presence/vividness framing","operational route memo","medium","viv vs bri","field distinction memo + synthetic separability assumptions","1.0","less standardized than basic vision fields"
+"R2.FIELD.BRI","bri","visual perception; appearance models","brightness/lightness traditions","color appearance standards","medium_high","bri vs contrast; bri vs vividness","synthetic brightness sweeps","1.0","definition drift"
+"R2.FIELD.LOC","loc","visual field organization; peripheral vision","central/peripheral distinctions","visual field literature","medium","near-center vs center; diffuse vs field-wide","stimulus-position sanity checks","1.0","boundary ambiguity"
+"R2.FIELD.COL","col","color perception; color appearance","color-family/category traditions","color appearance standards","high_for_controlled","mixed color; low chroma ambiguity","synthetic color-category checks","1.0","viewing-condition dependence"
+"R2.FIELD.TEX","tex","texture/clarity perception; spatial vision","texture and edge/blur traditions","psychophysical spatial-vision anchors","medium","diffuse vs haze; smear vs blur; edge vs sharp","synthetic texture-family sets","1.5","category overlap"
+"R2.FIELD.CON","con","motion/flicker/form change","temporal and motion traditions","psychophysics anchors","medium","oscillation vs flicker; wave vs expansion","synthetic temporal/motion checks","1.0","mixed categories"
+"R2.FIELD.STB","stb","percept stability","stability framing","operational route memo","medium","stb vs cer","metadata distinction checks","0.75","unclear user interpretation"
+"R2.FIELD.CER","cer","metacognitive confidence","confidence distinction","measurement logic","medium","cer vs stb","ensure not conflated in docs","0.5","overweighted certainty"

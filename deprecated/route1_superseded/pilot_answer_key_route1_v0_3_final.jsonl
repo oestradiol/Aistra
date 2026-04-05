@@ -1,0 +1,10 @@
+{"id": "PR1", "condition": "practice_structured", "surface_or_prompt": "sai neu ma du chet pres stan meda ren non", "expected_canonical": "IA.NEU.M.2.CH.PRESS.STAT.MED.REACT.NON"}
+{"id": "PR2", "condition": "practice_baseline", "surface_or_prompt": "A light warmth on the skin that seems reactive and gently invites approach.", "expected_canonical": "IA.POS.L.1.SK.WARM.STAT.HIGH.REACT.APP"}
+{"id": "S1", "condition": "structured", "surface_or_prompt": "sai neu lo du heda grav-pres stan meda unu res", "expected_canonical": "IA.NEU.L.2.HD.HEAVY+PRESS.STAT.MED.UNC.RST"}
+{"id": "S2", "condition": "structured", "surface_or_prompt": "sai pos ma un holo cal stan kei sel res", "expected_canonical": "IA.POS.M.1.WH.CALM.STAT.HIGH.SELF.RST"}
+{"id": "S3", "condition": "structured", "surface_or_prompt": "sai neg ha tri abdo tak-pres pul meda mem dis", "expected_canonical": "IA.NEG.H.3.AB.TIGHT+PRESS.PULSE.MED.MEM.DIS"}
+{"id": "S4", "condition": "structured", "surface_or_prompt": "sai mix ha du difa hol-rawa osc meda unu faz", "expected_canonical": "IA.MIX.H.2.DF.HOLLOW+RAW.OSC.MED.UNC.FRZ"}
+{"id": "B1", "condition": "baseline", "surface_or_prompt": "A sharp, rising negative feeling in the chest that seems reactive and pushes toward freezing.", "expected_canonical": "IA.NEG.H.2.CH.TIGHT+SHARP.RISE.HIGH.REACT.FRZ"}
+{"id": "B2", "condition": "baseline", "surface_or_prompt": "A warm, easing feeling in the abdomen that seems reactive and settles toward rest.", "expected_canonical": "IA.POS.L.2.AB.WARM+OPEN.FALL.HIGH.REACT.RST"}
+{"id": "B3", "condition": "baseline", "surface_or_prompt": "A low mixed hollow feeling spread out diffusely, mostly static, with no clear source and no clear action pull.", "expected_canonical": "IA.MIX.L.1.DF.HOLLOW.STAT.LOW.UNC.NON"}
+{"id": "B4", "condition": "baseline", "surface_or_prompt": "A whole-body buzz-pressure state that feels reactive, fairly intense, and tends toward release.", "expected_canonical": "IA.NEG.H.3.WH.BUZZ+PRESS.OSC.LOW.REACT.DIS"}

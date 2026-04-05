@@ -1,0 +1,59 @@
+[
+  {
+    "id": "RC01",
+    "expected": "route1_intero_affective",
+    "got": "route1_intero_affective",
+    "ok": true,
+    "detail": {
+      "route": "route1_intero_affective",
+      "confidence": 1.0,
+      "reason": "surface_modality_token"
+    }
+  },
+  {
+    "id": "RC02",
+    "expected": "route2_visual_microstructures",
+    "got": "route2_visual_microstructures",
+    "ok": true,
+    "detail": {
+      "route": "route2_visual_microstructures",
+      "confidence": 1.0,
+      "reason": "surface_modality_token"
+    }
+  },
+  {
+    "id": "RC03",
+    "expected": "route1_intero_affective",
+    "got": "route1_intero_affective",
+    "ok": true,
+    "detail": {
+      "route": "route1_intero_affective",
+      "confidence": 1.0,
+      "reason": "canonical_prefix"
+    }
+  },
+  {
+    "id": "RC04",
+    "expected": "route2_visual_microstructures",
+    "got": "route2_visual_microstructures",
+    "ok": true,
+    "detail": {
+      "route": "route2_visual_microstructures",
+      "confidence": 1.0,
+      "reason": "canonical_prefix"
+    }
+  },
+  {
+    "id": "RC05",
+    "expected": "defer_mixed_or_out_of_scope",
+    "got": "defer_mixed_or_out_of_scope",
+    "ok": true,
+    "detail": {
+      "route": "defer_mixed_or_out_of_scope",
+      "confidence": 0.0,
+      "reason": "insufficient_route_signal",
+      "r1_hits": 0,
+      "r2_hits": 0
+    }
+  }
+]

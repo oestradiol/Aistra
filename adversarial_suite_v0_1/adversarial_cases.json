@@ -1,0 +1,119 @@
+{
+  "route1": {
+    "parse_should_fail": [
+      {
+        "id": "R1A01",
+        "text": "sai neg ha du chet tak-sha ras kei ren",
+        "expect": "wrong_slot_count"
+      },
+      {
+        "id": "R1A02",
+        "text": "IA.NEG.H.2.CH.TIGHT+SHARP+PRESS.RISE.HIGH.REACT.FRZ",
+        "expect": "too_many_textures"
+      },
+      {
+        "id": "R1A03",
+        "text": "sai neg ha du chet wav ras kei ren faz",
+        "expect": "slot_family_mismatch"
+      },
+      {
+        "id": "R1A04",
+        "text": "IA.BAD.H.2.CH.TIGHT.RISE.HIGH.REACT.FRZ",
+        "expect": "invalid_token"
+      }
+    ],
+    "score_adversarial_pairs": [
+      {
+        "id": "R1S01",
+        "gold": "sai neg ha du chet tak-sha ras kei ren faz",
+        "pred": "sai neg ha du thal tak-pres ras meda ren faz",
+        "expect_min": 0.65,
+        "expect_max": 0.8,
+        "purpose": "partial-overlap should score moderately, not near-1"
+      },
+      {
+        "id": "R1S02",
+        "gold": "sai pos lo du abdo war-opa fal kei ren res",
+        "pred": "sai neg ha tri chet rawa osc li unu faz",
+        "expect_min": 0.0,
+        "expect_max": 0.25,
+        "purpose": "substantially different but still valid Route 1 reconstruction should score low"
+      }
+    ]
+  },
+  "route2": {
+    "parse_should_fail": [
+      {
+        "id": "R2A01",
+        "text": "va neu hii du cen rel sha pul meda",
+        "expect": "wrong_slot_count"
+      },
+      {
+        "id": "R2A02",
+        "text": "V.NEU.H.2.CTR.RED.SHARP+DIFF+HAZE.PULSE.MED.HIGH",
+        "expect": "too_many_textures"
+      },
+      {
+        "id": "R2A03",
+        "text": "va neu hii du cen rel pul pul meda hiq",
+        "expect": "slot_family_mismatch"
+      },
+      {
+        "id": "R2A04",
+        "text": "V.BAD.H.2.CTR.RED.SHARP.PULSE.MED.HIGH",
+        "expect": "invalid_token"
+      }
+    ],
+    "score_adversarial_pairs": [
+      {
+        "id": "R2S01",
+        "gold": "va neu hii du cen rel sha pul meda hiq",
+        "pred": "va neu hii du per rel edg pul meda meq",
+        "expect_min": 0.65,
+        "expect_max": 0.85,
+        "purpose": "shared color/contour with locus/texture deviation should score moderately"
+      },
+      {
+        "id": "R2S02",
+        "gold": "va mix hii tri allo wha clr fli low hiq",
+        "pred": "vam neg lii du per blk smr con meda meq",
+        "expect_min": 0.0,
+        "expect_max": 0.3,
+        "purpose": "substantially different percept should score low"
+      }
+    ]
+  },
+  "route_control": {
+    "classification_checks": [
+      {
+        "id": "RCA01",
+        "text": "sai neg ha du chet tak-sha ras kei ren faz",
+        "expect": "route1_intero_affective"
+      },
+      {
+        "id": "RCA02",
+        "text": "va neu hii du cen rel sha pul meda hiq",
+        "expect": "route2_visual_microstructures"
+      },
+      {
+        "id": "RCA03",
+        "text": "garbled mixed stream",
+        "expect": "defer_mixed_or_out_of_scope"
+      }
+    ],
+    "assignment_checks": [
+      {
+        "id": "RCA04",
+        "text": "va neu hii du cen rel sha pul meda hiq",
+        "claimed": "route1_intero_affective",
+        "expect_ok": false
+      },
+      {
+        "id": "RCA05",
+        "text": "sai neg ha du chet tak-sha ras kei ren faz",
+        "claimed": "route1_intero_affective",
+        "expect_ok": true
+      }
+    ]
+  }
+}

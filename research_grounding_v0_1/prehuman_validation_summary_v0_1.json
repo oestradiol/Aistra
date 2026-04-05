@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "status": "PASS",
+  "runs": [
+    {
+      "script": "validate_evidence_tables.py",
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"issues\": []\n}\n"
+    },
+    {
+      "script": "validate_datasets_manifest.py",
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"issues\": []\n}\n"
+    }
+  ]
+}

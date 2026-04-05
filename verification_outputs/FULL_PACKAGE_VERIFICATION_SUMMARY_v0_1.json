@@ -1,0 +1,14 @@
+{
+  "package_version": "0.5.0",
+  "doctor_pass": true,
+  "launch_gate_pass": true,
+  "regression_tests_pass": true,
+  "adversarial_n_failed": 0,
+  "repo_review_available": false,
+  "diff_against_original": {
+    "added_count": 36,
+    "removed_count": 0,
+    "changed_count": 18,
+    "unchanged_count": 102
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "package_name": "suf_experiential_language",
+  "version": "0.5.0",
+  "package_status": "route1_pilot_ready_route2_pre_human",
+  "current_authoritative_entrypoints": [
+    "README.md",
+    "START_HERE_v0_7.md",
+    "docs/frontdoor/CURRENT_OPERATOR_START_HERE_v0_1.md",
+    "docs/frontdoor/HANDOFF_GUIDE_v0_1.md",
+    "AUTHORITATIVE_INDEX_v0_1.md",
+    "AUTHORITATIVE_SOURCES_v0_2.json",
+    "AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json",
+    "PACKAGE_STATE_SUMMARY_v0_1.json",
+    "docs/ops/CORRECTION_CYCLE_PROTOCOL_v0_1.md",
+    "docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md"
+  ],
+  "routes": {
+    "route1_intero_affective": {
+      "status": "pilot_ready",
+      "authoritative_pilot_packet": "core/route1/pilot_packet_route1_v0_3_final.jsonl",
+      "authoritative_answer_key": "core/route1/pilot_answer_key_route1_v0_4_alternate_aware.jsonl",
+      "current_protocol_docs": [
+        "docs/ops/pilot_protocol_memo_v0_2_redteamed.md",
+        "docs/ops/baseline_protocol_memo_v0_2_redteamed.md",
+        "docs/ops/pilot_review_template_v0_2_redteamed.md"
+      ],
+      "current_participant_layer": [
+        "docs/ops/participant_instructions_route1_pilot_v0_2_anchored.md",
+        "docs/ops/allowed_values_response_form_route1_v0_2_anchored.md",
+        "core/route1/pilot_response_template_route1_v0_2_anchored.json",
+        "docs/ops/route1_calibration_examples_v0_1.md",
+        "docs/ops/route1_pilot_clarification_layer_v0_1.md"
+      ]
+    },
+    "route2_visual_microstructures": {
+      "status": "pre_human",
+      "pilot_layer_present": false,
+      "formal_stack_present": true
+    }
+  },
+  "shared_layers": {
+    "route_control": true,
+    "cross_route_spec": true,
+    "weight_calibration": true,
+    "adversarial_suite": true
+  },
+  "known_provisional_areas": [
+    "ontology adequacy",
+    "token usability",
+    "score interpretation",
+    "weight calibration",
+    "route2 usability",
+    "mixed-route handling"
+  ],
+  "human_testing_status": {
+    "route1": "initial_single_participant_pilot_complete_not_yet_validated",
+    "route2": "not_started_and_not_pilot_ready"
+  },
+  "superseded_material_warning": "Earlier pilot docs remain under deprecated/ for traceability. Use AUTHORITATIVE_INDEX_v0_1.md and AUTHORITATIVE_SOURCES_v0_2.json to avoid outdated materials.",
+  "enforcement_layer": {
+    "present": true,
+    "doctor": "package_doctor.py",
+    "launch_gate": "route1_launch_gate.py",
+    "launch_checklist": "docs/ops/route1_pilot_launch_checklist_v0_1.md"
+  },
+  "research_grounding_layer": {
+    "present": true,
+    "path": "research_grounding_v0_1/",
+    "route1_scientific_grounding_status": "PENDING_VALIDATION",
+    "route2_scientific_grounding_status": "PENDING_VALIDATION"
+  }
+}

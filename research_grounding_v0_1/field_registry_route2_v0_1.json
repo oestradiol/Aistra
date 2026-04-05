@@ -1,0 +1,56 @@
+{
+  "route_id": "route2_visual_microstructures",
+  "version": "0.1.0",
+  "fields": [
+    {
+      "field_id": "R2.FIELD.MOD",
+      "name": "mod",
+      "role": "route_identity"
+    },
+    {
+      "field_id": "R2.FIELD.VAL",
+      "name": "val",
+      "role": "affective_tone"
+    },
+    {
+      "field_id": "R2.FIELD.VIV",
+      "name": "viv",
+      "role": "phenomenal_presence"
+    },
+    {
+      "field_id": "R2.FIELD.BRI",
+      "name": "bri",
+      "role": "brightness_intensity"
+    },
+    {
+      "field_id": "R2.FIELD.LOC",
+      "name": "loc",
+      "role": "visual_location"
+    },
+    {
+      "field_id": "R2.FIELD.COL",
+      "name": "col",
+      "role": "color_family"
+    },
+    {
+      "field_id": "R2.FIELD.TEX",
+      "name": "tex",
+      "role": "visual_texture_clarity"
+    },
+    {
+      "field_id": "R2.FIELD.CON",
+      "name": "con",
+      "role": "contour_motion_form"
+    },
+    {
+      "field_id": "R2.FIELD.STB",
+      "name": "stb",
+      "role": "percept_stability"
+    },
+    {
+      "field_id": "R2.FIELD.CER",
+      "name": "cer",
+      "role": "encoding_confidence"
+    }
+  ]
+}

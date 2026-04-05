@@ -1,0 +1,10 @@
+{"id": "X01", "input": "sai neg ha du chet tak-sha ras kei ren", "mode": "surface", "error_type": "wrong_slot_count", "message": "Only 9 slots; expected 10."}
+{"id": "X02", "input": "IA.NEG.H.2.CH.TIGHT+SHARP+PRESS.RISE.HIGH.REACT.FRZ", "mode": "canonical", "error_type": "too_many_textures", "message": "v1 allows at most 2 texture atoms."}
+{"id": "X03", "input": "IA.NEG.H.2.ARM.TIGHT+SHARP.RISE.HIGH.REACT.FRZ", "mode": "canonical", "error_type": "invalid_token", "slot": "loc", "token": "ARM", "message": "ARM not in allowed locus set."}
+{"id": "X04", "input": "IA.BAD.H.2.CH.TIGHT.RISE.HIGH.REACT.FRZ", "mode": "canonical", "error_type": "invalid_token", "slot": "val", "token": "BAD", "message": "BAD not allowed."}
+{"id": "X05", "input": "NEG.IA.H.2.CH.TIGHT.RISE.HIGH.REACT.FRZ", "mode": "canonical", "error_type": "field_order_violation", "message": "Slot 1 must be modality."}
+{"id": "X06", "input": "IA.NEG.H.2.CH.TIGHT.RISE.REACT.FRZ", "mode": "canonical", "error_type": "wrong_slot_count", "message": "Only 8 slots after collapse; certainty missing."}
+{"id": "X07", "input": "IA.NEG.H.2.CH.TIGHT?SHARP+PRESS.RISE.HIGH.REACT.FRZ", "mode": "canonical", "error_type": "illegal_operator_use", "slot": "tex", "message": "Mixed ? and + operator structure not allowed in v1 texture field."}
+{"id": "X08", "input": "IA.NEG.H.~2.CH.TIGHT.RISE.HIGH.REACT.FRZ", "mode": "canonical", "error_type": "illegal_operator_use", "slot": "int", "message": "Approximate intensity not supported in v1 syntax."}
+{"id": "X09", "input": "sai neg ha du chet glow ras kei ren faz", "mode": "surface", "error_type": "invalid_token", "slot": "tex", "token": "glow", "message": "Token not in allowed texture lexicon."}
+{"id": "X10", "input": "sai neg ma du chet wav ras kei ren faz", "mode": "surface", "error_type": "slot_family_mismatch", "slot": "tex", "token": "wav", "message": "wav is contour token, not texture token."}

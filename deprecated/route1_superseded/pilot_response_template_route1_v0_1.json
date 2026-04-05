@@ -1,0 +1,202 @@
+[
+  {
+    "participant_id": "",
+    "trial_id": "PR1",
+    "condition": "practice_structured",
+    "stimulus": "sai neu ma du chet pres stan meda ren non",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "PR2",
+    "condition": "practice_baseline",
+    "stimulus": "A light warmth on the skin that seems reactive and gently invites approach.",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "S1",
+    "condition": "structured",
+    "stimulus": "sai neu lo du heda grav-pres stan meda unu res",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "S2",
+    "condition": "structured",
+    "stimulus": "sai pos ma un holo cal stan kei sel res",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "S3",
+    "condition": "structured",
+    "stimulus": "sai neg ha tri abdo tak-pres pul meda mem dis",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "S4",
+    "condition": "structured",
+    "stimulus": "sai mix ha du difa hol-rawa osc meda unu faz",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "B1",
+    "condition": "baseline",
+    "stimulus": "A sharp, rising negative feeling in the chest that seems reactive and pushes toward freezing.",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "B2",
+    "condition": "baseline",
+    "stimulus": "A warm, easing feeling in the abdomen that seems reactive and settles toward rest.",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "B3",
+    "condition": "baseline",
+    "stimulus": "A low mixed hollow feeling spread out diffusely, mostly static, with no clear source and no clear action pull.",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  },
+  {
+    "participant_id": "",
+    "trial_id": "B4",
+    "condition": "baseline",
+    "stimulus": "A whole-body buzz-pressure state that feels reactive, fairly intense, and tends toward release.",
+    "response_fields": {
+      "val": "",
+      "aro": "",
+      "int": "",
+      "loc": "",
+      "tex": [],
+      "con": "",
+      "cer": "",
+      "src": "",
+      "act": ""
+    },
+    "comments": "",
+    "time_start": "",
+    "time_end": ""
+  }
+]

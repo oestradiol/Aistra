@@ -1,0 +1,7 @@
+{"id": "C01", "bad": "sai neg ma tri thal pres-pul ras meda ren avo", "good": "sai neg ma tri thal pres-buz ras meda ren avo", "reason": "pul is contour token, not texture token; buz is the intended texture token."}
+{"id": "C02", "bad": "sai neg ha tri abdo tak-pres pulse meda mem dis", "good": "sai neg ha tri abdo tak-pres pul meda mem dis", "reason": "pulse should be tokenized as pul."}
+{"id": "C03", "bad": "sai neu ma du chet press stan meda react non", "good": "sai neu ma du chet pres stan meda ren non", "reason": "press/react are English-like forms; canonical surface tokens are pres/ren."}
+{"id": "C04", "bad": "sai neg ha du chet tak-sha ras kei ren faz", "good": "sai neg ha du chet tak-sha ras kei ren faz", "reason": "neg is not the canonical valence token; use neg."}
+{"id": "C05", "bad": "si neu lo un heda pres fall meda mem res", "good": "si neu lo un heda pres fal meda mem res", "reason": "fall should be tokenized as fal."}
+{"id": "C06", "bad": "sai neg ha tri wh buz-pul osc li react dis", "good": "sai neg ha tri woba buz-pres osc li ren dis", "reason": "wh/react are invalid surface tokens; pul is contour token, not texture token."}
+{"id": "C07", "bad": "sai mix lo un df hol stan low unc non", "good": "sai mix lo un difa hol stan li unu non", "reason": "Mixed abbreviations and English-like forms replaced by canonical surface tokens."}

@@ -1,0 +1,24 @@
+aistra/
+├── README.md
+├── core/common/route_control.py
+├── core/common/route_control_memo.md
+├── core/common/route_control_examples.json
+├── cross_route_spec_v0_1/
+│   ├── manifest.json
+│   ├── common_interfaces.md
+│   ├── unified_report_template.json
+│   └── package_tree.txt
+├── core/route1/gold_valid.jsonl
+├── core/route1/gold_invalid.jsonl
+├── core/route1/correction_pairs.jsonl
+├── core/route1/parser.py
+├── core/route1/scorer.py
+├── core/route1/experiment_runner.py
+└── route2_visual_v0_1/
+    ├── README.md
+    ├── core/route1/gold_valid.jsonl
+    ├── core/route1/gold_invalid.jsonl
+    ├── core/route1/correction_pairs.jsonl
+    ├── core/route1/parser.py
+    ├── core/route1/scorer.py
+    └── core/route1/experiment_runner.py

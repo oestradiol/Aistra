@@ -1,0 +1,12 @@
+{
+  "package": "suf_experiential_language",
+  "version": "0.1.0",
+  "route_id": "route1_intero_affective",
+  "status": "pre_human",
+  "n_gold": 0,
+  "n_predictions": 0,
+  "n_scored": 0,
+  "average_score": 0.0,
+  "results": [],
+  "notes": []
+}

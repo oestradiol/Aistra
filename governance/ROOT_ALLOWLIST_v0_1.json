@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "allowed_root_files": [
+    {
+      "path": "README.md",
+      "reason": "root package summary"
+    },
+    {
+      "path": "START_HERE_v0_7.md",
+      "reason": "single front-door entrypoint"
+    },
+    {
+      "path": "authoritative_guard.py",
+      "reason": "authoritative artifact and integrity resolver"
+    },
+    {
+      "path": "package_doctor.py",
+      "reason": "top-level package validator"
+    },
+    {
+      "path": "route1_launch_gate.py",
+      "reason": "top-level route1 preflight gate"
+    }
+  ]
+}

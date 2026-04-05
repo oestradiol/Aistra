@@ -1,0 +1,10 @@
+{"id": "R2X01", "input": "va neu hii du cen rel sha pul meda", "mode": "surface", "error_type": "wrong_slot_count", "message": "Only 9 slots; expected 10."}
+{"id": "R2X02", "input": "V.NEU.H.2.CTR.RED.SHARP+DIFF+HAZE.PULSE.MED.HIGH", "mode": "canonical", "error_type": "too_many_textures", "message": "v1 allows at most 2 texture atoms."}
+{"id": "R2X03", "input": "V.NEU.H.2.LEFT.RED.SHARP.PULSE.MED.HIGH", "mode": "canonical", "error_type": "invalid_token", "slot": "loc", "token": "LEFT", "message": "LEFT not in allowed locus set."}
+{"id": "R2X04", "input": "V.BAD.H.2.CTR.RED.SHARP.PULSE.MED.HIGH", "mode": "canonical", "error_type": "invalid_token", "slot": "val", "token": "BAD", "message": "BAD not allowed."}
+{"id": "R2X05", "input": "NEU.V.H.2.CTR.RED.SHARP.PULSE.MED.HIGH", "mode": "canonical", "error_type": "field_order_violation", "message": "Slot 1 must be modality."}
+{"id": "R2X06", "input": "V.NEU.H.2.CTR.RED.SHARP.PULSE.HIGH", "mode": "canonical", "error_type": "wrong_slot_count", "message": "Only 9 slots; missing stability or certainty."}
+{"id": "R2X07", "input": "V.NEU.H.2.CTR.RED.SHARP?DIFF+HAZE.PULSE.MED.HIGH", "mode": "canonical", "error_type": "illegal_operator_use", "slot": "tex", "message": "Mixed ? and + operator structure not allowed in v1 texture field."}
+{"id": "R2X08", "input": "V.NEU.H.~2.CTR.RED.SHARP.PULSE.MED.HIGH", "mode": "canonical", "error_type": "illegal_operator_use", "slot": "bri", "message": "Approximate brightness not supported in v1 syntax."}
+{"id": "R2X09", "input": "va neu hii du cen pink sha pul meda hiq", "mode": "surface", "error_type": "invalid_token", "slot": "col", "token": "pink", "message": "Token not in allowed color lexicon."}
+{"id": "R2X10", "input": "va neu hii du cen rel pul pul meda hiq", "mode": "surface", "error_type": "slot_family_mismatch", "slot": "tex", "token": "pul", "message": "pul is contour token, not texture token."}

@@ -1,0 +1,5 @@
+{"id": "R2C01", "bad": "vai neu mii tri cen rel edg-pul meda hiq", "good": "vai neu mii tri cen rel edg-sha pul meda hiq", "reason": "pul is contour token, not texture token."}
+{"id": "R2C02", "bad": "va neu hii du cen pink sha pul meda hiq", "good": "va neu hii du cen rel sha pul meda hiq", "reason": "pink is not in the bounded color lexicon; use nearest allowed category."}
+{"id": "R2C03", "bad": "va neg hii tri per red gra fli low hiq", "good": "va neg hii tri per rel gra fli low hiq", "reason": "red should be tokenized as rel."}
+{"id": "R2C04", "bad": "va neu mii du center blu sha sta meda hiq", "good": "va neu mii du cen blu sha sta meda hiq", "reason": "center should be tokenized as cen."}
+{"id": "R2C05", "bad": "va neu hii du cen rel sharp pul meda hiq", "good": "va neu hii du cen rel sha pul meda hiq", "reason": "sharp should be tokenized as sha."}

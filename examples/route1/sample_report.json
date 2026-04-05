@@ -1,0 +1,635 @@
+{
+  "n_gold": 6,
+  "n_predictions": 6,
+  "n_scored": 5,
+  "average_score": 0.9833,
+  "results": [
+    {
+      "valid": true,
+      "gold_canonical": "IA.NEG.H.2.CH.TIGHT+SHARP.RISE.HIGH.REACT.FRZ",
+      "pred_canonical": "IA.NEG.H.2.CH.TIGHT+SHARP.RISE.HIGH.REACT.FRZ",
+      "gold_gloss": "Mixed interoceptive-affective, negative, high-arousal, medium-intensity chest tight-sharp rising state; high certainty; reactive source; freeze tendency.",
+      "pred_gloss": "Mixed interoceptive-affective, negative, high-arousal, medium-intensity chest tight-sharp rising state; high certainty; reactive source; freeze tendency.",
+      "score": 1.0,
+      "earned_weight": 9.0,
+      "total_weight": 9.0,
+      "exact_fields": [
+        "mod",
+        "val",
+        "aro",
+        "int",
+        "loc",
+        "tex",
+        "con",
+        "cer",
+        "src",
+        "act"
+      ],
+      "partial_fields": [],
+      "missed_fields": [],
+      "field_results": [
+        {
+          "field": "mod",
+          "gold": "IA",
+          "pred": "IA",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "val",
+          "gold": "NEG",
+          "pred": "NEG",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "aro",
+          "gold": "H",
+          "pred": "H",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "int",
+          "gold": "2",
+          "pred": "2",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "loc",
+          "gold": "CH",
+          "pred": "CH",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "tex",
+          "gold": [
+            "TIGHT",
+            "SHARP"
+          ],
+          "pred": [
+            "TIGHT",
+            "SHARP"
+          ],
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.5,
+          "weighted_score": 1.5
+        },
+        {
+          "field": "con",
+          "gold": "RISE",
+          "pred": "RISE",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "cer",
+          "gold": "HIGH",
+          "pred": "HIGH",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "src",
+          "gold": "REACT",
+          "pred": "REACT",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "act",
+          "gold": "FRZ",
+          "pred": "FRZ",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        }
+      ],
+      "id": "V11"
+    },
+    {
+      "valid": true,
+      "gold_canonical": "IA.NEG.M.3.TH.PRESS+BUZZ.RISE.MED.REACT.AVO",
+      "pred_canonical": "IA.NEG.M.3.TH.PRESS+BUZZ.RISE.MED.REACT.AVO",
+      "gold_gloss": "Mixed interoceptive-affective, negative, medium-arousal, high-intensity throat pressure-buzz rising state; medium certainty; reactive source; avoid tendency.",
+      "pred_gloss": "Mixed interoceptive-affective, negative, medium-arousal, high-intensity throat pressure-buzz rising state; medium certainty; reactive source; avoid tendency.",
+      "score": 1.0,
+      "earned_weight": 9.0,
+      "total_weight": 9.0,
+      "exact_fields": [
+        "mod",
+        "val",
+        "aro",
+        "int",
+        "loc",
+        "tex",
+        "con",
+        "cer",
+        "src",
+        "act"
+      ],
+      "partial_fields": [],
+      "missed_fields": [],
+      "field_results": [
+        {
+          "field": "mod",
+          "gold": "IA",
+          "pred": "IA",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "val",
+          "gold": "NEG",
+          "pred": "NEG",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "aro",
+          "gold": "M",
+          "pred": "M",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "int",
+          "gold": "3",
+          "pred": "3",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "loc",
+          "gold": "TH",
+          "pred": "TH",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "tex",
+          "gold": [
+            "PRESS",
+            "BUZZ"
+          ],
+          "pred": [
+            "PRESS",
+            "BUZZ"
+          ],
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.5,
+          "weighted_score": 1.5
+        },
+        {
+          "field": "con",
+          "gold": "RISE",
+          "pred": "RISE",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "cer",
+          "gold": "MED",
+          "pred": "MED",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "src",
+          "gold": "REACT",
+          "pred": "REACT",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "act",
+          "gold": "AVO",
+          "pred": "AVO",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        }
+      ],
+      "id": "V05"
+    },
+    {
+      "valid": true,
+      "gold_canonical": "IA.MIX.M.2.(TH?AB).RAW.OSC.LOW.UNC.NON",
+      "pred_canonical": "IA.MIX.M.2.(TH?AB).RAW.OSC.LOW.UNC.NON",
+      "gold_gloss": "Mixed interoceptive-affective, mixed-valence, medium-arousal, medium-intensity uncertain throat or abdomen raw oscillating state; low certainty; unclear source; no clear action tendency.",
+      "pred_gloss": "Mixed interoceptive-affective, mixed-valence, medium-arousal, medium-intensity uncertain throat or abdomen raw oscillating state; low certainty; unclear source; no clear action tendency.",
+      "score": 1.0,
+      "earned_weight": 9.0,
+      "total_weight": 9.0,
+      "exact_fields": [
+        "mod",
+        "val",
+        "aro",
+        "int",
+        "loc",
+        "tex",
+        "con",
+        "cer",
+        "src",
+        "act"
+      ],
+      "partial_fields": [],
+      "missed_fields": [],
+      "field_results": [
+        {
+          "field": "mod",
+          "gold": "IA",
+          "pred": "IA",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "val",
+          "gold": "MIX",
+          "pred": "MIX",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "aro",
+          "gold": "M",
+          "pred": "M",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "int",
+          "gold": "2",
+          "pred": "2",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "loc",
+          "gold": [
+            "TH",
+            "AB"
+          ],
+          "pred": [
+            "TH",
+            "AB"
+          ],
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "tex",
+          "gold": [
+            "RAW"
+          ],
+          "pred": [
+            "RAW"
+          ],
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.5,
+          "weighted_score": 1.5
+        },
+        {
+          "field": "con",
+          "gold": "OSC",
+          "pred": "OSC",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "cer",
+          "gold": "LOW",
+          "pred": "LOW",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "src",
+          "gold": "UNC",
+          "pred": "UNC",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "act",
+          "gold": "NON",
+          "pred": "NON",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        }
+      ],
+      "id": "V13"
+    },
+    {
+      "valid": true,
+      "gold_canonical": "IA.POS.L.2.AB.WARM+OPEN.FALL.HIGH.REACT.RST",
+      "pred_canonical": "IA.POS.L.2.AB.WARM.FALL.HIGH.REACT.RST",
+      "gold_gloss": "Mixed interoceptive-affective, positive, low-arousal, medium-intensity abdomen warm-open fading state; high certainty; reactive source; rest tendency.",
+      "pred_gloss": "Mixed interoceptive-affective, positive, low-arousal, medium-intensity abdomen warm fading state; high certainty; reactive source; rest tendency.",
+      "score": 0.9167,
+      "earned_weight": 8.25,
+      "total_weight": 9.0,
+      "exact_fields": [
+        "mod",
+        "val",
+        "aro",
+        "int",
+        "loc",
+        "con",
+        "cer",
+        "src",
+        "act"
+      ],
+      "partial_fields": [
+        "tex"
+      ],
+      "missed_fields": [],
+      "field_results": [
+        {
+          "field": "mod",
+          "gold": "IA",
+          "pred": "IA",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "val",
+          "gold": "POS",
+          "pred": "POS",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "aro",
+          "gold": "L",
+          "pred": "L",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "int",
+          "gold": "2",
+          "pred": "2",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "loc",
+          "gold": "AB",
+          "pred": "AB",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "tex",
+          "gold": [
+            "WARM",
+            "OPEN"
+          ],
+          "pred": [
+            "WARM"
+          ],
+          "match_type": "partial",
+          "raw_score": 0.5,
+          "weight": 1.5,
+          "weighted_score": 0.75
+        },
+        {
+          "field": "con",
+          "gold": "FALL",
+          "pred": "FALL",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "cer",
+          "gold": "HIGH",
+          "pred": "HIGH",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "src",
+          "gold": "REACT",
+          "pred": "REACT",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "act",
+          "gold": "RST",
+          "pred": "RST",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        }
+      ],
+      "id": "V02"
+    },
+    {
+      "valid": true,
+      "gold_canonical": "IA.NEU.L.2.HD.HEAVY+PRESS.STAT.MED.UNC.RST",
+      "pred_canonical": "IA.NEU.L.2.HD.HEAVY+PRESS.STAT.MED.UNC.RST",
+      "gold_gloss": "Mixed interoceptive-affective, neutral, low-arousal, medium-intensity head heavy-pressure static state; medium certainty; unclear source; rest tendency.",
+      "pred_gloss": "Mixed interoceptive-affective, neutral, low-arousal, medium-intensity head heavy-pressure static state; medium certainty; unclear source; rest tendency.",
+      "score": 1.0,
+      "earned_weight": 9.0,
+      "total_weight": 9.0,
+      "exact_fields": [
+        "mod",
+        "val",
+        "aro",
+        "int",
+        "loc",
+        "tex",
+        "con",
+        "cer",
+        "src",
+        "act"
+      ],
+      "partial_fields": [],
+      "missed_fields": [],
+      "field_results": [
+        {
+          "field": "mod",
+          "gold": "IA",
+          "pred": "IA",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "val",
+          "gold": "NEU",
+          "pred": "NEU",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "aro",
+          "gold": "L",
+          "pred": "L",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "int",
+          "gold": "2",
+          "pred": "2",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "loc",
+          "gold": "HD",
+          "pred": "HD",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "tex",
+          "gold": [
+            "HEAVY",
+            "PRESS"
+          ],
+          "pred": [
+            "HEAVY",
+            "PRESS"
+          ],
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.5,
+          "weighted_score": 1.5
+        },
+        {
+          "field": "con",
+          "gold": "STAT",
+          "pred": "STAT",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        },
+        {
+          "field": "cer",
+          "gold": "MED",
+          "pred": "MED",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "src",
+          "gold": "UNC",
+          "pred": "UNC",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 0.5,
+          "weighted_score": 0.5
+        },
+        {
+          "field": "act",
+          "gold": "RST",
+          "pred": "RST",
+          "match_type": "exact",
+          "raw_score": 1.0,
+          "weight": 1.0,
+          "weighted_score": 1.0
+        }
+      ],
+      "id": "V03"
+    },
+    {
+      "id": "V14",
+      "valid": false,
+      "stage": "lookup",
+      "error": {
+        "message": "Missing prediction for id"
+      }
+    }
+  ]
+}

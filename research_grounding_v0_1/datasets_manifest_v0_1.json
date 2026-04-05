@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "datasets": [
+    {
+      "dataset_id": "R1.OASIS",
+      "name": "OASIS",
+      "route": "route1_intero_affective",
+      "access": "open",
+      "role": "valence_arousal_grounding",
+      "required_for": "route1_scientific_grounding_prehuman"
+    },
+    {
+      "dataset_id": "R1.DEAP",
+      "name": "DEAP",
+      "route": "route1_intero_affective",
+      "access": "restricted_academic",
+      "role": "optional robustness dataset",
+      "required_for": "optional_only"
+    },
+    {
+      "dataset_id": "R2.SYNTH",
+      "name": "Synthetic visual gold set",
+      "route": "route2_visual_microstructures",
+      "access": "generated_local",
+      "role": "mechanical correctness and confusion tests",
+      "required_for": "route2_scientific_grounding_prehuman"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "entries": [
+    {
+      "path": "README.md",
+      "type": "file",
+      "justification": "minimal root summary"
+    },
+    {
+      "path": "START_HERE_v0_7.md",
+      "type": "file",
+      "justification": "single front-door operator entrypoint"
+    },
+    {
+      "path": "authoritative_guard.py",
+      "type": "file",
+      "justification": "shared authoritative path and integrity resolver"
+    },
+    {
+      "path": "package_doctor.py",
+      "type": "file",
+      "justification": "package-wide validator"
+    },
+    {
+      "path": "route1_launch_gate.py",
+      "type": "file",
+      "justification": "Route 1 launch preflight"
+    }
+  ]
+}
