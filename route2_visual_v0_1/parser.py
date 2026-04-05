@@ -1,4 +1,6 @@
 from __future__ import annotations
+import sys
+sys.dont_write_bytecode = True
 import json
 from dataclasses import dataclass, asdict
 from typing import Dict, List, Optional, Any

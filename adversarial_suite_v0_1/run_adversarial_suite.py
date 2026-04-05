@@ -1,4 +1,6 @@
 from __future__ import annotations
+import sys
+sys.dont_write_bytecode = True
 import json
 import importlib.util
 import sys
@@ -71,7 +73,7 @@ def run():
         "n_failed": sum(1 for x in flat if not x["ok"]),
         "results": results,
     }
-    out = Path(__file__).resolve().parents[1] / "verification_outputs" / "adversarial_suite_v0_1" / "adversarial_report.json"
+    out = Path(__file__).resolve().parents[1] / "reports" / "generated" / "adversarial_suite_v0_1" / "adversarial_report.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     return summary

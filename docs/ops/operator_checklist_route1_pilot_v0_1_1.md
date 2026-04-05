@@ -38,7 +38,7 @@ The wrapper writes:
 - scored report
 - run manifest
 
-Store generated outputs under `verification_outputs/` or another run-evidence directory, not in the canonical top level.
+Store generated outputs under `reports/generated/` or another run-evidence directory, not in the canonical top level.
 
 ## Stop conditions
 Stop and mark the run if:

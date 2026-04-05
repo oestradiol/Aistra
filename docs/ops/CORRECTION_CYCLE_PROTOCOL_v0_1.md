@@ -71,7 +71,7 @@ Also update:
 ## Handoff rule
 A future operator should be able to reconstruct current truth by reading:
 1. `README.md`
-2. `../frontdoor/HANDOFF_GUIDE_v0_1.md`
+2. `../frontdoor/HANDOFF_GUIDE.md`
 3. `../../governance/AUTHORITATIVE_INDEX_v0_1.md`
 4. `../../governance/PACKAGE_STATE_SUMMARY_v0_1.json`
 

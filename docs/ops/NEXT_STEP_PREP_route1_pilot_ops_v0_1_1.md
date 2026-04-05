@@ -11,12 +11,5 @@
 2. Fill `response_fields` only.
 3. Run the authoritative wrapper:
    `python tools/run_route1_current_ops.py --responses <filled_response.json> --run-dir <outdir>`
-4. Store the generated output in `verification_outputs/route1_runs/` or another dedicated run-evidence directory.
-5. Keep operator notes separate from canonical source files.
-
-## Example evidence paths
-- `verification_outputs/route1_runs/`
-- `verification_outputs/adversarial_suite_v0_1/`
-- `verification_outputs/integrity/`
-
-These are evidence directories, not source-of-truth definitions.
+4. Store generated outputs under `reports/generated/route1_runs/` or another dedicated run-evidence directory.
+5. Keep notes separate from canonical source files.

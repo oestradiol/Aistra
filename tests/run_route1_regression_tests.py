@@ -1,4 +1,6 @@
 from __future__ import annotations
+import sys
+sys.dont_write_bytecode = True
 import json
 import subprocess
 import sys
@@ -6,6 +8,7 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SUBPROCESS_ENV = {**__import__("os").environ, "PYTHONDONTWRITEBYTECODE": "1"}
 
 
 def assert_true(cond, msg):
@@ -69,7 +72,7 @@ def test_export_scorer_generates_outputs():
     with tempfile.TemporaryDirectory() as td:
         sample_path = Path(td) / 'sample.json'
         sample_path.write_text(json.dumps(sample), encoding='utf-8')
-        subprocess.run([sys.executable, str(ROOT / 'tools' / 'score_route1_human_pilot_export.py'), str(sample_path), str(cfg)], check=True)
+        subprocess.run([sys.executable, str(ROOT / 'tools' / 'score_route1_human_pilot_export.py'), str(sample_path), str(cfg)], check=True, env=SUBPROCESS_ENV)
         scored = sample_path.with_suffix('.scored.json')
         report = sample_path.with_suffix('.report.md')
         assert_true(scored.exists(), 'scored json not created')
@@ -117,12 +120,26 @@ def test_alternate_aware_scoring_prefers_best_match():
         sample_path = Path(td) / 'sample.json'
         cfg_path.write_text(json.dumps(cfg), encoding='utf-8')
         sample_path.write_text(json.dumps(sample), encoding='utf-8')
-        subprocess.run([sys.executable, str(ROOT / 'tools' / 'score_route1_human_pilot_export.py'), str(sample_path), str(cfg_path)], check=True)
+        subprocess.run([sys.executable, str(ROOT / 'tools' / 'score_route1_human_pilot_export.py'), str(sample_path), str(cfg_path)], check=True, env=SUBPROCESS_ENV)
         scored = json.loads(sample_path.with_suffix('.scored.json').read_text(encoding='utf-8'))
         row = scored['responses'][0]
         assert_true(row['scoring']['matched_policy'] == 'alternate', 'expected alternate to win')
         assert_true(row['scoring']['best_match']['exact_match'] is True, 'expected exact match against alternate')
 
+
+
+
+def test_repository_file_registry_audit_passes():
+    subprocess.run([sys.executable, str(ROOT / 'tools' / 'audit_repository_file_registry.py')], check=True, env=SUBPROCESS_ENV)
+
+def test_current_surfaces_audit_passes():
+    subprocess.run([sys.executable, str(ROOT / 'tools' / 'audit_current_surfaces.py')], check=True, env=SUBPROCESS_ENV)
+
+
+def test_frontdoor_uses_clean_names():
+    readme = (ROOT / 'README.md').read_text(encoding='utf-8')
+    assert_true('START_HERE.md' in readme, 'expected clean START_HERE.md reference')
+    assert_true('START_HERE_v0_7.md' not in readme, 'stale start path leaked into README')
 
 def main():
     test_packet_contains_woba()
@@ -130,6 +147,9 @@ def main():
     test_packet_config_sync()
     test_export_scorer_generates_outputs()
     test_alternate_aware_scoring_prefers_best_match()
+    test_repository_file_registry_audit_passes()
+    test_current_surfaces_audit_passes()
+    test_frontdoor_uses_clean_names()
     print('route1 regression tests passed')
 
 

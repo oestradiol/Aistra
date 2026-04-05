@@ -5,7 +5,7 @@ Do **not** use it as the current package source of truth.
 
 Current authoritative state is defined in:
 - `governance/AUTHORITATIVE_INDEX_v0_1.md`
-- `../docs/frontdoor/HANDOFF_GUIDE_v0_1.md`
+- `../docs/frontdoor/HANDOFF_GUIDE.md`
 - `governance/PACKAGE_STATE_SUMMARY_v0_1.json`
 
 For the current Route 1 pilot packet, use:

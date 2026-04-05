@@ -5,8 +5,8 @@ const state = {
   responses: {},
 };
 
-const APP_VERSION = 'human_pilot_app_v0_3';
-const SCORER_VERSION = 'route1_human_scorer_v0_4';
+const APP_VERSION = 'human_pilot_app_v0_6';
+const SCORER_VERSION = 'route1_human_scorer_v0_8';
 
 const el = id => document.getElementById(id);
 

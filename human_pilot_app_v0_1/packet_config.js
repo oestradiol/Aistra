@@ -1,5 +1,5 @@
 window.PACKET_CONFIG = {
-  "package_name": "aistra_route1_human_pilot_pack_v1_1",
+  "package_name": "aistra_route1_human_pilot_pack_v1_10",
   "token_change": {
     "whole_body_surface_token_old": "holo",
     "whole_body_surface_token_new": "woba"
@@ -181,6 +181,6 @@ window.PACKET_CONFIG = {
     ]
   },
   "design_mode": "baseline_explicit_calibration",
-  "scorer_version": "route1_human_scorer_v0_4",
-  "config_sha256": "5d875b559afc97e1a1da2302068346d2c4f8c013ee022739150aee4e6a630893"
+  "scorer_version": "route1_human_scorer_v0_7",
+  "config_sha256": "102df167fbc94953339562d1a46c90c825fa1b8be94a3c391a9c7b6b092abf61"
 };

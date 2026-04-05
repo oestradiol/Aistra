@@ -125,7 +125,7 @@ Optional:
 ## Unified experiment report schema
 ```json
 {
-  "package": "suf_experiential_language",
+  "package": "aistra",
   "version": "0.1.0",
   "route_id": "route1_intero_affective",
   "n_gold": 20,

@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "package_name": "aistra",
+  "package_version": "1.10.0",
+  "limits": {
+    "max_root_files": 5,
+    "max_docs_history_files": 3,
+    "max_deprecated_files": 25,
+    "max_reports_generated_files_shipped": 1
+  },
+  "rules": [
+    "historical material may ship only if it preserves traceability that current docs or specs still rely on",
+    "generated report artifacts should not ship except for the README that explains the zone",
+    "a file justification is necessary but not sufficient; historical and deprecated zones remain under explicit size pressure",
+    "if a file can be reconstructed from current sources without losing operational or audit value, it should not ship"
+  ]
+}

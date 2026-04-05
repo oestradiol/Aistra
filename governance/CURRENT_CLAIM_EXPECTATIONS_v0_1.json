@@ -1,0 +1,76 @@
+{
+  "package_name": "aistra",
+  "package_version": "1.10.0",
+  "expectations": {
+    "README.md": {
+      "must_contain_all": [
+        "Aistra",
+        "prototype",
+        "not yet broadly validated science",
+        "START_HERE.md"
+      ],
+      "must_not_contain_any": [
+        "suf_lang_v0_1",
+        "START_HERE_v0_7.md"
+      ]
+    },
+    "START_HERE.md": {
+      "must_contain_all": [
+        "Aistra",
+        "Route 1",
+        "HUMAN_PILOT_PACK_GUIDE.md",
+        "SCIENTIFIC_GROUNDING.md"
+      ],
+      "must_not_contain_any": [
+        "START_HERE_v0_7.md",
+        "CURRENT_OPERATOR_START_HERE_v0_1.md"
+      ]
+    },
+    "docs/frontdoor/SCIENTIFIC_GROUNDING.md": {
+      "must_contain_all": [
+        "research-grounding",
+        "not psychometric validation by themselves",
+        "prototype"
+      ],
+      "must_not_contain_any": [
+        "broadly validated science"
+      ]
+    },
+    "docs/state/PROJECT_STATUS.md": {
+      "must_contain_all": [
+        "pilot-ready",
+        "Route 2 remains pre-human",
+        "not broadly validated science"
+      ],
+      "must_not_contain_any": [
+        "v0.8",
+        "v0.6"
+      ]
+    },
+    "docs/frontdoor/VERIFICATION_REPORT.md": {
+      "must_contain_all": [
+        "1.10.0",
+        "package_doctor.py",
+        "route1_launch_gate.py",
+        "audit_current_surfaces.py",
+        "audit_current_claims.py",
+        "audit_repository_minimality.py"
+      ],
+      "must_not_contain_any": [
+        "SUF repo review could not be done"
+      ]
+    },
+    "docs/frontdoor/FULL_AUDIT_REPORT.md": {
+      "must_contain_all": [
+        "1.10.0",
+        "current-surface governance",
+        "repository-wide file registry"
+      ],
+      "must_not_contain_any": [
+        "v1.3",
+        "v1.4"
+      ]
+    }
+  },
+  "expectation_schema_version": "1.0.0"
+}

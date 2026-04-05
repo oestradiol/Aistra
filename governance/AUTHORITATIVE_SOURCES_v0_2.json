@@ -1,17 +1,21 @@
 {
-  "version": "0.8.0",
+  "version": "1.10.0",
   "package_entrypoints": [
     "README.md",
-    "START_HERE_v0_7.md",
-    "docs/frontdoor/CURRENT_OPERATOR_START_HERE_v0_1.md",
-    "docs/frontdoor/HANDOFF_GUIDE_v0_1.md",
+    "START_HERE.md",
+    "docs/frontdoor/CURRENT_OPERATOR_START_HERE.md",
+    "docs/frontdoor/HANDOFF_GUIDE.md",
+    "docs/frontdoor/SCIENTIFIC_GROUNDING.md",
     "governance/AUTHORITATIVE_INDEX_v0_1.md",
     "governance/AUTHORITATIVE_SOURCES_v0_2.json",
     "governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json",
     "governance/PACKAGE_STATE_SUMMARY_v0_1.json",
     "docs/ops/CORRECTION_CYCLE_PROTOCOL_v0_1.md",
     "cross_route_spec_v0_1/manifest.json",
-    "docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md"
+    "docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md",
+    "governance/CURRENT_SURFACES_REGISTRY_v0_1.json",
+    "governance/CURRENT_CLAIM_EXPECTATIONS_v0_1.json",
+    "governance/MINIMALITY_POLICY_v0_1.json"
   ],
   "route1_current": {
     "formal": [

@@ -1,4 +1,6 @@
 from __future__ import annotations
+import sys
+sys.dont_write_bytecode = True
 import json
 import hashlib
 from pathlib import Path
@@ -50,7 +52,7 @@ def assert_current_route1_artifact(path_like: str | Path, *, allowed: List[str],
     if rel not in allowed:
         raise AuthorityError(
             f"Non-current {label}: {rel}. Use one of: {', '.join(allowed)}. "
-            f"Resolve current artifacts via governance/AUTHORITATIVE_INDEX_v0_1.md or docs/frontdoor/CURRENT_OPERATOR_START_HERE_v0_1.md."
+            f"Resolve current artifacts via governance/AUTHORITATIVE_INDEX_v0_1.md or docs/frontdoor/CURRENT_OPERATOR_START_HERE.md."
         )
     return rel
 

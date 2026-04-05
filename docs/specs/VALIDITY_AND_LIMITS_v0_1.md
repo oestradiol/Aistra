@@ -1,35 +1,22 @@
 # Validity and limits v0.1
 
-## Current validity claim
-The package currently supports a modest claim:
-**Route 1 is a usable structured-state prototype that humans can learn and apply under controlled administration.**
+## Current claim
+Aistra currently supports a modest claim:
+**Route 1 is a usable, scientifically grounded prototype that humans can learn and apply under controlled administration.**
 
 ## What supports that claim
-- participant performance improved rapidly with stable ontology
+- the field choices and route design are documented in the research-grounding layer
+- participant performance improved rapidly once the ontology stabilized
 - structured items became reliably decodable
 - protocol weaknesses were diagnosable and repairable
-- a local interface now removes operator paraphrase drift
+- a local interface removes a large part of operator paraphrase drift
 
-## Threats to validity
-- tiny sample size
-- same-user learning effects
-- baseline prompts were previously ambiguous
-- early sessions were contaminated by operator drift
-- no broader inter-rater or test-retest evidence yet
+## What is still missing
+- broader multi-user evidence
+- test-retest and inter-rater evidence
+- stronger evidence for external validity
+- any basis for calling this a finished instrument
 
 ## Interpretation boundary
-Useful ontology ≠ validated measurement instrument.
-
-The project can be useful before it is psychometrically mature, but those are different claims and must stay separate.
-
-## What would strengthen validity later
-- multi-user pilots
-- field-level confusion matrices
-- test-retest stability
-- clearer alternate policy
-- comparison between explicit and natural baselines
-
-## What would weaken the ontology claim
-- repeated failure on the same fields even under explicit prompts
-- persistent inability to separate arousal from intensity
-- source/certainty remaining uninterpretable even when explicitly stated
+Scientific alignment is not the same thing as finished validation.
+The research layer supports why the package is built this way. The pilot/testing layer is what still has to show how well it holds up in broader human use.

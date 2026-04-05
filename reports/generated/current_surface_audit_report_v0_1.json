@@ -1,0 +1,1515 @@
+{
+  "status": "PASS",
+  "package_name": "aistra",
+  "package_version": "1.10.0",
+  "total_checks": 301,
+  "failed_checks": 0,
+  "issues": [],
+  "checks": [
+    {
+      "check": "exists:README.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:README.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:README.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:README.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:START_HERE.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:START_HERE.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:START_HERE.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:START_HERE.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/SCIENTIFIC_GROUNDING.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SCIENTIFIC_GROUNDING.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/SCIENTIFIC_GROUNDING.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/VERIFICATION_REPORT.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/VERIFICATION_REPORT.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/VERIFICATION_REPORT.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/FULL_AUDIT_REPORT.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/FULL_AUDIT_REPORT.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/FULL_AUDIT_REPORT.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/state/PROJECT_STATUS.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/PROJECT_STATUS.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/state/PROJECT_STATUS.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/state/CURRENT_EXECUTION_ORDER.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/state/CURRENT_EXECUTION_ORDER.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/state/CURRENT_EXECUTION_ORDER.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:governance/AUTHORITATIVE_INDEX_v0_1.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INDEX_v0_1.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:governance/AUTHORITATIVE_INDEX_v0_1.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:governance/PACKAGE_STATE_SUMMARY_v0_1.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/PACKAGE_STATE_SUMMARY_v0_1.json:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/frontdoor/TRUST_AND_STYLE_POLICY.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/TRUST_AND_STYLE_POLICY.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/NAME_DECISION.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/NAME_DECISION.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/NAME_DECISION.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:docs/frontdoor/HANDOFF_GUIDE.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:docs/frontdoor/HANDOFF_GUIDE.md:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "current-name:docs/frontdoor/HANDOFF_GUIDE.md",
+      "ok": true,
+      "detail": "current surface too generic"
+    },
+    {
+      "check": "exists:governance/AUTHORITATIVE_SOURCES_v0_2.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_SOURCES_v0_2.json:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:governance/ROOT_ALLOWLIST_v0_1.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/ROOT_ALLOWLIST_v0_1.json:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:governance/REPOSITORY_FILE_REGISTRY_v0_1.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:governance/CURRENT_CLAIM_EXPECTATIONS_v0_1.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "exists:governance/MINIMALITY_POLICY_v0_1.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:aistra_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:VERIFICATION_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:FULL_AUDIT_REPORT_v1_4.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:PROJECT_STATUS_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:CURRENT_EXECUTION_ORDER_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "forbidden:governance/MINIMALITY_POLICY_v0_1.json:reports/generated/route1_runs/",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "state:package-name",
+      "ok": true,
+      "detail": "package_name=aistra"
+    },
+    {
+      "check": "state:version",
+      "ok": true,
+      "detail": "version=1.10.0"
+    },
+    {
+      "check": "link:readme-start",
+      "ok": true,
+      "detail": "README missing START_HERE.md"
+    },
+    {
+      "check": "link:start-guide",
+      "ok": true,
+      "detail": "START_HERE missing guide"
+    },
+    {
+      "check": "link:start-grounding",
+      "ok": true,
+      "detail": "START_HERE missing scientific grounding"
+    },
+    {
+      "check": "link:operator-guide",
+      "ok": true,
+      "detail": "operator guide path stale"
+    },
+    {
+      "check": "link:guide-start",
+      "ok": true,
+      "detail": "human guide start path stale"
+    },
+    {
+      "check": "link:handoff-current",
+      "ok": true,
+      "detail": "handoff guide paths stale"
+    }
+  ]
+}

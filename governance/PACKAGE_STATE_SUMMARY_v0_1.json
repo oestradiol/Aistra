@@ -1,18 +1,24 @@
 {
-  "package_name": "suf_experiential_language",
-  "version": "0.5.0",
+  "package_name": "aistra",
+  "version": "1.10.0",
   "package_status": "route1_pilot_ready_route2_pre_human",
   "current_authoritative_entrypoints": [
     "README.md",
-    "START_HERE_v0_7.md",
-    "docs/frontdoor/CURRENT_OPERATOR_START_HERE_v0_1.md",
-    "docs/frontdoor/HANDOFF_GUIDE_v0_1.md",
-    "AUTHORITATIVE_INDEX_v0_1.md",
-    "AUTHORITATIVE_SOURCES_v0_2.json",
-    "AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json",
-    "PACKAGE_STATE_SUMMARY_v0_1.json",
+    "START_HERE.md",
+    "docs/frontdoor/CURRENT_OPERATOR_START_HERE.md",
+    "docs/frontdoor/HANDOFF_GUIDE.md",
+    "docs/frontdoor/SCIENTIFIC_GROUNDING.md",
+    "governance/AUTHORITATIVE_INDEX_v0_1.md",
+    "governance/AUTHORITATIVE_SOURCES_v0_2.json",
+    "governance/CURRENT_SURFACES_REGISTRY_v0_1.json",
+    "governance/CURRENT_CLAIM_EXPECTATIONS_v0_1.json",
+    "governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json",
+    "governance/PACKAGE_STATE_SUMMARY_v0_1.json",
+    "governance/MINIMALITY_POLICY_v0_1.json",
     "docs/ops/CORRECTION_CYCLE_PROTOCOL_v0_1.md",
-    "docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md"
+    "docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md",
+    "docs/ops/RELEASE_CHECKLIST_v0_1.md",
+    "governance/REPOSITORY_FILE_REGISTRY_v0_1.json"
   ],
   "routes": {
     "route1_intero_affective": {
@@ -56,7 +62,7 @@
     "route1": "initial_single_participant_pilot_complete_not_yet_validated",
     "route2": "not_started_and_not_pilot_ready"
   },
-  "superseded_material_warning": "Earlier pilot docs remain under deprecated/ for traceability. Use AUTHORITATIVE_INDEX_v0_1.md and AUTHORITATIVE_SOURCES_v0_2.json to avoid outdated materials.",
+  "superseded_material_warning": "Earlier pilot docs remain under deprecated/ for traceability. Use governance/AUTHORITATIVE_INDEX_v0_1.md and governance/AUTHORITATIVE_SOURCES_v0_2.json to avoid outdated materials.",
   "enforcement_layer": {
     "present": true,
     "doctor": "package_doctor.py",
@@ -66,7 +72,7 @@
   "research_grounding_layer": {
     "present": true,
     "path": "research_grounding_v0_1/",
-    "route1_scientific_grounding_status": "PENDING_VALIDATION",
-    "route2_scientific_grounding_status": "PENDING_VALIDATION"
+    "route1_scientific_grounding_status": "PREHUMAN_GROUNDED_NOT_HUMAN_VALIDATED",
+    "route2_scientific_grounding_status": "PREHUMAN_GROUNDED_NOT_HUMAN_VALIDATED"
   }
 }

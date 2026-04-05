@@ -1,10 +1,9 @@
 {
-  "package_name": "suf_experiential_language",
-  "version": "0.8.0",
+  "package_name": "aistra",
   "package_status": "route1_pilot_ready_route2_pre_human",
   "authoritative_entrypoints": {
     "readme": "README.md",
-    "handoff_guide": "docs/frontdoor/HANDOFF_GUIDE_v0_1.md",
+    "handoff_guide": "docs/frontdoor/HANDOFF_GUIDE.md",
     "authoritative_index": "governance/AUTHORITATIVE_INDEX_v0_1.md",
     "state_summary": "governance/PACKAGE_STATE_SUMMARY_v0_1.json",
     "correction_protocol": "docs/ops/CORRECTION_CYCLE_PROTOCOL_v0_1.md",
@@ -86,10 +85,12 @@
     "route fusion scoring",
     "human pilot for Route 2"
   ],
-  "handoff_rule": "Use docs/frontdoor/HANDOFF_GUIDE_v0_1.md and governance/AUTHORITATIVE_INDEX_v0_1.md first. If two documents conflict, prefer the higher-version authoritative doc listed there.",
+  "handoff_rule": "Use docs/frontdoor/HANDOFF_GUIDE.md and governance/AUTHORITATIVE_INDEX_v0_1.md first. If two documents conflict, prefer the higher-version authoritative doc listed there.",
   "research_grounding_layer": {
     "present": true,
     "path": "research_grounding_v0_1/",
     "required_for_status": "scientifically_grounded_prehuman"
-  }
+  },
+  "package_version": "1.10.0",
+  "cross_route_spec_schema_version": "0.8.0"
 }

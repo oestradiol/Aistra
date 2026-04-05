@@ -1,0 +1,50 @@
+{
+  "package_name": "aistra",
+  "package_version": "1.10.0",
+  "current_truth_surfaces": [
+    "README.md",
+    "START_HERE.md",
+    "docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md",
+    "docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md",
+    "docs/frontdoor/SCIENTIFIC_GROUNDING.md",
+    "docs/frontdoor/CURRENT_OPERATOR_START_HERE.md",
+    "docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md",
+    "docs/frontdoor/VERIFICATION_REPORT.md",
+    "docs/frontdoor/FULL_AUDIT_REPORT.md",
+    "docs/state/PROJECT_STATUS.md",
+    "docs/state/CURRENT_EXECUTION_ORDER.md",
+    "governance/AUTHORITATIVE_INDEX_v0_1.md",
+    "governance/PACKAGE_STATE_SUMMARY_v0_1.json"
+  ],
+  "current_supporting_surfaces": [
+    "docs/frontdoor/TRUST_AND_STYLE_POLICY.md",
+    "docs/frontdoor/NAME_DECISION.md",
+    "docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md",
+    "docs/frontdoor/HANDOFF_GUIDE.md",
+    "governance/AUTHORITATIVE_SOURCES_v0_2.json",
+    "governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json",
+    "governance/ROOT_ALLOWLIST_v0_1.json",
+    "governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json",
+    "governance/REPOSITORY_FILE_REGISTRY_v0_1.json",
+    "governance/CURRENT_CLAIM_EXPECTATIONS_v0_1.json",
+    "governance/MINIMALITY_POLICY_v0_1.json"
+  ],
+  "historical_or_trace_surfaces": [
+    "deprecated/",
+    "docs/history/"
+  ],
+  "forbidden_in_current_surfaces": [
+    "suf_lang_v0_1",
+    "aistra_v0_1",
+    "START_HERE_v0_7.md",
+    "CURRENT_OPERATOR_START_HERE_v0_1.md",
+    "HUMAN_PILOT_PACK_GUIDE_v0_5.md",
+    "ANTI_SLOP_TRUST_AND_STYLE_POLICY_v0_1.md",
+    "VERIFICATION_REPORT_v1_4.md",
+    "FULL_AUDIT_REPORT_v1_4.md",
+    "PROJECT_STATUS_v0_1.md",
+    "CURRENT_EXECUTION_ORDER_v0_1.md",
+    "reports/generated/route1_runs/"
+  ],
+  "registry_schema_version": "1.1.0"
+}

@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "total_checks": 39,
+  "failed_checks": 0,
+  "issues": [],
+  "checks": [
+    {
+      "check": "exists:README.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:README.md:Aistra",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:README.md:prototype",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:README.md:not yet broadly validated science",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:README.md:START_HERE.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:README.md:suf_lang_v0_1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:README.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:START_HERE.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:START_HERE.md:Aistra",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:START_HERE.md:Route 1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:START_HERE.md:HUMAN_PILOT_PACK_GUIDE.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:START_HERE.md:SCIENTIFIC_GROUNDING.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:START_HERE.md:START_HERE_v0_7.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:START_HERE.md:CURRENT_OPERATOR_START_HERE_v0_1.md",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/frontdoor/SCIENTIFIC_GROUNDING.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/SCIENTIFIC_GROUNDING.md:research-grounding",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/SCIENTIFIC_GROUNDING.md:not psychometric validation by themselves",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/SCIENTIFIC_GROUNDING.md:prototype",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:docs/frontdoor/SCIENTIFIC_GROUNDING.md:broadly validated science",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/state/PROJECT_STATUS.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/state/PROJECT_STATUS.md:pilot-ready",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/state/PROJECT_STATUS.md:Route 2 remains pre-human",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/state/PROJECT_STATUS.md:not broadly validated science",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:docs/state/PROJECT_STATUS.md:v0.8",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:docs/state/PROJECT_STATUS.md:v0.6",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/frontdoor/VERIFICATION_REPORT.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/VERIFICATION_REPORT.md:1.10.0",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/VERIFICATION_REPORT.md:package_doctor.py",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/VERIFICATION_REPORT.md:route1_launch_gate.py",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/VERIFICATION_REPORT.md:audit_current_surfaces.py",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/VERIFICATION_REPORT.md:audit_current_claims.py",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/VERIFICATION_REPORT.md:audit_repository_minimality.py",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:docs/frontdoor/VERIFICATION_REPORT.md:SUF repo review could not be done",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/frontdoor/FULL_AUDIT_REPORT.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/FULL_AUDIT_REPORT.md:1.10.0",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/FULL_AUDIT_REPORT.md:current-surface governance",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/FULL_AUDIT_REPORT.md:repository-wide file registry",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:docs/frontdoor/FULL_AUDIT_REPORT.md:v1.3",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-contain:docs/frontdoor/FULL_AUDIT_REPORT.md:v1.4",
+      "ok": true,
+      "detail": "ok"
+    }
+  ]
+}

@@ -26,3 +26,11 @@ The package separates:
 - audit history
 
 Only the canonical source files are authoritative.
+4. Repo-wide existence control:
+   - `../../governance/REPOSITORY_FILE_REGISTRY_v0_1.json`
+   - `../../tools/audit_repository_file_registry.py`
+
+
+## Added semantic-currentness pressure
+
+The package now runs `tools/audit_current_claims.py` to check that key current files still carry the bounded project posture and current release identity, and `tools/audit_repository_minimality.py` to keep historical and generated zones under explicit size pressure.

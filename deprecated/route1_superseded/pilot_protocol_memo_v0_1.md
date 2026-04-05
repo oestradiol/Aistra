@@ -5,7 +5,7 @@ Do **not** use it as the current package source of truth.
 
 Current authoritative state is defined in:
 - `governance/AUTHORITATIVE_INDEX_v0_1.md`
-- `../docs/frontdoor/HANDOFF_GUIDE_v0_1.md`
+- `../docs/frontdoor/HANDOFF_GUIDE.md`
 - `governance/PACKAGE_STATE_SUMMARY_v0_1.json`
 
 For the current Route 1 pilot packet, use:
@@ -15,7 +15,7 @@ For the current Route 1 pilot packet, use:
 # Pilot protocol memo v0.1
 
 ## Purpose
-This memo defines the first human pilot for the SUF-shaped experiential language package.
+This memo defines the first human pilot for the Aistra experiential language package.
 
 This is a **small bounded pilot**, not a full study.
 

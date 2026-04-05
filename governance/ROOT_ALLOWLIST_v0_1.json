@@ -1,12 +1,12 @@
 {
-  "version": "0.2.0",
+  "version": "0.4.0",
   "allowed_root_files": [
     {
       "path": "README.md",
       "reason": "root package summary"
     },
     {
-      "path": "START_HERE_v0_7.md",
+      "path": "START_HERE.md",
       "reason": "single front-door entrypoint"
     },
     {

@@ -1,7 +1,7 @@
 # Project spec v0.1
 
-## What SUF Route 1 is
-A compact structured language and pilot instrument for representing subjective felt-state reports across 9 fields:
+## What Aistra Route 1 is
+A compact structured language and pilot instrument for representing felt-state reports across 9 fields:
 valence, arousal, intensity, location, texture, contour, certainty, source, and action.
 
 ## What it is trying to do
@@ -11,7 +11,8 @@ valence, arousal, intensity, location, texture, contour, certainty, source, and 
 ## Current status
 - prototype instrument
 - handoff-ready local pilot package
-- not yet a validated scientific measurement tool
+- scientifically grounded in a bounded prehuman sense
+- not yet a validated measurement instrument
 
 ## Intended uses
 - structured annotation of subjective-state descriptions
@@ -24,19 +25,3 @@ valence, arousal, intensity, location, texture, contour, certainty, source, and 
 - clinical decision support
 - claims of validated psychometric measurement
 - claims that the ontology fully captures all human feeling
-
-## Route split
-- structured route: tokenized, fixed-slot prompts
-- baseline-explicit route: plain-language prompts that explicitly encode all scored fields
-- future optional baseline-natural route: exploratory only, unmerged with calibration metrics
-
-## Evidence stance
-Current evidence supports:
-- learnability
-- practical administrability
-- usefulness for structured error localization
-
-Current evidence does not yet support:
-- strong external validity claims
-- robust psychometric reliability claims across populations
-- field reduction or ontology finality

@@ -1,4 +1,6 @@
 from __future__ import annotations
+import sys
+sys.dont_write_bytecode = True
 import hashlib
 import json
 from pathlib import Path
@@ -33,7 +35,7 @@ def main():
     packet_rows = load_jsonl(PACKET)
     answer_rows = load_jsonl(ANSWER)
     config = {
-        'package_name': 'aistra_route1_human_pilot_pack_v1_1',
+        'package_name': 'aistra_route1_human_pilot_pack_v1_10',
         'token_change': {
             'whole_body_surface_token_old': 'holo',
             'whole_body_surface_token_new': 'woba',
@@ -47,7 +49,7 @@ def main():
         'answer_key': {r['id']: {'expected_canonical': r['expected_canonical'], 'acceptable_alternates': r.get('acceptable_alternates', [])} for r in answer_rows},
         'fields': FIELDS,
         'design_mode': 'baseline_explicit_calibration',
-        'scorer_version': 'route1_human_scorer_v0_4',
+        'scorer_version': 'route1_human_scorer_v0_7',
     }
     bare_json = json.dumps(config, ensure_ascii=False, indent=2) + '\n'
     config['config_sha256'] = sha256_text(bare_json)

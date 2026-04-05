@@ -53,7 +53,7 @@ If you cannot answer all five cleanly, do not add the file.
 - Do not create version-suffixed siblings unless content is materially different and both versions must coexist.
 - Do not keep historical drafts at root.
 - Prefer appending to changelog, status, or audit surfaces over creating another summary.
-- Prefer generated artifacts under `verification_outputs/` or `pilot_runs/`.
+- Prefer generated artifacts under `reports/generated/` or another non-canonical run directory.
 - Prefer governance rules under `governance/`.
 
 ## Enforcement
@@ -64,3 +64,6 @@ Use:
 - `tools/audit_root_budget.py`
 
 A package change should fail review if it adds an unregistered root file or leaves a file without a justification entry.
+
+## Repo-wide registry rule
+Root control is not enough. Every shipped file must appear in `REPOSITORY_FILE_REGISTRY_v0_1.json` with a role and justification, and the repository audit must fail if any file is missing from that registry.
