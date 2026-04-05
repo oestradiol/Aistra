@@ -5,7 +5,11 @@ import json
 import sys
 from pathlib import Path
 
+SCORING_FAMILY = "route1_scoring_family_v0_1"
+SCORER_LAYER = "human_export_9_field"
+SCORER_VERSION = "route1_human_export_scorer_v1_0"
 FIELDS = ["valence", "arousal", "intensity", "location", "texture", "contour", "certainty", "source", "action"]
+WEIGHTS = {field: 1.0 for field in FIELDS}
 CANON_TO_LABEL = {
     "valence": {"NEG": "negative", "NEU": "neutral", "POS": "positive", "MIX": "mixed"},
     "arousal": {"L": "low", "M": "medium", "H": "high"},
@@ -56,13 +60,50 @@ def score_against_expected(resp, expected):
         "source": normalize("source", resp["source"]),
         "action": normalize("action", resp["action"]),
     }
-    fields = {f: predicted[f] == expected[f] for f in FIELDS}
+    field_matches = {}
+    field_match_types = {}
+    exact_fields = []
+    partial_fields = []
+    missed_fields = []
+    earned = 0.0
+    total = 0.0
+    for field in FIELDS:
+        total += WEIGHTS[field]
+        if field == "texture":
+            ps = set(predicted[field])
+            es = set(expected[field])
+            if predicted[field] == expected[field]:
+                match_type = "exact"
+            elif ps & es:
+                match_type = "partial"
+            else:
+                match_type = "none"
+        else:
+            match_type = "exact" if predicted[field] == expected[field] else "none"
+        field_match_types[field] = match_type
+        field_matches[field] = match_type == "exact"
+        if match_type == "exact":
+            exact_fields.append(field)
+            earned += WEIGHTS[field]
+        elif match_type == "partial":
+            partial_fields.append(field)
+            earned += WEIGHTS[field] / 2.0
+        else:
+            missed_fields.append(field)
     return {
+        "scoring_family": SCORING_FAMILY,
+        "scorer_layer": SCORER_LAYER,
+        "scorer_version": SCORER_VERSION,
         "predicted_fields": predicted,
         "expected_fields": expected,
-        "field_matches": fields,
-        "exact_9_score": sum(fields.values()),
-        "exact_match": all(fields.values()),
+        "field_matches": field_matches,
+        "field_match_types": field_match_types,
+        "exact_fields": exact_fields,
+        "partial_fields": partial_fields,
+        "missed_fields": missed_fields,
+        "exact_9_score": len(exact_fields),
+        "exact_match": len(exact_fields) == len(FIELDS),
+        "weighted_9_score": round(earned / total if total else 0.0, 4),
     }
 
 
@@ -76,7 +117,7 @@ def score_response(resp, key_row):
             "is_primary": idx == 0,
             "result": score_against_expected(resp, expected),
         })
-    scored.sort(key=lambda x: (-x["result"]["exact_9_score"], 0 if x["is_primary"] else 1))
+    scored.sort(key=lambda x: (-x["result"]["exact_9_score"], -x["result"]["weighted_9_score"], 0 if x["is_primary"] else 1))
     best = scored[0]
     return {
         "predicted_canonical": None,
@@ -87,6 +128,14 @@ def score_response(resp, key_row):
             "matched_canonical": best["canonical"],
             **best["result"],
         },
+        "candidate_results": [{
+            "canonical": row["canonical"],
+            "is_primary": row["is_primary"],
+            "exact_9_score": row["result"]["exact_9_score"],
+            "weighted_9_score": row["result"]["weighted_9_score"],
+            "exact_match": row["result"]["exact_match"],
+            "partial_fields": row["result"]["partial_fields"],
+        } for row in scored],
         "status": "exact" if best["result"]["exact_match"] else "scored",
     }
 
@@ -174,8 +223,13 @@ def build_report(out):
         lines.append(f"- matched_policy: {scoring['matched_policy']}")
         lines.append(f"- matched_canonical: {best['matched_canonical']}")
         lines.append(f"- exact_9_score: {best['exact_9_score']}")
+        lines.append(f"- weighted_9_score: {best['weighted_9_score']}")
         lines.append(f"- exact_match: {best['exact_match']}")
+        lines.append(f"- exact_fields: {json.dumps(best['exact_fields'])}")
+        lines.append(f"- partial_fields: {json.dumps(best['partial_fields'])}")
+        lines.append(f"- missed_fields: {json.dumps(best['missed_fields'])}")
         lines.append(f"- field_matches: {json.dumps(best['field_matches'])}")
+        lines.append(f"- field_match_types: {json.dumps(best['field_match_types'])}")
         lines.append("")
     return "\n".join(lines) + "\n"
 
@@ -199,6 +253,9 @@ def main():
         score["predicted_canonical"] = row.get("prediction_canonical")
         scored.append({**row, "scoring": score})
     out = {**results, "responses": scored}
+    out["scoring_family"] = SCORING_FAMILY
+    out["scorer_layer"] = SCORER_LAYER
+    out["scorer_version"] = SCORER_VERSION
     out["summary"] = summarize(scored)
     out_path = results_path.with_suffix('.scored.json')
     out_path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')

@@ -9,6 +9,10 @@ BASE = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE))
 from parser import parse
 
+SCORING_FAMILY = "route1_scoring_family_v0_1"
+SCORER_LAYER = "canonical_10_field"
+SCORER_VERSION = "route1_canonical_scorer_v0_1"
+
 FIELDS = ["mod","val","aro","int","loc","tex","con","cer","src","act"]
 WEIGHTS = {"mod":1/18,"val":2/18,"aro":2/18,"int":2/18,"loc":2/18,"tex":2/18,"con":2/18,"cer":2/18,"src":2/18,"act":1/18}
 
@@ -45,6 +49,9 @@ def score_against(gold_canonical: str, pred_canonical: str):
             missed_fields.append(f)
         field_results.append({"field": f, "match_type": match_type})
     return {
+        "scoring_family": SCORING_FAMILY,
+        "scorer_layer": SCORER_LAYER,
+        "scorer_version": SCORER_VERSION,
         "score": round(score, 4),
         "exact_fields": exact_fields,
         "partial_fields": partial_fields,
@@ -95,6 +102,9 @@ def score_predictions_file(gold_path: str, pred_path: str):
         results.append(out)
         valid_scores.append(best_detail["score"])
     return {
+        "scoring_family": SCORING_FAMILY,
+        "scorer_layer": SCORER_LAYER,
+        "scorer_version": SCORER_VERSION,
         "n_gold": len(gold_rows),
         "n_scored": len(valid_scores),
         "average_score": round(sum(valid_scores)/len(valid_scores), 4) if valid_scores else 0.0,

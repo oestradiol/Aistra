@@ -49,7 +49,7 @@ Keep all 9 fields for now, but clarify semantics and status:
 - low arousal can still be strong in heavy, depressive, or diffuse states
 - user data so far shows occasional inflation, but not proof of redundancy
 
-**Conclusion:** keep for now. Reassess after more pilots using field-confusion matrices.
+**Conclusion:** keep for now. Reassess after more pilots using field-confusion matrices and familiar-vs-holdout comparisons.
 
 ### 4. Location
 **Status:** retain
@@ -129,12 +129,17 @@ Action tendency is one of the best bridges from felt state to behavioral implica
 The ontology is currently **minimal-enough to continue**.
 No field should be removed before additional multi-user evidence.
 
-## What would justify future revision
-- repeated multi-user confusion showing intensity and arousal collapse into one dimension
-- contour failing across explicit packets despite direct wording
-- certainty showing poor interpretability even after report-level clarification
-- source failing even when explicitly stated
+## Revision triggers and change threshold
+A field should stay unchanged unless one of the following becomes true under multi-user review:
+- repeated familiar-vs-holdout degradation suggests packet-specific learning rather than real field understanding
+- repeated multi-user confusion shows intensity and arousal collapsing into one dimension
+- contour fails across explicit packets despite direct wording
+- certainty remains poorly interpretable even after report-level clarification
+- source fails even when explicitly stated
+- participants repeatedly report that a field feels forced, interface-shaped, or semantically absent rather than merely hard
+
+Any add / remove / merge / split decision should be treated as an ontology change, not a local tweak. It should only happen after the package has a documented migration plan for packet, answer key, parser, scorer, app config, and current docs.
 
 ## Current recommendation
 Freeze the 9-field ontology for the next pilot cycle.
-Do not add or remove fields until field-level confusion data from multiple users exists.
+Do not add or remove fields until field-level confusion data from multiple users exists, holdout packet performance has been reviewed, and migration impact has been checked.

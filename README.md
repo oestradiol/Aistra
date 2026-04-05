@@ -13,7 +13,7 @@ Read `docs/frontdoor/SCIENTIFIC_GROUNDING.md` for the shortest map of the resear
 The project and language name is **Aistra**. See `docs/frontdoor/NAME_DECISION.md`.
 
 Current package posture:
-- **Route 1**: `pilot_ready`, one initial human pilot completed, not broadly validated
+- **Route 1**: `pilot_ready` as an operational package-status label, one initial human pilot completed, not broadly validated
 - **Route 2**: `pre_human`
 
 ## Front door
@@ -56,4 +56,4 @@ Read in this order:
 Use `START_HERE.md`, `governance/AUTHORITATIVE_INDEX_v0_1.md`, and `governance/AUTHORITATIVE_SOURCES_v0_2.json` to find the live files.
 
 
-This is still not yet broadly validated science.
+This is still not yet broadly validated science. In this package, `pilot_ready` means the bounded workflow is operationally runnable under current controls; it is not an evidence-grade validation label.

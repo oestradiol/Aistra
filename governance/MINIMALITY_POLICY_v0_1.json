@@ -3,7 +3,7 @@
   "package_name": "aistra",
   "package_version": "1.11.0",
   "limits": {
-    "max_root_files": 5,
+    "max_root_files": 6,
     "max_docs_history_files": 3,
     "max_deprecated_files": 25,
     "max_reports_generated_files_shipped": 1

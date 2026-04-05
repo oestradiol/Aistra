@@ -4,7 +4,7 @@ This guide is for running the current Route 1 local packet without manual operat
 
 ## Current package state
 - live package line: `v1.11`
-- Route 1 status: `pilot_ready`
+- Route 1 status: `pilot_ready` in package state, meaning operationally runnable under current controls
 - Route 1 is the explicit-calibration route, not a naturalistic phenomenology route
 
 ## Recommended path

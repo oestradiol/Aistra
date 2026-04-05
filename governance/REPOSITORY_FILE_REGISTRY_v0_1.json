@@ -4,6 +4,11 @@
   "package_version": "1.11.0",
   "entries": [
     {
+      "path": "LICENSE",
+      "role": "current_support",
+      "justification": "license file required for lawful redistribution and handoff of the current package"
+    },
+    {
       "path": "README.md",
       "role": "current_truth",
       "justification": "root entry or executable anchor required by the package front door"

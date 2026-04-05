@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "total_checks": 39,
+  "total_checks": 100,
   "failed_checks": 0,
   "issues": [],
   "checks": [
@@ -110,12 +110,12 @@
       "detail": "ok"
     },
     {
-      "check": "must-contain:docs/state/PROJECT_STATUS.md:Route 2 remains pre-human",
+      "check": "must-contain:docs/state/PROJECT_STATUS.md:operationally pilot-ready",
       "ok": true,
       "detail": "ok"
     },
     {
-      "check": "must-contain:docs/state/PROJECT_STATUS.md:not broadly validated science",
+      "check": "must-contain:docs/state/PROJECT_STATUS.md:Route 2 remains pre-human",
       "ok": true,
       "detail": "ok"
     },
@@ -126,6 +126,41 @@
     },
     {
       "check": "must-not-contain:docs/state/PROJECT_STATUS.md:v0.6",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-satisfy-any-regex:docs/state/PROJECT_STATUS.md:1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/state/PROJECT_STATUS.md:1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/state/PROJECT_STATUS.md:2",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/state/PROJECT_STATUS.md:3",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/state/PROJECT_STATUS.md:4",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/state/PROJECT_STATUS.md:5",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/state/PROJECT_STATUS.md:6",
       "ok": true,
       "detail": "ok"
     },
@@ -196,6 +231,276 @@
     },
     {
       "check": "must-not-contain:docs/frontdoor/FULL_AUDIT_REPORT.md:v1.4",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/state/CURRENT_EXECUTION_ORDER.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/state/CURRENT_EXECUTION_ORDER.md:holdout packet performance",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/state/CURRENT_EXECUTION_ORDER.md:interface-effect observations",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/state/CURRENT_EXECUTION_ORDER.md:weird-but-valid",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/state/CURRENT_EXECUTION_ORDER.md:migration plan",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/specs/FIELD_RATIONALE_REVIEW_v0_1.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/specs/FIELD_RATIONALE_REVIEW_v0_1.md:Revision triggers and change threshold",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/specs/FIELD_RATIONALE_REVIEW_v0_1.md:familiar-vs-holdout",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/specs/FIELD_RATIONALE_REVIEW_v0_1.md:migration plan",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/specs/FIELD_RATIONALE_REVIEW_v0_1.md:Do not add or remove fields",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/specs/VALIDITY_AND_LIMITS_v0_1.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/specs/VALIDITY_AND_LIMITS_v0_1.md:packet-specific fit",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/specs/VALIDITY_AND_LIMITS_v0_1.md:discretization error",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/specs/VALIDITY_AND_LIMITS_v0_1.md:interface can reduce operator paraphrase drift while still shaping answers",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/specs/VALIDITY_AND_LIMITS_v0_1.md:open-world failure harvesting",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:holdout packet",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:open-world human weirdness",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:deep ontology revision expensive",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:familiar-vs-holdout generalization",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md:Deliberate ontology change rule",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md:familiar-vs-holdout review",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md:migration impact",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md:9-field ontology should stay frozen",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/ops/RELEASE_CHECKLIST_v0_1.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/ops/RELEASE_CHECKLIST_v0_1.md:holdout packet behavior",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/RELEASE_CHECKLIST_v0_1.md:interface-effect observations",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/RELEASE_CHECKLIST_v0_1.md:weird-but-valid human failures",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/RELEASE_CHECKLIST_v0_1.md:migration review across packet, key, parser, scorer, app config, and current docs",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/ops/pilot_review_template_v0_2_redteamed.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/ops/pilot_review_template_v0_2_redteamed.md:holdout items",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/pilot_review_template_v0_2_redteamed.md:interface-shaping / instruction dependence",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/pilot_review_template_v0_2_redteamed.md:weird-but-valid state",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-contain:docs/ops/pilot_review_template_v0_2_redteamed.md:packet-specific, interface-shaped, or ontology-level",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-contain:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:small prototype language and test package",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-satisfy-any-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-satisfy-any-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:2",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-satisfy-any-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:3",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-satisfy-any-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:4",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:2",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:3",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:4",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:5",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "exists:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "must-satisfy-any-regex:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-satisfy-any-regex:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:2",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-satisfy-any-regex:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:3",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:1",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:2",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:3",
+      "ok": true,
+      "detail": "ok"
+    },
+    {
+      "check": "must-not-match-regex:docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md:4",
       "ok": true,
       "detail": "ok"
     }

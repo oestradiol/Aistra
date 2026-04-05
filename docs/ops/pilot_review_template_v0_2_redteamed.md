@@ -8,6 +8,8 @@
 - practice items used:
 - scored structured items:
 - scored baseline items:
+- were any items familiar from a previous packet? yes/no
+- were any items explicitly treated as holdout items? yes/no
 
 ## Sanity checks
 - any repeated underlying targets across conditions for same participant? yes/no
@@ -28,6 +30,7 @@ For each participant, estimate which source dominated:
 - field extraction difficulty
 - wording ambiguity
 - fatigue
+- interface-shaping / instruction dependence
 - other
 
 ## Field confusion summary
@@ -37,6 +40,7 @@ For each field:
 - miss rate
 - common substitutions
 - did this feel like a real semantic miss or a format miss?
+- did the miss look packet-specific, interface-shaped, or ontology-level?
 
 Fields:
 - val
@@ -53,17 +57,25 @@ Fields:
 - Was structured clearly harder because of token lookup?
 - Was baseline clearly easier because wording was too explicit?
 - Did one condition produce better qualitative comments even when scores were similar?
+- Did familiar items behave differently from holdout items?
 
 ## Token usability notes
 - which tokens caused recurrent confusion?
 - were there legend-dependent lookups?
 - did participants stop reasoning and start decoding mechanically?
 
+## Interface and human-factors notes
+- where did participants hesitate?
+- where did they ask for clarification?
+- did examples or layout seem to steer answers?
+- did fatigue, overload, or demand characteristics seem to shape responses?
+
 ## Ontology adequacy notes
 - which distinctions felt natural?
 - which felt forced?
 - what missing distinctions were reported?
 - did any field seem unnecessary in pilot 1?
+- did any weird-but-valid state fail because the schema could not represent it cleanly?
 
 ## Scoring reality check
 - did high-scoring trials actually feel like good reconstructions?

@@ -6,7 +6,9 @@ const state = {
 };
 
 const APP_VERSION = 'human_pilot_app_v0_6';
-const SCORER_VERSION = 'route1_human_scorer_v0_8';
+const SCORING_FAMILY = 'route1_scoring_family_v0_1';
+const SCORER_LAYER = 'human_export_9_field';
+const SCORER_VERSION = 'route1_human_export_scorer_v1_0';
 
 const el = id => document.getElementById(id);
 
@@ -120,8 +122,13 @@ function buildMarkdownReport(payload) {
     lines.push(`- matched_policy: ${row.scoring.matched_policy}`);
     lines.push(`- matched_canonical: ${s.matched_canonical}`);
     lines.push(`- exact_9_score: ${s.exact_9_score}`);
+    lines.push(`- weighted_9_score: ${s.weighted_9_score}`);
     lines.push(`- exact_match: ${s.exact_match}`);
+    lines.push(`- exact_fields: ${JSON.stringify(s.exact_fields)}`);
+    lines.push(`- partial_fields: ${JSON.stringify(s.partial_fields)}`);
+    lines.push(`- missed_fields: ${JSON.stringify(s.missed_fields)}`);
     lines.push(`- field_matches: ${JSON.stringify(s.field_matches)}`);
+    lines.push(`- field_match_types: ${JSON.stringify(s.field_match_types)}`);
     lines.push('');
   }
   return lines.join('\n');
@@ -258,38 +265,94 @@ function canonicalToFields(canonical) {
   };
 }
 
+const HUMAN_SCORING_WEIGHTS = {
+  valence: 1,
+  arousal: 1,
+  intensity: 1,
+  location: 1,
+  texture: 1,
+  contour: 1,
+  certainty: 1,
+  source: 1,
+  action: 1,
+};
+
 function compareResponseToCanonical(resp, canonical) {
   const expected = canonicalToFields(canonical);
   if (!expected) return null;
   const predictedTextures = [resp.texture1, resp.texture2].filter(Boolean).map(t => normalizeLabel('texture', t)).sort();
-  const fields = {
-    valence: normalizeLabel('valence', resp.valence) === expected.valence,
-    arousal: normalizeLabel('arousal', resp.arousal) === expected.arousal,
-    intensity: normalizeLabel('intensity', resp.intensity) === expected.intensity,
-    location: normalizeLabel('location', resp.location) === expected.location,
-    texture: JSON.stringify(predictedTextures) === JSON.stringify(expected.textures),
-    contour: normalizeLabel('contour', resp.contour) === expected.contour,
-    certainty: normalizeLabel('certainty', resp.certainty) === expected.certainty,
-    source: normalizeLabel('source', resp.source) === expected.source,
-    action: normalizeLabel('action', resp.action) === expected.action,
+  const predictedFields = {
+    valence: normalizeLabel('valence', resp.valence),
+    arousal: normalizeLabel('arousal', resp.arousal),
+    intensity: normalizeLabel('intensity', resp.intensity),
+    location: normalizeLabel('location', resp.location),
+    texture: predictedTextures,
+    contour: normalizeLabel('contour', resp.contour),
+    certainty: normalizeLabel('certainty', resp.certainty),
+    source: normalizeLabel('source', resp.source),
+    action: normalizeLabel('action', resp.action),
   };
-  const exact9 = Object.values(fields).filter(Boolean).length;
+  const expectedFields = {
+    valence: expected.valence,
+    arousal: expected.arousal,
+    intensity: expected.intensity,
+    location: expected.location,
+    texture: expected.textures,
+    contour: expected.contour,
+    certainty: expected.certainty,
+    source: expected.source,
+    action: expected.action,
+  };
+  const fieldMatches = {};
+  const fieldMatchTypes = {};
+  const exactFields = [];
+  const partialFields = [];
+  const missedFields = [];
+  let earned = 0;
+  let total = 0;
+  for (const [field, weight] of Object.entries(HUMAN_SCORING_WEIGHTS)) {
+    total += weight;
+    let matchType = 'none';
+    const predicted = predictedFields[field];
+    const expectedValue = expectedFields[field];
+    if (field === 'texture') {
+      const p = new Set(predicted);
+      const e = new Set(expectedValue);
+      if (JSON.stringify(predicted) === JSON.stringify(expectedValue)) {
+        matchType = 'exact';
+      } else if ([...p].some(v => e.has(v))) {
+        matchType = 'partial';
+      }
+    } else if (predicted === expectedValue) {
+      matchType = 'exact';
+    }
+    fieldMatchTypes[field] = matchType;
+    fieldMatches[field] = matchType === 'exact';
+    if (matchType === 'exact') {
+      exactFields.push(field);
+      earned += weight;
+    } else if (matchType === 'partial') {
+      partialFields.push(field);
+      earned += weight / 2;
+    } else {
+      missedFields.push(field);
+    }
+  }
+  const exact9 = exactFields.length;
   return {
     expected_fields: expected,
     predicted_fields: {
-      valence: normalizeLabel('valence', resp.valence),
-      arousal: normalizeLabel('arousal', resp.arousal),
-      intensity: normalizeLabel('intensity', resp.intensity),
-      location: normalizeLabel('location', resp.location),
+      ...predictedFields,
       textures: predictedTextures,
-      contour: normalizeLabel('contour', resp.contour),
-      certainty: normalizeLabel('certainty', resp.certainty),
-      source: normalizeLabel('source', resp.source),
-      action: normalizeLabel('action', resp.action),
     },
-    field_matches: fields,
+    field_matches: fieldMatches,
+    field_match_types: fieldMatchTypes,
+    exact_fields: exactFields,
+    partial_fields: partialFields,
+    missed_fields: missedFields,
     exact_9_score: exact9,
     exact_match: exact9 === 9,
+    weighted_9_score: Number((earned / total).toFixed(4)),
   };
 }
 
@@ -310,6 +373,7 @@ function scoreItem(item, resp) {
   })).filter(x => x.result);
   scoredCandidates.sort((a, b) => {
     if (b.result.exact_9_score !== a.result.exact_9_score) return b.result.exact_9_score - a.result.exact_9_score;
+    if (b.result.weighted_9_score !== a.result.weighted_9_score) return b.result.weighted_9_score - a.result.weighted_9_score;
     if (a.is_primary !== b.is_primary) return a.is_primary ? -1 : 1;
     return 0;
   });
@@ -324,7 +388,12 @@ function scoreItem(item, resp) {
       matched_canonical: best.canonical,
       exact_match: best.result.exact_match,
       exact_9_score: best.result.exact_9_score,
+      weighted_9_score: best.result.weighted_9_score,
       field_matches: best.result.field_matches,
+      field_match_types: best.result.field_match_types,
+      exact_fields: best.result.exact_fields,
+      partial_fields: best.result.partial_fields,
+      missed_fields: best.result.missed_fields,
       expected_fields: best.result.expected_fields,
       predicted_fields: best.result.predicted_fields,
     },
@@ -347,6 +416,8 @@ function exportResults() {
   const payload = {
     package_name: state.config.package_name,
     app_version: APP_VERSION,
+    scoring_family: SCORING_FAMILY,
+    scorer_layer: SCORER_LAYER,
     scorer_version: SCORER_VERSION,
     exported_at: new Date().toISOString(),
     packet_source: state.config.packet_source,
@@ -355,7 +426,7 @@ function exportResults() {
     answer_key_sha256: state.config.answer_key_sha256,
     config_sha256: state.config.config_sha256,
     token_change: state.config.token_change,
-    scoring_note: 'exact_9_score compares the 9 scored fields. texture order is ignored during scoring. unknown normalizes to unclear.',
+    scoring_note: 'This export uses the Route 1 human-export 9-field scorer inside the shared Route 1 scoring family. exact_9_score remains the primary export metric. weighted_9_score is a secondary descriptive metric with half-credit only for texture partial overlap. texture order is ignored during scoring. unknown normalizes to unclear. declared alternates can win both exact and weighted comparison. The canonical 10-field scorer remains the separate formal scorer for canonical prediction evaluation.',
     summary: summarizeRows(rows),
     responses: rows,
   };

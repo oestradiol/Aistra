@@ -18,7 +18,7 @@ Read these in order:
 Name: **Aistra**
 
 Simple summary:
-- Route 1 is the live pilot route.
+- Route 1 is the live operational pilot route.
 - Route 2 is still pre-human.
 - The package is designed to be testable, bounded, and hard to drift by accident.
-- The research layer supports the field choices, but broader validation is still future work.
+- The research layer supports the field choices, but broader validation is still future work. Here, `pilot_ready` is an operational label for the current bounded workflow, not an evidence claim.

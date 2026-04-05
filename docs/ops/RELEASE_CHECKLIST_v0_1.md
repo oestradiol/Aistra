@@ -20,6 +20,10 @@ Manual checks:
 - confirm current verification and audit reports describe the live package state
 - confirm current docs still match the research-grounding layer in spirit and boundary
 - confirm any renamed current files are reflected in `governance/CURRENT_SURFACES_REGISTRY_v0_1.json` and `governance/AUTHORITATIVE_INDEX_v0_1.md`
+- confirm current pilot review practice distinguishes familiar packet behavior from holdout packet behavior where applicable
+- confirm interface-effect observations were reviewed for hesitation, clarification requests, fatigue, and instruction dependence
+- confirm weird-but-valid human failures were reviewed instead of only canonical adversarial cases
+- confirm no ontology change was shipped without migration review across packet, key, parser, scorer, app config, and current docs
 
 Release rule:
 Do not call the package release-clean unless both the automated checks and the manual current-surface pass succeed.

@@ -36,3 +36,9 @@ It does not mean future edits cannot introduce new mistakes.
 Latest hardening additions:
 - `tools/audit_current_claims.py` checks current-package claim shape and bounded scientific posture on key live files.
 - `tools/audit_repository_minimality.py` keeps historical and generated zones under explicit size pressure so governance cannot justify endless growth.
+
+
+Newly documented residual-risk controls:
+- current execution order now explicitly requires familiar-vs-holdout review, interface-effect logging, and failure harvesting
+- field rationale now binds ontology revision to evidence plus migration review
+- release and pilot review docs now explicitly check interface-shaping, weird-but-valid failures, and packet-specific fit risk

@@ -181,6 +181,6 @@
     ]
   },
   "design_mode": "baseline_explicit_calibration",
-  "scorer_version": "route1_human_scorer_v0_7",
-  "config_sha256": "cd987d7e7eb5fbc5c99229c4f330f0dd77216caed011a4a4452e29b50d42fb6d"
+  "scorer_version": "route1_human_export_scorer_v1_0",
+  "config_sha256": "8a989722b2fbf99e289f19e4a1d0045976cb66c8e9b9e51c62a2d5e0cf2ce292"
 }

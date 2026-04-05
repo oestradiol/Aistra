@@ -25,5 +25,5 @@ What it does not claim:
 - it is not proof that every person experiences states in this exact structure
 
 Current package posture:
-- Route 1 = pilot-ready, one initial human pilot completed, not broadly validated
+- Route 1 = operationally pilot-ready as a package/workflow label, one initial human pilot completed, not broadly validated
 - Route 2 = pre-human

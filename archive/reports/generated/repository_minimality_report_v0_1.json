@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "counts": {
-    "root_files": 5,
+    "root_files": 6,
     "history_files": 1,
     "deprecated_files": 14,
     "generated_files": 1
@@ -13,7 +13,7 @@
     {
       "check": "limit:root-files",
       "ok": true,
-      "detail": "count=5 limit=5"
+      "detail": "count=6 limit=6"
     },
     {
       "check": "limit:history-files",

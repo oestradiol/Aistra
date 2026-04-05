@@ -13,7 +13,7 @@ Read these before operating the live Route 1 package:
 10. `../ops/operator_checklist_route1_pilot_v0_1_1.md` if you are operating Route 1
 
 Fast truth:
-- Route 1 has completed one initial single-participant pilot and remains pilot-ready, not validated.
+- Route 1 has completed one initial single-participant pilot and remains operationally pilot-ready, not validated.
 - Route 2 remains pre-human.
 - `package_doctor.py` and `route1_launch_gate.py` are the minimum checks before live use.
 - The package has a research-grounding layer, but broader human validation is still future work.

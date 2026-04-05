@@ -23,7 +23,8 @@ def main():
         print("Missing current Route 1 artifacts:", ", ".join(missing))
         sys.exit(1)
     print("LAUNCH GATE: PASS")
-    print("Route 1 current pilot package is present, verified, and research grounding is in passing state.")
+    print("Route 1 current pilot package is present. package_doctor.py passed, required current Route 1 artifacts exist, and current claim audits plus grounding-surface consistency checks passed through package_doctor.py.")
+    print("This launch gate demonstrates bounded package coherence and current operational readiness for the shipped Route 1 workflow. It does not by itself validate research claims, psychometric adequacy, or broad human generalization.")
     sys.exit(0)
 
 if __name__ == "__main__":

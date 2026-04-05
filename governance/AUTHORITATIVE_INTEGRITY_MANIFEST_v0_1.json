@@ -1,17 +1,19 @@
 {
-  "manifest_version": "0.2.0",
-  "source_config_version": "1.11.0",
-  "generated_from": "governance/AUTHORITATIVE_SOURCES_v0_2.json",
-  "tracked_file_count": 67,
+  "manifest_version": "0.3.0",
+  "generated_from": [
+    "governance/AUTHORITATIVE_SOURCES_v0_2.json",
+    "governance/CURRENT_SURFACES_REGISTRY_v0_1.json"
+  ],
+  "tracked_file_count": 80,
   "untracked_self": "governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json",
   "files": {
     "README.md": {
-      "sha256": "05fc0165143b2fb894c4bbb87f1f16fc5fd74dddc2239662b23a5cc9ce3fa2cd",
-      "bytes": 2900
+      "sha256": "2b3d0ae4b11bf6342c97c9b8edb571aa323a3f553b2735f60a503e662bb33167",
+      "bytes": 3093
     },
     "START_HERE.md": {
-      "sha256": "cfeb2548e159d896a984497cd541d421fd751e652a2dcb40fe2ea93fd30eb40b",
-      "bytes": 852
+      "sha256": "eca71dfd48e830108f1a80bdd53f07e33b93ab6b061e490f05bef8edf9f063c5",
+      "bytes": 965
     },
     "apps/route2_visual/README.md": {
       "sha256": "9ad0014fc9e38e6b4e895d53b353befe3fdfc75800a7370f9408ed81c1753ed8",
@@ -42,8 +44,8 @@
       "bytes": 4197
     },
     "authoritative_guard.py": {
-      "sha256": "b669eb8ca062836a3047015c6680e15f31cc27e6d388b51f40246fb1f45a0f94",
-      "bytes": 3620
+      "sha256": "6c27333f11c5e48dbb2fb017dcaea90f81053e99a63e13919c28a3f29351edb9",
+      "bytes": 5214
     },
     "core/route1/correction_pairs.jsonl": {
       "sha256": "cd70d689de0947bdca2ba23e0d8c67f0ceab32d8b2a178544dec7292594a1297",
@@ -78,24 +80,56 @@
       "bytes": 5397
     },
     "core/route1/scorer.py": {
-      "sha256": "68d346cd581989525e17dcf2e80e5a4c418be7b7c3043e5ceae693ec11220128",
-      "bytes": 4449
+      "sha256": "9fe50454015bc302bf72c181d18efdc3a1bcee026d9d68cae9afc948859da39e",
+      "bytes": 4824
     },
     "core/route1/token_legend_route1_v0_1.md": {
       "sha256": "2e91aff756070a792194609dabebe11ab3928f8d9bb3ae9b2040fdd053906b9a",
       "bytes": 908
     },
+    "docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md": {
+      "sha256": "289d6a770dae76cfb7f18fd036c8a1fc95baf92dc3ee4e217925f6e55b54b869",
+      "bytes": 2254
+    },
     "docs/frontdoor/CURRENT_OPERATOR_START_HERE.md": {
-      "sha256": "d444f09d1542882cb55134ee915beadb46fef1b901c08445722480b6e2d5cfad",
-      "bytes": 1086
+      "sha256": "434ba09be25191542cd64f710ce39fdc768c58f045bebfc4a11c987602ea4c30",
+      "bytes": 1100
+    },
+    "docs/frontdoor/FULL_AUDIT_REPORT.md": {
+      "sha256": "7bcb5791978649599f8c437c4bab169af4b3e4854216280033408aed8db0c133",
+      "bytes": 1699
     },
     "docs/frontdoor/HANDOFF_GUIDE.md": {
       "sha256": "4a783ea9a0fa83ac8eae58e0924501bc57907c73edcb5bed3afde04c550328b9",
       "bytes": 1130
     },
+    "docs/frontdoor/HUMAN_PILOT_PACK_GUIDE.md": {
+      "sha256": "e55ac28296c2877a5388719f49ce7c256cbb7adbd999b88e45e43c2b52ef1303",
+      "bytes": 1486
+    },
+    "docs/frontdoor/NAME_DECISION.md": {
+      "sha256": "a7b5a13149f45dbbf2ae37835a6eeddaba4ac9d0c6aad54a7a3ebd62235699cc",
+      "bytes": 196
+    },
+    "docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md": {
+      "sha256": "9fb98e4f0225af2d62d484693ce572cb46a9c9b2acce7a410e0e1118fd8b82cc",
+      "bytes": 904
+    },
     "docs/frontdoor/SCIENTIFIC_GROUNDING.md": {
       "sha256": "4304bc333294084eeb829d1006f86512289a1d6f497ec3e7c3336d578ba072e1",
       "bytes": 1604
+    },
+    "docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md": {
+      "sha256": "a693552fd0855c8f14410aec8154b6fbd1825e65e653f2c9130a3fb4881807c7",
+      "bytes": 2993
+    },
+    "docs/frontdoor/TRUST_AND_STYLE_POLICY.md": {
+      "sha256": "8cf3132600a1b3c205c69c6bf1ad49d989c5ee09a28f82e06d99891c076e5ffb",
+      "bytes": 959
+    },
+    "docs/frontdoor/VERIFICATION_REPORT.md": {
+      "sha256": "21d5df6a5134efc057894015d388e2b5b3591a7e756fe8e6d592ceb217e27d62",
+      "bytes": 1769
     },
     "docs/ops/CORRECTION_CYCLE_PROTOCOL_v0_1.md": {
       "sha256": "5cb0c410f07adc5e5cf9dee37236528217c14ee43183f3041860809d8de72857",
@@ -106,8 +140,8 @@
       "bytes": 776
     },
     "docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md": {
-      "sha256": "af66ac90d2e15e2def2fbcfc1968a01f636239c09a0d5be015ef513e8cf0fc0d",
-      "bytes": 1226
+      "sha256": "d7910ee7a6a8fb84f7a8a5a1badb51458acc335e3dea12eaec13afc6e755f389",
+      "bytes": 2202
     },
     "docs/ops/allowed_values_response_form_route1_v0_2_anchored.md": {
       "sha256": "d9fe5abd26b843e0ff674e391bc7f6a39e8fd7c66cdbe457c523f22dbe32010a",
@@ -130,8 +164,8 @@
       "bytes": 4982
     },
     "docs/ops/pilot_review_template_v0_2_redteamed.md": {
-      "sha256": "7d51350e9eb1fbe37854a6c1eb99a07eda2817afa7278a1b62357d07bfc7a6e1",
-      "bytes": 2117
+      "sha256": "af3f0334b5b650e1f735bbae52bcee8203c9ed17f100a8520be0ce79119aa2aa",
+      "bytes": 2739
     },
     "docs/ops/route1_calibration_examples_v0_1.md": {
       "sha256": "f7699171bcf242905442943452d56ca4fbca962e32ca2fb7f1b6830525d03301",
@@ -140,6 +174,14 @@
     "docs/ops/route1_pilot_clarification_layer_v0_1.md": {
       "sha256": "2ca4cca8bf0d4931d899df6c7df1f763a2610f91c304ffd56ef16de66151a3df",
       "bytes": 57
+    },
+    "docs/state/CURRENT_EXECUTION_ORDER.md": {
+      "sha256": "565ad23658136702fdf1da44349605827316fab093de2128b1528aca3816565b",
+      "bytes": 1309
+    },
+    "docs/state/PROJECT_STATUS.md": {
+      "sha256": "8c896ef6b7bc3e8d6324063e0de3b664b4e8843c875339e3a31d574faffd2c35",
+      "bytes": 1921
     },
     "governance/AUTHORITATIVE_INDEX_v0_1.md": {
       "sha256": "51412ba320004b4e23eedcca53d706d37e375b0018e704f0e545eea777d5462a",
@@ -150,20 +192,32 @@
       "bytes": 3750
     },
     "governance/CURRENT_CLAIM_EXPECTATIONS_v0_1.json": {
-      "sha256": "6f23476ff9dd2ac0425600ff1055c6d73a7a00da60ef406205297df39ed20e23",
-      "bytes": 1831
+      "sha256": "7d9ccf8dc9132715062040ea6c5bd378bae1b255c0ac8213fd8da6b99094ccf6",
+      "bytes": 9664
     },
     "governance/CURRENT_SURFACES_REGISTRY_v0_1.json": {
       "sha256": "d84b58e049b09639bb95d485010532677d715816b5c44a967c13e335dee61dd2",
       "bytes": 1785
     },
+    "governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json": {
+      "sha256": "9ebe4c0d2676d7f3e8835f5ea5be58499d265c8a0b21a9a850c4343910045939",
+      "bytes": 827
+    },
     "governance/MINIMALITY_POLICY_v0_1.json": {
-      "sha256": "04d522231c813e14e6f1fe13de53770827bac36a11578eaa874546b23b23b093",
+      "sha256": "7634bf7b00a53f355ddd4f4151b2fe56c4ae61af7c2d72d090d47faf3d2add0d",
       "bytes": 711
     },
     "governance/PACKAGE_STATE_SUMMARY_v0_1.json": {
       "sha256": "52b985104c12084da0c38dbae33367ca56161f1980eb26b85c3295847ff7943a",
       "bytes": 3094
+    },
+    "governance/REPOSITORY_FILE_REGISTRY_v0_1.json": {
+      "sha256": "90e188b179c2e7c0821a298a995a1fb7bf9858cc67e0a56fd08ccf31a0887a37",
+      "bytes": 29155
+    },
+    "governance/ROOT_ALLOWLIST_v0_1.json": {
+      "sha256": "605abd1b3ecb053b29a0bd9e66316e60791fae70762e76ad20acafe098f834a8",
+      "bytes": 654
     },
     "research/cross_route_spec/manifest.json": {
       "sha256": "c9ae7a76d99931fee3b8e4281474f6b247789f487977911d443816e107782c03",
@@ -238,8 +292,8 @@
       "bytes": 1667
     },
     "research/grounding/scripts/generate_integrity_manifest.py": {
-      "sha256": "ebaa682cbc1764a554b1301bd4a9bfaf9beed26a825e46e4cd589d8d95a8e293",
-      "bytes": 1828
+      "sha256": "5ce758460d04be094be29212cf99c5dcf411bc1e1f8a61ca387802ac8d031050",
+      "bytes": 1498
     },
     "research/grounding/scripts/run_prehuman_suite.py": {
       "sha256": "2b134fa12ae5e7d199ad403fe2808e13575d27b00333f4ebf0f4a82d504ccfa0",

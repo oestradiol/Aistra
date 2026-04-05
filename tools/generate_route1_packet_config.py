@@ -49,7 +49,7 @@ def main():
         'answer_key': {r['id']: {'expected_canonical': r['expected_canonical'], 'acceptable_alternates': r.get('acceptable_alternates', [])} for r in answer_rows},
         'fields': FIELDS,
         'design_mode': 'baseline_explicit_calibration',
-        'scorer_version': 'route1_human_scorer_v0_7',
+        'scorer_version': 'route1_human_export_scorer_v1_0',
     }
     bare_json = json.dumps(config, ensure_ascii=False, indent=2) + '\n'
     config['config_sha256'] = sha256_text(bare_json)

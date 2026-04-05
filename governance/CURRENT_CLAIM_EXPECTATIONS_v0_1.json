@@ -39,12 +39,49 @@
     "docs/state/PROJECT_STATUS.md": {
       "must_contain_all": [
         "pilot-ready",
-        "Route 2 remains pre-human",
-        "not broadly validated science"
+        "operationally pilot-ready",
+        "Route 2 remains pre-human"
+      ],
+      "must_satisfy_any_regex": [
+        {
+          "patterns": [
+            "\\bnot\\s+broadly\\s+validated\\s+science\\b",
+            "\\bnot\\s+yet\\s+broadly\\s+validated\\b",
+            "\\bbroad\\s+validation\\s+has\\s+not\\s+been\\s+established\\b"
+          ],
+          "ignore_case": true,
+          "description": "must preserve bounded non-broad-validation posture"
+        }
       ],
       "must_not_contain_any": [
         "v0.8",
         "v0.6"
+      ],
+      "must_not_match_regex_any": [
+        {
+          "pattern": "(?<!not\\s)\\bbroadly\\s+validated\\s+science\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "(?<!not\\s)\\bvalidated\\s+psychometric\\s+instrument\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "(?<!not\\s)\\ba\\s+universal\\s+ontology\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "(?<!not\\s)\\bready\\s+for\\s+broad\\s+deployment\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "(?<!not\\s)\\breliable\\s+across\\s+users\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "\\b(?:does|do|did|can|will|may|might|could)\\s+(?!not\\b)generalize\\s+broadly\\b|(?<!not\\s)\\bgeneraliz(?:es|ed|ing)\\s+broadly\\b",
+          "ignore_case": true
+        }
       ]
     },
     "docs/frontdoor/VERIFICATION_REPORT.md": {
@@ -70,7 +107,183 @@
         "v1.3",
         "v1.4"
       ]
+    },
+    "docs/state/CURRENT_EXECUTION_ORDER.md": {
+      "must_contain_all": [
+        "holdout packet performance",
+        "interface-effect observations",
+        "weird-but-valid",
+        "migration plan"
+      ],
+      "must_not_contain_any": []
+    },
+    "docs/specs/FIELD_RATIONALE_REVIEW_v0_1.md": {
+      "must_contain_all": [
+        "Revision triggers and change threshold",
+        "familiar-vs-holdout",
+        "migration plan",
+        "Do not add or remove fields"
+      ],
+      "must_not_contain_any": []
+    },
+    "docs/specs/VALIDITY_AND_LIMITS_v0_1.md": {
+      "must_contain_all": [
+        "packet-specific fit",
+        "discretization error",
+        "interface can reduce operator paraphrase drift while still shaping answers",
+        "open-world failure harvesting"
+      ],
+      "must_not_contain_any": []
+    },
+    "docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md": {
+      "must_contain_all": [
+        "holdout packet",
+        "open-world human weirdness",
+        "deep ontology revision expensive",
+        "familiar-vs-holdout generalization"
+      ],
+      "must_not_contain_any": []
+    },
+    "docs/ops/PACKAGE_ENFORCEMENT_LAYER_v0_1.md": {
+      "must_contain_all": [
+        "Deliberate ontology change rule",
+        "familiar-vs-holdout review",
+        "migration impact",
+        "9-field ontology should stay frozen"
+      ],
+      "must_not_contain_any": []
+    },
+    "docs/ops/RELEASE_CHECKLIST_v0_1.md": {
+      "must_contain_all": [
+        "holdout packet behavior",
+        "interface-effect observations",
+        "weird-but-valid human failures",
+        "migration review across packet, key, parser, scorer, app config, and current docs"
+      ],
+      "must_not_contain_any": []
+    },
+    "docs/ops/pilot_review_template_v0_2_redteamed.md": {
+      "must_contain_all": [
+        "holdout items",
+        "interface-shaping / instruction dependence",
+        "weird-but-valid state",
+        "packet-specific, interface-shaped, or ontology-level"
+      ],
+      "must_not_contain_any": []
+    },
+    "docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md": {
+      "must_contain_all": [
+        "small prototype language and test package"
+      ],
+      "must_satisfy_any_regex": [
+        {
+          "patterns": [
+            "\\bit\\s+is\\s+not\\s+a\\s+validated\\s+clinical\\s+or\\s+psychometric\\s+instrument\\b",
+            "\\bnot\\s+validated\\s+for\\s+clinical\\s+or\\s+psychometric\\s+use\\b",
+            "\\bno\\s+validated\\s+clinical\\s+or\\s+psychometric\\s+instrument\\s+claim\\b"
+          ],
+          "ignore_case": true,
+          "description": "must preserve non-instrument limitation"
+        },
+        {
+          "patterns": [
+            "\\bit\\s+is\\s+not\\s+a\\s+final\\s+theory\\s+of\\s+human\\s+feeling\\b",
+            "\\bnot\\s+a\\s+final\\s+theory\\s+of\\s+human\\s+feeling\\b",
+            "\\bnot\\s+presented\\s+as\\s+a\\s+final\\s+theory\\s+of\\s+human\\s+feeling\\b"
+          ],
+          "ignore_case": true,
+          "description": "must preserve non-final-theory limitation"
+        },
+        {
+          "patterns": [
+            "\\bit\\s+is\\s+not\\s+proof\\s+that\\s+every\\s+person\\s+experiences\\s+states\\s+in\\s+this\\s+exact\\s+structure\\b",
+            "\\bnot\\s+proof\\s+that\\s+every\\s+person\\s+experiences\\s+states\\s+in\\s+this\\s+exact\\s+structure\\b",
+            "\\bnot\\s+evidence\\s+that\\s+every\\s+person\\s+uses\\s+this\\s+exact\\s+structure\\b"
+          ],
+          "ignore_case": true,
+          "description": "must preserve non-universality limitation"
+        },
+        {
+          "patterns": [
+            "\\bnot\\s+broadly\\s+validated\\b",
+            "\\bnot\\s+yet\\s+broadly\\s+validated\\b",
+            "\\bbroad\\s+validation\\s+has\\s+not\\s+been\\s+established\\b"
+          ],
+          "ignore_case": true,
+          "description": "must preserve bounded non-broad-validation posture"
+        }
+      ],
+      "must_not_match_regex_any": [
+        {
+          "pattern": "(?<!not\\s)\\bvalidated\\s+clinical\\s+instrument\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "(?<!not\\s)\\bvalidated\\s+psychometric\\s+instrument\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "(?<!not\\s)\\bready\\s+for\\s+broad\\s+deployment\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "(?<!not\\s)\\breliable\\s+across\\s+users\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "\\b(?:does|do|did|can|will|may|might|could)\\s+(?!not\\b)generalize\\s+broadly\\b|(?<!not\\s)\\bgeneraliz(?:es|ed|ing)\\s+broadly\\b",
+          "ignore_case": true
+        }
+      ]
+    },
+    "docs/frontdoor/COHERENCE_AND_CONTROL_SURFACE.md": {
+      "must_contain_all": [],
+      "must_satisfy_any_regex": [
+        {
+          "patterns": [
+            "\\bno\\s+package\\s+claim\\s+should\\s+be\\s+stronger\\s+than\\s+the\\s+evidence\\s+and\\s+checks\\s+currently\\s+present\\s+in\\s+the\\s+package\\b",
+            "\\bpackage\\s+claims\\s+must\\s+not\\s+outrun\\s+the\\s+evidence\\s+and\\s+checks\\b"
+          ],
+          "ignore_case": true,
+          "description": "must preserve bounded-evidence claim rule"
+        },
+        {
+          "patterns": [
+            "\\bdo\\s+not\\s+guarantee\\s+perfection\\b",
+            "\\bno\\s+guarantee\\s+of\\s+perfection\\b"
+          ],
+          "ignore_case": true,
+          "description": "must preserve non-perfection limitation"
+        },
+        {
+          "patterns": [
+            "\\bdo\\s+not\\s+replace\\s+human\\s+judgment\\b",
+            "\\bhuman\\s+judgment\\s+remains\\s+required\\b",
+            "\\bhuman\\s+review\\s+remains\\s+necessary\\b"
+          ],
+          "ignore_case": true,
+          "description": "must preserve human-review limitation"
+        }
+      ],
+      "must_not_match_regex_any": [
+        {
+          "pattern": "\\bhuman\\s+review\\s+(?:is|was|were|be|being|been|becomes?|remains?)\\s+unnecessary\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "\\bhuman\\s+judgment\\s+(?:is|was|were|be|being|been|becomes?|remains?)\\s+unnecessary\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "\\b(?:does|do|did)\\s+replace\\s+human\\s+judgment\\b",
+          "ignore_case": true
+        },
+        {
+          "pattern": "\\b(?:is|are|was|were|be|being|been|becomes?|remains?)\\s+safe\\s+without\\s+human\\s+review\\b",
+          "ignore_case": true
+        }
+      ]
     }
   },
-  "expectation_schema_version": "1.0.0"
+  "expectation_schema_version": "1.3.0"
 }

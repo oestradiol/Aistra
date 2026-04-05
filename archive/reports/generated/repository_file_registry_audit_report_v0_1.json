@@ -2,9 +2,9 @@
   "status": "PASS",
   "package_name": "aistra",
   "package_version": "1.11.0",
-  "total_files": 151,
-  "registered_files": 151,
-  "total_checks": 396,
+  "total_files": 152,
+  "registered_files": 152,
+  "total_checks": 400,
   "failed_checks": 0,
   "issues": [],
   "checks": [
@@ -27,6 +27,26 @@
       "check": "registry:no-phantom-files",
       "ok": true,
       "detail": "extra_in_registry=[] count=0"
+    },
+    {
+      "check": "entry:LICENSE:valid-role",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
+      "check": "entry:LICENSE:justified",
+      "ok": true,
+      "detail": "empty justification"
+    },
+    {
+      "check": "entry:LICENSE:not-in-historical-zones",
+      "ok": true,
+      "detail": "current file placed in historical zone"
+    },
+    {
+      "check": "entry:LICENSE:root-allowlisted",
+      "ok": true,
+      "detail": "root file not allowlisted"
     },
     {
       "check": "entry:README.md:valid-role",
@@ -1749,12 +1769,32 @@
       "detail": "empty justification"
     },
     {
-      "check": "current-surface:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:registered",
+      "check": "current-surface:governance/PACKAGE_STATE_SUMMARY_v0_1.json:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:role-valid",
+      "check": "current-surface:governance/PACKAGE_STATE_SUMMARY_v0_1.json:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:README.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:README.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:role-valid",
       "ok": true,
       "detail": "role=current_support"
     },
@@ -1769,74 +1809,14 @@
       "detail": "role=governance_support"
     },
     {
-      "check": "current-surface:governance/MINIMALITY_POLICY_v0_1.json:registered",
+      "check": "current-surface:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:governance/MINIMALITY_POLICY_v0_1.json:role-valid",
-      "ok": true,
-      "detail": "role=governance_support"
-    },
-    {
-      "check": "current-surface:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:role-valid",
+      "check": "current-surface:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:role-valid",
       "ok": true,
       "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:docs/state/CURRENT_EXECUTION_ORDER.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/state/CURRENT_EXECUTION_ORDER.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:governance/AUTHORITATIVE_SOURCES_v0_2.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/AUTHORITATIVE_SOURCES_v0_2.json:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:README.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:README.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:START_HERE.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:START_HERE.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
     },
     {
       "check": "current-surface:docs/frontdoor/PROJECT_PURPOSE_AND_USE_CASES.md:registered",
@@ -1869,6 +1849,36 @@
       "detail": "role=current_truth"
     },
     {
+      "check": "current-surface:docs/frontdoor/NAME_DECISION.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/NAME_DECISION.md:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/SKEPTICAL_AUDIT_AND_HARDENING.md:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
+      "check": "current-surface:governance/AUTHORITATIVE_SOURCES_v0_2.json:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:governance/AUTHORITATIVE_SOURCES_v0_2.json:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
       "check": "current-surface:governance/AUTHORITATIVE_INDEX_v0_1.md:registered",
       "ok": true,
       "detail": "missing registry entry"
@@ -1879,12 +1889,52 @@
       "detail": "role=current_truth"
     },
     {
-      "check": "current-surface:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:registered",
+      "check": "current-surface:START_HERE.md:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:governance/AUTHORITATIVE_INTEGRITY_MANIFEST_v0_1.json:role-valid",
+      "check": "current-surface:START_HERE.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/CURRENT_OPERATOR_START_HERE.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/VERIFICATION_REPORT.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/VERIFICATION_REPORT.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/state/CURRENT_EXECUTION_ORDER.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/state/CURRENT_EXECUTION_ORDER.md:role-valid",
+      "ok": true,
+      "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:role-valid",
       "ok": true,
       "detail": "role=current_support"
     },
@@ -1899,64 +1949,14 @@
       "detail": "role=current_truth"
     },
     {
-      "check": "current-surface:docs/frontdoor/FULL_AUDIT_REPORT.md:registered",
+      "check": "current-surface:governance/MINIMALITY_POLICY_v0_1.json:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:docs/frontdoor/FULL_AUDIT_REPORT.md:role-valid",
+      "check": "current-surface:governance/MINIMALITY_POLICY_v0_1.json:role-valid",
       "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/REPOSITORY_FILE_REGISTRY_v0_1.json:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/VERIFICATION_REPORT.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/VERIFICATION_REPORT.md:role-valid",
-      "ok": true,
-      "detail": "role=current_truth"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/NAME_DECISION.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/NAME_DECISION.md:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:docs/frontdoor/TRUST_AND_STYLE_POLICY.md:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
-    },
-    {
-      "check": "current-surface:governance/ROOT_ALLOWLIST_v0_1.json:registered",
-      "ok": true,
-      "detail": "missing registry entry"
-    },
-    {
-      "check": "current-surface:governance/ROOT_ALLOWLIST_v0_1.json:role-valid",
-      "ok": true,
-      "detail": "role=current_support"
+      "detail": "role=governance_support"
     },
     {
       "check": "current-surface:docs/frontdoor/HANDOFF_GUIDE.md:registered",
@@ -1969,12 +1969,12 @@
       "detail": "role=current_support"
     },
     {
-      "check": "current-surface:governance/PACKAGE_STATE_SUMMARY_v0_1.json:registered",
+      "check": "current-surface:docs/frontdoor/FULL_AUDIT_REPORT.md:registered",
       "ok": true,
       "detail": "missing registry entry"
     },
     {
-      "check": "current-surface:governance/PACKAGE_STATE_SUMMARY_v0_1.json:role-valid",
+      "check": "current-surface:docs/frontdoor/FULL_AUDIT_REPORT.md:role-valid",
       "ok": true,
       "detail": "role=current_truth"
     },
@@ -1987,6 +1987,26 @@
       "check": "current-surface:docs/state/PROJECT_STATUS.md:role-valid",
       "ok": true,
       "detail": "role=current_truth"
+    },
+    {
+      "check": "current-surface:governance/ROOT_ALLOWLIST_v0_1.json:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:governance/ROOT_ALLOWLIST_v0_1.json:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
+    },
+    {
+      "check": "current-surface:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:registered",
+      "ok": true,
+      "detail": "missing registry entry"
+    },
+    {
+      "check": "current-surface:governance/FILE_JUSTIFICATION_REGISTRY_v0_1.json:role-valid",
+      "ok": true,
+      "detail": "role=current_support"
     }
   ]
 }
