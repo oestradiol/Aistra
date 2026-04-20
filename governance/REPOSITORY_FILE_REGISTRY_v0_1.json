@@ -762,6 +762,11 @@
       "path": "tools/score_route1_human_pilot_export.py",
       "role": "tooling_current",
       "justification": "current validation, scoring, config-generation, or operational tool"
+    },
+    {
+      "path": "tools/README.md",
+      "role": "tooling_current",
+      "justification": "repo-local subtools entry surface and scope boundary for current tooling"
     }
   ]
 }

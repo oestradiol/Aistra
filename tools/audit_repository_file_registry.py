@@ -49,6 +49,10 @@ def all_files(base: Path) -> list[str]:
         if not p.is_file():
             continue
         rel = str(p.relative_to(base)).replace('\\', '/')
+        if rel.startswith('.git/'):
+            continue
+        if rel.startswith('.venv/'):
+            continue
         if rel.startswith('archive/reports/generated/') and rel != 'archive/reports/generated/README.md':
             continue
         files.append(rel)
